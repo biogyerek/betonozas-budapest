@@ -29,8 +29,19 @@ import Footer from '../components/Footer.astro';
                     </div>
                 </div>
                 <div class="relative">
-                    <div class="bg-concrete-200 rounded-2xl h-96 flex items-center justify-center">
-                        <span class="text-concrete-500 text-lg">Betonozás Hero Kép</span>
+                    <div class="rounded-2xl h-96 overflow-hidden shadow-2xl">
+                        <picture>
+                            <source srcset="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=600&h=400&fit=crop&crop=center&q=80" type="image/webp">
+                            <img 
+                                src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=600&h=400&fit=crop&crop=center&q=80" 
+                                alt="Profi betonozó szakember munka közben - Betonozás Budapest szolgáltatás"
+                                class="w-full h-full object-cover"
+                                loading="eager"
+                                width="600"
+                                height="400"
+                            >
+                        </picture>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
                 </div>
             </div>
