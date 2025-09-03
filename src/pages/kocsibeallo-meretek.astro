@@ -1,0 +1,393 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+
+const title = "Kocsibeálló méretek és betonozás Budapesten | Szakértői útmutató 2024";
+const description = "Teljes útmutató a kocsibeálló optimális méreteihez és betonozásához Budapesten. Méretezés, tervezés, költségek és építési tanácsok szakértőktől.";
+---
+
+<Layout title={title} description={description}>
+  <Header />
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="text-sm breadcrumbs mb-6">
+      <ol class="flex space-x-2 text-gray-600">
+        <li><a href="/" class="hover:text-blue-600">Főoldal</a></li>
+        <li class="before:content-['>'] before:mx-2">Blog</li>
+        <li class="before:content-['>'] before:mx-2 text-gray-800">Kocsibeálló méretek</li>
+      </ol>
+    </nav>
+
+    <article class="prose prose-lg max-w-none">
+      <header class="mb-8">
+        <h1 class="text-4xl font-bold mb-4 text-gray-900">Kocsibeálló méretek és betonozás: Minden, amit tudni kell Budapesten</h1>
+        <div class="flex items-center space-x-4 text-sm text-gray-600">
+          <span>2024. január 15.</span>
+          <span>•</span>
+          <span>Olvasási idő: 12 perc</span>
+        </div>
+      </header>
+
+      <div class="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 class="text-xl font-semibold mb-3 text-blue-900">Gyors áttekintés</h2>
+        <ul class="text-blue-800 space-y-1">
+          <li>✓ Optimális kocsibeálló méretek autótípusonként</li>
+          <li>✓ Tervezési szempontok és előírások</li>
+          <li>✓ Beton vastagság és alapozás követelményei</li>
+          <li>✓ Költségkalkuláció részletes bontásban</li>
+          <li>✓ Építési engedélyek és hatósági eljárások</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Kocsibeálló méretek: A tökéletes tervezés alapjai</h2>
+      
+      <p>A kocsibeálló helyes méretezése kulcsfontosságú a kényelmes használat és a hosszú távú tartósság szempontjából. Budapesten a városrendezési előírások és a gyakorlati tapasztalatok alapján optimalizált méreteket alkalmazunk minden projektünkben.</p>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Standard kocsibeálló méretek autótípusonként</h3>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse border border-gray-300 mb-6">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Autó kategória</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Minimum méret (m)</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Ajánlott méret (m)</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Komfort méret (m)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Kisautó</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2.5 × 4.8</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2.7 × 5.0</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3.0 × 5.5</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Kompakt autó</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2.7 × 5.2</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3.0 × 5.5</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3.2 × 6.0</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Középkategóriás autó</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3.0 × 5.5</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3.2 × 6.0</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3.5 × 6.5</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Nagy autó/SUV</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3.2 × 6.0</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3.5 × 6.5</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3.8 × 7.0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Kétautós kocsibeálló tervezése</h3>
+      
+      <p>Kétautós kocsibeálló esetén különös figyelmet kell fordítani a megfelelő szélességre és a közlekedési útvonalakra:</p>
+
+      <ul class="list-disc pl-6 mb-6">
+        <li><strong>Párhuzamos elhelyezés:</strong> 5.5-6.0 m szélesség × 5.5-6.0 m hosszúság</li>
+        <li><strong>Egymás mögötti elhelyezés:</strong> 3.0-3.5 m szélesség × 10-11 m hosszúság</li>
+        <li><strong>L-alakú elrendezés:</strong> Optimális helykihasználás szűk telkeken</li>
+        <li><strong>Fordulási sugár:</strong> Minimum 6.0 m átmérőjű kör szükséges</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Tervezési szempontok és előírások Budapesten</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Építési szabványok és előírások</h3>
+      
+      <p>Budapest területén a kocsibeállók tervezésénél figyelembe kell venni a helyi építési szabályzatot és az OTÉK előírásait:</p>
+
+      <div class="bg-yellow-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">⚠️ Fontos előírások:</h4>
+        <ul class="text-sm space-y-1">
+          <li>• Telek határától minimum 1.0 m távolság</li>
+          <li>• Közterületre való rálátás biztosítása</li>
+          <li>• Vízelvezetés megfelelő megoldása</li>
+          <li>• Tetőfedés esetén építési engedély szükséges</li>
+        </ul>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Lejtés és vízelvezetés</h3>
+
+      <p>A kocsibeálló megfelelő lejtése elengedhetetlen a víz elvezetéséhez és a hosszú távú tartóssághoz:</p>
+
+      <ul class="list-disc pl-6 mb-6">
+        <li><strong>Minimum lejtés:</strong> 1-2% (1-2 cm/méter)</li>
+        <li><strong>Maximum lejtés:</strong> 8% (8 cm/méter)</li>
+        <li><strong>Vízelvezetés:</strong> Csapadékvíz elvezető árok vagy szennyvízcsatorna</li>
+        <li><strong>Felületi víz:</strong> Nem vezethető a szomszéd telkére</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Betonozás és alapozás követelményei</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Beton vastagság és minőség</h3>
+
+      <p>A kocsibeálló beton vastagságát a tervezett terhelés és a talajviszonyok határozzák meg:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-3">Személyautókhoz:</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Beton vastagság:</strong> 12-15 cm</li>
+            <li>• <strong>Betonminőség:</strong> C20/25</li>
+            <li>• <strong>Vasalás:</strong> Nem szükséges</li>
+            <li>• <strong>Alapozás:</strong> 15 cm kavics</li>
+          </ul>
+        </div>
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-3">Nehéz járművekhez:</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Beton vastagság:</strong> 18-20 cm</li>
+            <li>• <strong>Betonminőség:</strong> C25/30</li>
+            <li>• <strong>Vasalás:</strong> 6 mm-es háló</li>
+            <li>• <strong>Alapozás:</strong> 20 cm kavics</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Alapozási munkálatok lépései</h3>
+
+      <p>A szakszerű alapozás garanciája a tartós kocsibeállónak. A következő lépések betartása elengedhetetlen:</p>
+
+      <ol class="list-decimal pl-6 mb-6 space-y-3">
+        <li><strong>Geodéziai bemérés:</strong> Pontos méretezés és szintezés</li>
+        <li><strong>Földmunka:</strong> 35-40 cm mélységű kiásás</li>
+        <li><strong>Tömörítés:</strong> Alaptalaj tömörítése vibráló lappal</li>
+        <li><strong>Kavicságy:</strong> 15-20 cm frakcióstabil kavics</li>
+        <li><strong>Zsaluzás:</strong> Szélek rögzítése fakeret vagy fémszegély</li>
+        <li><strong>Betonozás:</strong> Egyszerre öntés, vibrátor használata</li>
+        <li><strong>Simítás:</strong> Felületsimító géppel vagy kézzel</li>
+        <li><strong>Utókezelés:</strong> Nedvesen tartás 7 napig</li>
+      </ol>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Speciális megoldások és kiegészítők</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Padlófűtés kocsibeállóban</h3>
+
+      <p>Téli időszakban különösen hasznos lehet a padlófűtéses kocsibeálló, amely megakadályozza a felület fagyását:</p>
+
+      <ul class="list-disc pl-6 mb-6">
+        <li><strong>Elektromos fűtőkábel:</strong> 150-200 W/m² teljesítmény</li>
+        <li><strong>Víz-glikol rendszer:</strong> Gazdaságosabb üzemeltetés</li>
+        <li><strong>Szigetelés:</strong> 5-10 cm polisztirol a beton alatt</li>
+        <li><strong>Hőszabályozás:</strong> Automata termosztát kötelező</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Felületképzési lehetőségek</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Simított beton</h4>
+          <ul class="text-sm space-y-1">
+            <li>• Költséghatékony</li>
+            <li>• Közepes csúszásmentesség</li>
+            <li>• 15-20 Ft/m²</li>
+          </ul>
+        </div>
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Brosírozott felület</h4>
+          <ul class="text-sm space-y-1">
+            <li>• Jobb csúszásmentesség</li>
+            <li>• Esztétikus megjelenés</li>
+            <li>• 25-35 Ft/m²</li>
+          </ul>
+        </div>
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Szórt felület</h4>
+          <ul class="text-sm space-y-1">
+            <li>• Kiváló tapadás</li>
+            <li>• Színezhető</li>
+            <li>• 40-60 Ft/m²</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Költségkalkuláció és tervezési tanácsok</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Részletes költségbecslés</h3>
+
+      <p>Egy 18 m² (3×6 m) standard kocsibeálló költségbecslése Budapesten 2024-ben:</p>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse border border-gray-300 mb-6">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Munkanem</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Mennyiség</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Egységár (Ft)</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Összesen (Ft)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Földmunka</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">6.5 m³</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3,500</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">22,750</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Kavics alapozás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3.6 m³</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">8,500</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">30,600</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Zsaluzás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">18 m</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2,200</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">39,600</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Beton C20/25</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2.7 m³</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">28,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">75,600</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Betonozás munkadíj</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">18 m²</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">4,500</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">81,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Felületképzés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">18 m²</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2,800</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">50,400</td>
+            </tr>
+            <tr class="bg-green-100">
+              <td class="border border-gray-300 px-4 py-2 font-semibold">Összesen</td>
+              <td class="border border-gray-300 px-4 py-2"></td>
+              <td class="border border-gray-300 px-4 py-2"></td>
+              <td class="border border-gray-300 px-4 py-2 text-center font-semibold">299,950</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-blue-50 p-4 rounded-lg mb-6">
+        <p><strong>Összköltség:</strong> 299,950 Ft + ÁFA (18 m² kocsibeálló)</p>
+        <p><strong>Négyzetméterár:</strong> Kb. 16,650 Ft/m² + ÁFA</p>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Költségcsökkentő tippek</h3>
+
+      <ul class="list-disc pl-6 mb-6">
+        <li><strong>Egyszerűsített felületképzés:</strong> 30-50% megtakarítás</li>
+        <li><strong>Saját földmunka:</strong> 25-30% költségcsökkentés</li>
+        <li><strong>Nagyobb projekt:</strong> Járda és terasz együttes kivitelezése</li>
+        <li><strong>Szezonális munkák:</strong> Őszi-téli időszakban kedvezőbb árak</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Hatósági engedélyek és jogi kérdések</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Mikor kell építési engedély?</h3>
+
+      <p>Budapest területén a kocsibeálló építéséhez szükséges engedélyek típusa a mérettől és a kivitelezéstől függ:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-3">🟢 Bejelentés elegendő:</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Nyitott kocsibeálló</li>
+            <li>• Maximum 50 m² területű</li>
+            <li>• Magasság max. 4.5 m</li>
+            <li>• Telekhatár betartása</li>
+          </ul>
+        </div>
+        <div class="bg-yellow-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-3">🟡 Építési engedély szükséges:</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Fedett/zárt kocsibeálló</li>
+            <li>• 50 m² feletti terület</li>
+            <li>• Elektromos kapu</li>
+            <li>• Múlt alatt védett övezetben</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Szomszédság jogok</h3>
+
+      <p>A kocsibeálló építésekor figyelembe kell venni a szomszédság jogokat is:</p>
+
+      <ul class="list-disc pl-6 mb-6">
+        <li><strong>Telekhatártól távolság:</strong> Minimum 1.0 m (nyitott), 3.0 m (zárt)</li>
+        <li><strong>Vízelvezetés:</strong> Nem irányítható a szomszéd telkére</li>
+        <li><strong>Zajvédelem:</strong> Elektromos kapu esetén különös figyelem</li>
+        <li><strong>Láthatóság:</strong> Közterületre nyíló kijárat szabályozása</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Karbantartás és élettartam</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Rendszeres karbantartás</h3>
+
+      <p>A kocsibeálló hosszú távú használhatóságának biztosítása érdekében rendszeres karbantartás szükséges:</p>
+
+      <div class="space-y-4 mb-6">
+        <div class="border-l-4 border-blue-500 pl-4">
+          <h4 class="font-semibold">Évente egyszer:</h4>
+          <p class="text-sm">Repedések ellenőrzése, vízelvezetés tisztítása, felületi szennyeződések eltávolítása</p>
+        </div>
+        <div class="border-l-4 border-green-500 pl-4">
+          <h4 class="font-semibold">2-3 évente:</h4>
+          <p class="text-sm">Felületi impregnálás, kisebb repedések javítása, dilatációs hézagok tisztítása</p>
+        </div>
+        <div class="border-l-4 border-orange-500 pl-4">
+          <h4 class="font-semibold">5-8 évente:</h4>
+          <p class="text-sm">Felületi felújítás, nagyobb repedések szakszerű javítása</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Várható élettartam</h3>
+
+      <ul class="list-disc pl-6 mb-6">
+        <li><strong>Megfelelő kivitelezés esetén:</strong> 25-30 év</li>
+        <li><strong>Rendszeres karbantartással:</strong> 35-40 év</li>
+        <li><strong>Prémium anyaghasználat:</strong> 40-50 év</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Gyakran ismételt kérdések</h2>
+
+      <div class="space-y-6 mb-8">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Milyen széles legyen egy kocsibeálló?</h4>
+          <p class="text-sm">Személyautóhoz minimum 2.5 m, de kényelmes használathoz 3.0-3.2 m ajánlott. SUV-hoz vagy nagyobb autóhoz 3.5 m ideális.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Milyen vastag legyen a beton?</h4>
+          <p class="text-sm">Személyautókhoz 12-15 cm, nehéz járművekhez 18-20 cm. Vasalás személyautóknál általában nem szükséges.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Szükséges-e építési engedély?</h4>
+          <p class="text-sm">Nyitott kocsibeállóhoz 50 m² alatt általában bejelentés elegendő. Fedett vagy nagyobb kocsibeállóhoz építési engedély szükséges.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Mennyi ideig lehet használni a betonozás után?</h4>
+          <p class="text-sm">Gyalogosan 24 óra után, autóval 7 nap után ajánlott használni. Teljes szilárdság 28 nap alatt alakul ki.</p>
+        </div>
+      </div>
+
+      <div class="bg-blue-600 text-white p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-4">Szakértői kocsibeálló tervezés Budapesten</h3>
+        <p class="mb-4">25 éves tapasztalattal segítjük kocsibeálló projektjét a tervezéstől a kivitelezésig. Ingyenes helyszíni felmérés és árajánlat!</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div>
+            <strong>📞 Telefon:</strong> +36 1 234 5678<br>
+            <strong>📧 Email:</strong> info@betonozas-budapest.hu
+          </div>
+          <div>
+            <strong>📍 Terület:</strong> Budapest és 30 km-es körzet<br>
+            <strong>⏰ Garanciaidő:</strong> 5 év teljes körű garancia
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>

@@ -1,0 +1,576 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+
+const title = "Beton javítás módszerei és technikái Budapesten | Szakszerű helyreállítás 2024";
+const description = "Teljes útmutató a betonszerkezetek javításához: repedések tömítése, felületek helyreállítása, megerősítési technikák és költségek Budapesten.";
+---
+
+<Layout title={title} description={description}>
+  <Header />
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="text-sm breadcrumbs mb-6">
+      <ol class="flex space-x-2 text-gray-600">
+        <li><a href="/" class="hover:text-blue-600">Főoldal</a></li>
+        <li class="before:content-['>'] before:mx-2">Blog</li>
+        <li class="before:content-['>'] before:mx-2 text-gray-800">Beton javítás</li>
+      </ol>
+    </nav>
+
+    <article class="prose prose-lg max-w-none">
+      <header class="mb-8">
+        <h1 class="text-4xl font-bold mb-4 text-gray-900">Beton javítás: Professzionális helyreállítási módszerek Budapesten</h1>
+        <div class="flex items-center space-x-4 text-sm text-gray-600">
+          <span>2024. február 1.</span>
+          <span>•</span>
+          <span>Olvasási idő: 16 perc</span>
+        </div>
+      </header>
+
+      <div class="bg-red-50 p-6 rounded-lg mb-8">
+        <h2 class="text-xl font-semibold mb-3 text-red-900">Gyors áttekintés</h2>
+        <ul class="text-red-800 space-y-1">
+          <li>✓ Betonkárosodások típusai és okainak feltárása</li>
+          <li>✓ Repedésjavítási módszerek és anyagok</li>
+          <li>✓ Felület-helyreállítási technikák</li>
+          <li>✓ Szerkezeti megerősítések módszerei</li>
+          <li>✓ Költségbecslés javítási munkálatokhoz</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Betonkárosodások típusai és okai</h2>
+      
+      <p>Budapest változatos időjárási viszonyai és agyagos talajok különleges kihívásokat jelentenek a betonszerkezetek számára. A károsodások korai felismerése és megfelelő javítása kulcsfontosságú a szerkezetek hosszú távú épségének megőrzéséhez.</p>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Mechanikai károsodások</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-orange-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-orange-800 mb-3">🔨 Mechanikai terhelés</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Túlterhelés:</strong> Tervezett teherbírás túllépése</li>
+            <li>• <strong>Ütődés:</strong> Nehéz tárgyak becsapódása</li>
+            <li>• <strong>Kopás:</strong> Folyamatos mechanikai igénybevétel</li>
+            <li>• <strong>Rezgések:</strong> Dinamikus terhelések hatása</li>
+          </ul>
+        </div>
+        
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-blue-800 mb-3">❄️ Környezeti hatások</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Fagy-olvadás:</strong> Ciklikus hőmérséklet-változás</li>
+            <li>• <strong>Hőtágulás:</strong> Nagy hőingadozások</li>
+            <li>• <strong>Talajmozgás:</strong> Süllyedések, emelkedések</li>
+            <li>• <strong>Vegyi hatások:</strong> Só, savak, lúgok</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Repedéstípusok és osztályozásuk</h3>
+
+      <p>A repedések mérete és jellege határozza meg a szükséges javítási módszert:</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Repedés típus</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Szélesség</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Veszélyesség</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Javítási sürgősség</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Hajszálrepedés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">< 0.1 mm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Alacsony</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">1-2 év</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Kisebb repedés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">0.1-0.3 mm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Közepes</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">6-12 hónap</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Aktív repedés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">0.3-2.0 mm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Magas</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">1-3 hónap</td>
+            </tr>
+            <tr class="bg-red-50">
+              <td class="border border-gray-300 px-4 py-2">Szerkezeti repedés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">> 2.0 mm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Kritikus</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Azonnali</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Repedésjavítási módszerek</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Injektálási technikák</h3>
+
+      <p>Az injektálás a leghatékonyabb módszer a repedések tartós javítására:</p>
+
+      <div class="space-y-4 mb-6">
+        <div class="border-l-4 border-blue-500 pl-4">
+          <h4 class="font-semibold text-blue-800">Epoxi gyanta injektálás</h4>
+          <p class="text-sm">0.1-5.0 mm széles repedésekhez. Kiváló tapadás és szerkezeti szilárdság.</p>
+          <div class="grid grid-cols-2 gap-4 text-xs mt-2">
+            <div><strong>Alkalmazás:</strong> Szerkezeti javítások</div>
+            <div><strong>Költség:</strong> 8,000-15,000 Ft/fm</div>
+          </div>
+        </div>
+        
+        <div class="border-l-4 border-green-500 pl-4">
+          <h4 class="font-semibold text-green-800">Cementszuszpenzió injektálás</h4>
+          <p class="text-sm">Nagyobb repedésekhez és üregek kitöltésére. Gazdaságos megoldás.</p>
+          <div class="grid grid-cols-2 gap-4 text-xs mt-2">
+            <div><strong>Alkalmazás:</strong> Nem szerkezeti javítások</div>
+            <div><strong>Költség:</strong> 3,500-6,000 Ft/fm</div>
+          </div>
+        </div>
+        
+        <div class="border-l-4 border-purple-500 pl-4">
+          <h4 class="font-semibold text-purple-800">Poliuretán injektálás</h4>
+          <p class="text-sm">Vízzáró javításokhoz, rugalmas kötés. Mozgó repedésekhez ideális.</p>
+          <div class="grid grid-cols-2 gap-4 text-xs mt-2">
+            <div><strong>Alkalmazás:</strong> Vízszigetelési problémák</div>
+            <div><strong>Költség:</strong> 12,000-20,000 Ft/fm</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Injektálási folyamat lépései</h3>
+
+      <p>A szakszerű injektálás precíz munkavégzést igényel:</p>
+
+      <ol class="list-decimal pl-6 mb-6 space-y-3">
+        <li><strong>Repedés feltárása:</strong> Szennyeződések eltávolítása, felület tisztítása</li>
+        <li><strong>Fúrási pontok kijelölése:</strong> 15-25 cm távolságra a repedés mentén</li>
+        <li><strong>Injektálófej beszerelése:</strong> Speciális packer elhelyezése</li>
+        <li><strong>Felület lezárása:</strong> Gyorskötő anyaggal vagy ragasztószalaggal</li>
+        <li><strong>Injektálás:</strong> Alacsony nyomáson, egyenletesen</li>
+        <li><strong>Utókezelés:</strong> 24-48 órás kötési idő biztosítása</li>
+        <li><strong>Felületrendezés:</strong> Feleslegek eltávolítása, simítás</li>
+      </ol>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Felület-helyreállítási technikák</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Vakolási rendszerek</h3>
+
+      <p>Nagyobb felületi károk esetén speciális vakolóanyagok alkalmazása szükséges:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-3">📦 Szárazanyagú rendszerek</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Cementbázisú:</strong> R3-R4 osztály, 25-45 MPa</li>
+            <li>• <strong>Polimer-módosított:</strong> Jobb tapadás és rugalmasság</li>
+            <li>• <strong>Gyorskötő:</strong> 2-4 órás járhatóság</li>
+            <li>• <strong>Mikroszilika-adalékos:</strong> Nagy szilárdság</li>
+          </ul>
+          <p class="text-xs mt-2 text-gray-600"><strong>Költség:</strong> 2,800-5,500 Ft/m²</p>
+        </div>
+        
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-3">🧪 Kétkomponensű rendszerek</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Epoxi-alapú:</strong> Kiváló kémiai ellenállás</li>
+            <li>• <strong>Poliuretán:</strong> Rugalmas, ütésálló</li>
+            <li>• <strong>Metakrilát:</strong> Gyors kötés, UV-álló</li>
+            <li>• <strong>Szilikon-módosított:</strong> Légáteresztő</li>
+          </ul>
+          <p class="text-xs mt-2 text-gray-600"><strong>Költség:</strong> 4,200-8,500 Ft/m²</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Felületi előkészítési módszerek</h3>
+
+      <div class="space-y-4 mb-6">
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🔨 Mechanikai előkészítés</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Módszerek:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Kézi vésés és csiszolás</li>
+                <li>Pneumatikus vésés</li>
+                <li>Gyémántfűrészelés</li>
+                <li>Vízsugár tisztítás</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Alkalmazási területek:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Laza rétegek eltávolítása</li>
+                <li>Felületi érdesítés</li>
+                <li>Régi bevonatok leverése</li>
+                <li>Poros felületek tisztítása</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">⚡ Kémiai előkészítés</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Savazás:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>10-15% sósav oldat</li>
+                <li>5-10 perc behatási idő</li>
+                <li>Alapos utómosás</li>
+                <li>pH semlegesítése</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Alkalmazás:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Cement-tej eltávolítása</li>
+                <li>Mészkő kioldása</li>
+                <li>Felületi aktiválás</li>
+                <li>Tapadás javítása</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Szerkezeti megerősítések</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Szálerősítéses technológiák</h3>
+
+      <p>Modern kompozit anyagokkal végzett megerősítések egyre népszerűbbek:</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Szál típusa</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Szakítószilárdság</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">E-modulusz</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Ár (Ft/m²)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Szénszál (CFRP)</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3,500 MPa</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">230 GPa</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">25,000-40,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Üvegszál (GFRP)</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2,200 MPa</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">72 GPa</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">12,000-18,000</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Aramidszál (AFRP)</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2,800 MPa</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">120 GPa</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">35,000-50,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Bazaltszál (BFRP)</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2,800 MPa</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">95 GPa</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">15,000-22,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">FRP rendszerek alkalmazása</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-blue-800 mb-3">✅ Előnyök:</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Kis súly, könnyű szállítás</li>
+            <li>• Korrózióálló tulajdonság</li>
+            <li>• Gyors telepítés</li>
+            <li>• Minimális szerkezeti változtatás</li>
+            <li>• Magas szilárdság/tömeg arány</li>
+          </ul>
+        </div>
+        
+        <div class="bg-orange-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-orange-800 mb-3">❌ Hátrányok:</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Magas anyagköltség</li>
+            <li>• Speciális szakértelem igény</li>
+            <li>• UV-érzékenység</li>
+            <li>• Tűz esetén gyors degradáció</li>
+            <li>• Hosszú távú viselkedés ismeretlen</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Hagyományos acélmegerősítés</h3>
+
+      <p>Külső acélszerkezetek alkalmazása nagyobb károk esetén:</p>
+
+      <ul class="list-disc pl-6 mb-6">
+        <li><strong>Acéllamellák:</strong> Hajlítási megerősítésekhez</li>
+        <li><strong>Szorítógépek:</strong> Hasadási károk javításához</li>
+        <li><strong>Külső merevítések:</strong> Stabilitás növelésére</li>
+        <li><strong>Pótlólagos vasalás:</strong> Utólagos bebetonozással</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Speciális javítási technikák</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Elektroozmózis és katódos védelem</h3>
+
+      <p>Korróziós károk kezelésére fejlesztett modern technikák:</p>
+
+      <div class="bg-green-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">⚡ Elektroozmózis működése:</h4>
+        <ul class="text-sm space-y-2">
+          <li>• Alacsony feszültségű egyenáram alkalmazása</li>
+          <li>• Nedvesség kivonása a beton pórusrendszeréből</li>
+          <li>• Korróziófolyamatok lelassítása</li>
+          <li>• 12-24 hónapos kezelési időszak</li>
+          <li>• Költség: 15,000-25,000 Ft/m²</li>
+        </ul>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Mikrocementezés és permeáció</h3>
+
+      <p>Speciális technológiák a beton tömörségének helyreállítására:</p>
+
+      <div class="space-y-4 mb-6">
+        <div class="border-l-4 border-purple-500 pl-4">
+          <h4 class="font-semibold text-purple-800">Mikrocementezés</h4>
+          <p class="text-sm">Ultrafinom cement szuszpenzió injektálása 5-10 mikrométer pórusokba.</p>
+          <p class="text-xs text-gray-600">Alkalmazás: Károsodott szerkezetek tömörségének helyreállítása</p>
+        </div>
+        
+        <div class="border-l-4 border-indigo-500 pl-4">
+          <h4 class="font-semibold text-indigo-800">Permeációs injektálás</h4>
+          <p class="text-sm">Alacsony viszkozitású anyagok beprésselése nagy területen.</p>
+          <p class="text-xs text-gray-600">Alkalmazás: Vízzáró réteg kialakítása betonban</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Költségkalkuláció és tervezés</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Javítási költségek alakulása</h3>
+
+      <p>50 m² károsodott beton terasz komplex javításának költségbecslése:</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Javítási típus</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Mennyiség</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Egységár (Ft)</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Összesen (Ft)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Felületi károk felmérése</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">50 m²</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">800</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">40,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Mechanikai előkészítés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">50 m²</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2,200</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">110,000</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Repedések injektálása</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">25 fm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">12,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">300,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Javítóhabarcs alkalmazása</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">15 m²</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">4,500</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">67,500</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Vízszigetelés felújítása</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">50 m²</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3,800</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">190,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Felületi védőbevonat</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">50 m²</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2,800</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">140,000</td>
+            </tr>
+            <tr class="bg-blue-100">
+              <td class="border border-gray-300 px-4 py-2 font-semibold">Összesen</td>
+              <td class="border border-gray-300 px-4 py-2"></td>
+              <td class="border border-gray-300 px-4 py-2"></td>
+              <td class="border border-gray-300 px-4 py-2 text-center font-semibold">847,500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-blue-50 p-4 rounded-lg mb-6">
+        <p><strong>Teljes javítási költség:</strong> 847,500 Ft + ÁFA (50 m²)</p>
+        <p><strong>Négyzetméterár:</strong> Kb. 16,950 Ft/m² + ÁFA</p>
+        <p class="text-sm mt-2 text-gray-600"><em>Megjegyzés: Az ár nagyban függ a károsodás mértékétől és a választott javítási módszerektől</em></p>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Költség-hatékonyság optimalizálása</h3>
+
+      <ul class="list-disc pl-6 mb-6">
+        <li><strong>Korai beavatkozás:</strong> 60-80% költségmegtakarítás</li>
+        <li><strong>Részleges javítás:</strong> Csak a kritikus területek kezelése</li>
+        <li><strong>Hosszú távú tervezés:</strong> Megelőző karbantartási program</li>
+        <li><strong>Anyagválasztás:</strong> Élettartam-költség elemzés</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Minőségbiztosítás és ellenőrzés</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Diagnosztikai módszerek</h3>
+
+      <p>Modern vizsgálati technikák a javítási terv elkészítéséhez:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-yellow-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-yellow-800 mb-3">🔬 Roncsolásmentes vizsgálatok</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Ultrahangos vizsgálat:</strong> Repedések mélysége</li>
+            <li>• <strong>Radar technológia:</strong> Vasalás állapota</li>
+            <li>• <strong>Termográfia:</strong> Nedvességmapping</li>
+            <li>• <strong>Rezonancia mérés:</strong> Dinamikai tulajdonságok</li>
+          </ul>
+        </div>
+        
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-green-800 mb-3">🧪 Laboratóriumi vizsgálatok</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Nyomószilárdság:</strong> Magminták vizsgálata</li>
+            <li>• <strong>Karbonátosodás:</strong> Mélység meghatározása</li>
+            <li>• <strong>Klorid tartalom:</strong> Korrózióveszély felmérése</li>
+            <li>• <strong>Mikroszerkezet:</strong> SEM analízis</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Elvégzett javítások ellenőrzése</h3>
+
+      <div class="space-y-4 mb-6">
+        <div class="border-l-4 border-blue-500 pl-4">
+          <h4 class="font-semibold">Közvetlen ellenőrzések:</h4>
+          <p class="text-sm">Vizuális szemrevételezés, méretek ellenőrzése, felületi minőség értékelése</p>
+        </div>
+        
+        <div class="border-l-4 border-green-500 pl-4">
+          <h4 class="font-semibold">Tapadási próbák:</h4>
+          <p class="text-sm">Pull-off teszt, hasító-húzó szilárdság mérés, kapcsolódási vizsgálatok</p>
+        </div>
+        
+        <div class="border-l-4 border-orange-500 pl-4">
+          <h4 class="font-semibold">Hosszú távú monitoring:</h4>
+          <p class="text-sm">Repedésmozgás követése, deformációmérés, rezgésanalízis</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Megelőzés és karbantartás</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Megelőző intézkedések</h3>
+
+      <p>A károsodások megelőzése sokkal gazdaságosabb, mint a javításuk:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2 text-green-800">🛡️ Tervezési védelem</h4>
+          <ul class="text-sm space-y-1">
+            <li>• Megfelelő fedőréteg</li>
+            <li>• Dilatációs hézagok</li>
+            <li>• Vízelvezetés tervezése</li>
+            <li>• Anyagminőség választás</li>
+          </ul>
+        </div>
+        
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2 text-blue-800">⚗️ Kémiai védelem</h4>
+          <ul class="text-sm space-y-1">
+            <li>• Impregnálás</li>
+            <li>• Katódos védelem</li>
+            <li>• Korróziógátló adalékok</li>
+            <li>• Víztaszító kezelések</li>
+          </ul>
+        </div>
+        
+        <div class="bg-orange-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2 text-orange-800">📅 Rendszeres ellenőrzés</h4>
+          <ul class="text-sm space-y-1">
+            <li>• Éves állapotfelmérés</li>
+            <li>• Repedések monitoring</li>
+            <li>• Tisztítás és ápolás</li>
+            <li>• Dokumentálás</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Karbantartási program kidolgozása</h3>
+
+      <div class="bg-gray-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">📋 Javasolt karbantartási ciklus:</h4>
+        <ul class="text-sm space-y-2">
+          <li>• <strong>Évente:</strong> Teljes állapotfelmérés, tisztítás</li>
+          <li>• <strong>2-3 évente:</strong> Felületi védelem megújítása</li>
+          <li>• <strong>5 évente:</strong> Részletes vizsgálatok, kisebb javítások</li>
+          <li>• <strong>10-15 évente:</strong> Nagyobb felújítási munkák tervezése</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Gyakran ismételt kérdések</h2>
+
+      <div class="space-y-6 mb-8">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Mikor szükséges azonnal javítani a repedéseket?</h4>
+          <p class="text-sm">0.3 mm-nél szélesebb repedések esetén 1-3 hónapon belül, 2 mm feletti esetén azonnal. Víz beáramlása vagy szerkezeti jellegű repedések azonnali beavatkozást igényelnek.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Mennyibe kerül egy átlagos repedés javítása?</h4>
+          <p class="text-sm">Kisebb repedések injektálása 8,000-15,000 Ft/fm. Nagyobb, szerkezeti károk esetén 50,000-200,000 Ft/fm is lehet a költség a megerősítésekkel együtt.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Milyen garanciát adnak a javításokra?</h4>
+          <p class="text-sm">Szakszerű javítás esetén 2-5 év anyag- és munkadíj garancia szokásos. FRP megerősítésekre akár 10-15 éves garancia is adható megfelelő kivitelezés mellett.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Lehet-e télen is végezni javítási munkákat?</h4>
+          <p class="text-sm">Igen, de +5°C feletti hőmérsékleten és megfelelő utókezeléssel. Fagyálló adalékanyagok használata és fűtött munkahelyi körülmények szükségesek.</p>
+        </div>
+      </div>
+
+      <div class="bg-red-600 text-white p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-4">Szakértői betonjavítás Budapesten</h3>
+        <p class="mb-4">Professzionális diagnosztika és komplex betonjavítási megoldások 15 éves tapasztalattal. Garanciális utógondozás minden javításra!</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div>
+            <strong>📞 Telefon:</strong> +36 1 234 5678<br>
+            <strong>📧 Email:</strong> info@betonozas-budapest.hu
+          </div>
+          <div>
+            <strong>🔬 Szolgáltatás:</strong> Ingyenes állapotfelmérés<br>
+            <strong>⏰ Garanciaidő:</strong> 2-10 év javítási módszertől függően
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>

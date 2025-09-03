@@ -1,0 +1,203 @@
+---
+import Layout from '../../components/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { generateSchemasForPage } from '../../schema-config.js';
+import { blogPosts } from '../../data/blogPosts.js';
+
+// Generate static paths for all blog posts
+export async function getStaticPaths() {
+    return blogPosts.map((post) => ({
+        params: { slug: post.slug },
+        props: post,
+    }));
+}
+
+const { title, description, date, category, author, readTime, excerpt, slug } = Astro.props;
+const metaDescription = description;
+
+// Generate schemas for blog post
+const blogSchemas = generateSchemasForPage('blog', {
+    headline: title,
+    description: excerpt,
+    datePublished: date,
+    author: { name: author },
+    publisher: { name: "Betonozás Budapest" }
+});
+---
+
+<Layout title={title + " - Betonozás Budapest"} description={metaDescription}>
+    <!-- Schema Markup -->
+    {blogSchemas.map(schema => (
+        <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+    ))}
+    
+    <Header />
+    
+    <!-- Breadcrumb -->
+    <nav class="bg-concrete-50 py-4">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ol class="flex items-center space-x-2 text-sm text-concrete-600">
+                <li><a href="/" class="hover:text-primary-600">Főoldal</a></li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <a href="/blog" class="hover:text-primary-600">Blog</a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-concrete-800 font-medium">{title}</span>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <header class="mb-8">
+            <div class="flex items-center justify-between mb-6">
+                <span class="bg-primary-100 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full">
+                    {category}
+                </span>
+                <span class="text-concrete-500">{readTime} olvasás</span>
+            </div>
+            
+            <h1 class="text-4xl lg:text-5xl font-bold text-concrete-800 font-heading mb-6">
+                {title}
+            </h1>
+            
+            <div class="flex items-center text-concrete-600">
+                <span>Szerző: {author}</span>
+                <span class="mx-3">•</span>
+                <time datetime={date}>
+                    {new Date(date).toLocaleDateString('hu-HU', { 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric' 
+                    })}
+                </time>
+            </div>
+        </header>
+
+        <!-- Article Content -->
+        <div class="prose prose-lg max-w-none">
+            <div class="blog-content">
+                <p class="text-lg leading-relaxed mb-6">{excerpt}</p>
+                
+                <div class="bg-gradient-to-r from-primary-600 to-primary-800 text-white rounded-lg p-8 text-center">
+                    <h3 class="text-2xl font-bold mb-4">Betonozásra van Szüksége?</h3>
+                    <p class="text-xl mb-8 opacity-90">
+                        15+ év tapasztalattal segítünk minden betonozási projektben 
+                        professzionális megoldást nyújtani!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a 
+                            href="/kapcsolat" 
+                            class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                        >
+                            Ingyenes Árajánlat
+                        </a>
+                        <a 
+                            href="tel:+36301234567" 
+                            class="bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-800 transition-colors"
+                        >
+                            📞 Hívjon Azonnal
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-concrete-50 border border-concrete-200 rounded-lg p-6 text-center">
+                    <h4 class="text-lg font-semibold text-concrete-800 mb-3">Teljes cikk elolvasása</h4>
+                    <p class="text-concrete-600 mb-4 text-sm">
+                        Részletes szakmai információk és gyakorlati tanácsok.
+                    </p>
+                    <a href={`/${slug}`} class="bg-concrete-600 hover:bg-concrete-700 text-white font-medium py-2 px-5 rounded-lg transition-colors duration-200 inline-block">
+                        Teljes cikk →
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <footer class="mt-12 pt-8 border-t border-concrete-200">
+            <div class="bg-concrete-50 rounded-xl p-8 text-center">
+                <h3 class="text-2xl font-semibold text-concrete-800 mb-4">
+                    Hasznos volt a cikk?
+                </h3>
+                <p class="text-concrete-600 mb-6">
+                    Oszd meg vagy iratkozz fel hírlevelünkre a friss betonozási tippekért és szakmai cikkekért!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/blog" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">
+                        További Cikkek
+                    </a>
+                    <a href="mailto:?subject=Érdekes betonozási cikk&body=Találtam egy hasznos cikket: ${window.location.href}" class="border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block">
+                        Megosztás
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </article>
+
+    <!-- Related Articles -->
+    <section class="py-16 bg-concrete-50">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-concrete-800 font-heading text-center mb-12">
+                Kapcsolódó cikkek
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Related article cards would go here -->
+                <div class="bg-white border border-concrete-200 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-3">Alapozás típusai</h3>
+                    <p class="text-concrete-600 mb-4">Hogyan válasszd ki a megfelelő alapozási módot...</p>
+                    <a href="/blog/alapozas-tipusok" class="text-primary-600 hover:text-primary-700 font-semibold">Tovább →</a>
+                </div>
+                <div class="bg-white border border-concrete-200 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-3">Betonkeverés tippek</h3>
+                    <p class="text-concrete-600 mb-4">Szakértői tanácsok a tökéletes betonkeveréshez...</p>
+                    <a href="/blog/betonkeveres-tippek" class="text-primary-600 hover:text-primary-700 font-semibold">Tovább →</a>
+                </div>
+                <div class="bg-white border border-concrete-200 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold text-concrete-800 mb-3">Beton karbantartás</h3>
+                    <p class="text-concrete-600 mb-4">Hogyan tartsd karban a betonfelületeket...</p>
+                    <a href="/blog/beton-karbantartas" class="text-primary-600 hover:text-primary-700 font-semibold">Tovább →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>
+
+<style>
+.blog-content {
+    @apply text-concrete-700 leading-relaxed;
+}
+
+.blog-content h2 {
+    @apply text-2xl font-semibold text-concrete-800 mt-8 mb-4;
+}
+
+.blog-content h3 {
+    @apply text-xl font-semibold text-concrete-800 mt-6 mb-3;
+}
+
+.blog-content p {
+    @apply mb-4;
+}
+
+.blog-content ul, .blog-content ol {
+    @apply ml-6 mb-4 space-y-2;
+}
+
+.blog-content li {
+    @apply text-concrete-700;
+}
+
+.blog-content a {
+    @apply text-primary-600 hover:text-primary-700 underline;
+}
+</style>

@@ -1,0 +1,612 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+
+const title = "Betonozási hibák és megelőzésük Budapesten | Gyakori problémák 2024";
+const description = "Átfogó útmutató a betonozási hibákhoz: okok, megelőzés, javítás. Szakértői tippek a minőségi betonozáshoz Budapesten.";
+---
+
+<Layout title={title} description={description}>
+  <Header />
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="text-sm breadcrumbs mb-6">
+      <ol class="flex space-x-2 text-gray-600">
+        <li><a href="/" class="hover:text-blue-600">Főoldal</a></li>
+        <li class="before:content-['>'] before:mx-2">Blog</li>
+        <li class="before:content-['>'] before:mx-2 text-gray-800">Betonozási hibák</li>
+      </ol>
+    </nav>
+
+    <article class="prose prose-lg max-w-none">
+      <header class="mb-8">
+        <h1 class="text-4xl font-bold mb-4 text-gray-900">Betonozási hibák és megelőzésük: Útmutató a minőségi munkához</h1>
+        <div class="flex items-center space-x-4 text-sm text-gray-600">
+          <span>2024. március 5.</span>
+          <span>•</span>
+          <span>Olvasási idő: 18 perc</span>
+        </div>
+      </header>
+
+      <div class="bg-red-50 p-6 rounded-lg mb-8">
+        <h2 class="text-xl font-semibold mb-3 text-red-900">Kritikus hibaforrások</h2>
+        <ul class="text-red-800 space-y-1">
+          <li>✗ Helytelen keverési arányok - szilárdság csökkenés</li>
+          <li>✗ Elégtelen tömörítés - buborékos struktúra</li>
+          <li>✗ Gyors száradás - felületi repedések</li>
+          <li>✗ Rossz utókezelés - tartósság problémák</li>
+          <li>✗ Időjárási körülmények figyelmen kívül hagyása</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">A betonozási hibák gazdasági hatása</h2>
+      
+      <p>A betonozási hibák nemcsak műszaki problémákat okoznak, hanem jelentős gazdasági veszteségeket is. Budapest építési projektjeiben a hibás betonozás miatti károk évente milliárd forintokat emésztenek fel. A megelőzés mindig gazdaságosabb, mint a javítás.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-red-100 p-4 rounded-lg text-center">
+          <div class="text-2xl font-bold text-red-800">300%</div>
+          <div class="text-sm">Javítási költség az eredeti ár %-ában</div>
+        </div>
+        <div class="bg-orange-100 p-4 rounded-lg text-center">
+          <div class="text-2xl font-bold text-orange-800">15-25 nap</div>
+          <div class="text-sm">Átlagos késedelem hibák miatt</div>
+        </div>
+        <div class="bg-yellow-100 p-4 rounded-lg text-center">
+          <div class="text-2xl font-bold text-yellow-800">40%</div>
+          <div class="text-sm">Élettartam csökkenés súlyos hibák esetén</div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Keverési és összetételi hibák</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Helytelen víz/cement arány</h3>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">V/C arány</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Szilárdság hatás</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Tipikus hibák</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Javítás költsége</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">< 0.4 (túl száraz)</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Jó szilárdság</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Művelhetőségi problémák</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Közepes</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">0.4-0.6 (optimális)</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Kiváló</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Minimális</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Alacsony</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">0.6-0.8 (magas)</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Csökkent</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Zsugorodás, repedések</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Magas</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">> 0.8 (túl nedves)</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Kritikusan alacsony</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Szerkezeti problémák</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Kritikus</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Adalékanyag problémák</h3>
+
+      <div class="space-y-4 mb-6">
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-red-800 mb-2">❌ Gyakori adalékanyag hibák</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Szennyezett adalékanyagok:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Szervesanyag tartalom >3%</li>
+                <li>Agyagos szennyeződések</li>
+                <li>Só, klorid szennyezés</li>
+                <li>Olajos, zsíros adalékok</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Szemeloszlási hibák:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Túl sok finomszemcsés anyag</li>
+                <li>Egyenetlen eloszlás</li>
+                <li>Szemcseméret túllépések</li>
+                <li>Szétválasztódás a szállítás során</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Szállítási és öntési hibák</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Betonszállítás problémái</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-orange-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-orange-800 mb-3">🚛 Szállítási hibák</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Túl hosszú szállítási idő:</strong> >90 perc</li>
+            <li>• <strong>Szétválás a keverőben:</strong> Fordulatszám probléma</li>
+            <li>• <strong>Víz utólagos hozzáadása:</strong> Helyszíni hígítás</li>
+            <li>• <strong>Szennyezett keverő:</strong> Tisztítatlan tartály</li>
+            <li>• <strong>Késedelmes szállítás:</strong> Kötés a keverőben</li>
+          </ul>
+        </div>
+        
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-blue-800 mb-3">⏰ Időzítési problémák</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Korai öntés:</strong> Zsaluzat nem kész</li>
+            <li>• <strong>Szakaszos szállítás:</strong> Munkahézagok</li>
+            <li>• <strong>Időjárási változás:</strong> Nem előre jelzett</li>
+            <li>• <strong>Munkaerő hiány:</strong> Lassú öntés</li>
+            <li>• <strong>Géphiba:</strong> Nem működő vibrátor</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Öntési technika hibái</h3>
+
+      <div class="space-y-4 mb-6">
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🏗️ Helytelen öntési gyakorlat</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Problémás technikák:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Túl nagy esésmagasság (>1.5m)</li>
+                <li>Egyenlőtlen rétegvastagságok</li>
+                <li>Helytelen öntési irány</li>
+                <li>Gyors öntés nagy területen</li>
+                <li>Szétválasztódás okozása</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Következmények:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Adalékanyag szegregáció</li>
+                <li>Légtartalom növekedés</li>
+                <li>Felületi egyenetlenségek</li>
+                <li>Munkahézag hibák</li>
+                <li>Szilárdság-inhomogenitás</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Tömörítési hibák</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Vibrálásos tömörítés problémái</h3>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Hiba típusa</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Oka</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Tünetei</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Megelőzés</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Elégtelen tömörítés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Rövid vibrálás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Légbuborékok, hidegkötések</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">15-30s vibrálás</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Túl erős vibrálás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Hosszú ideig, nagy amplitúdó</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Szétválasztódás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Szabályozott idő</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Helytelen pozíció</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Ferde, felületi vibrálás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Egyenlőtlen tömörség</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Függőleges behelyezés</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Légtartalom problémák</h3>
+
+      <div class="bg-yellow-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">💨 Optimális légtartalom:</h4>
+        <ul class="text-sm space-y-2">
+          <li>• <strong>Normál beton:</strong> 1-3% (természetes)</li>
+          <li>• <strong>Légbuborékos beton:</strong> 4-8% (adalékanyaggal)</li>
+          <li>• <strong>Kritikus érték:</strong> >6% (adalék nélkül) = problémás</li>
+          <li>• <strong>Mérési módszer:</strong> Nyomásos vagy térfogatos eljárás</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Felületi hibák</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Vérvíz és felületi problémák</h3>
+
+      <div class="space-y-4 mb-6">
+        <div class="border border-red-200 p-4 rounded-lg">
+          <h4 class="font-semibold text-red-800 mb-2">❌ Vérvíz kezelési hibák</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Helytelen gyakorlat:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Vérvíz visszakeverése</li>
+                <li>Túl korai simítás megkezdése</li>
+                <li>Vérvíz eltávolítás hiánya</li>
+                <li>Porteljes cement szórása</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Helyes eljárás:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Vérvíz teljes elpárolgásának bevárása</li>
+                <li>Fokozatos, többlépcsős simítás</li>
+                <li>Megfelelő eszközök használata</li>
+                <li>Időzítés betartása</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border border-orange-200 p-4 rounded-lg">
+          <h4 class="font-semibold text-orange-800 mb-2">⚠️ Felületi repedések</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Kiváltó okok:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Gyors felületi száradás</li>
+                <li>Szél és magas hőmérséklet</li>
+                <li>Alacsony páratartalom</li>
+                <li>Helytelen víz/cement arány</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Megelőzés:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Párásítás vagy takarás</li>
+                <li>Szélvédelem biztosítása</li>
+                <li>Optimális öntési időpont</li>
+                <li>Repedéscsökkentő adalékok</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Időjárási hibák</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Hőmérsékleti szélsőségek</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-red-800 mb-3">🔥 Forró időben (>30°C)</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Gyors vízvesztés:</strong> Felületi repedések</li>
+            <li>• <strong>Rövidített feldolgozási idő:</strong> Művelhetőség</li>
+            <li>• <strong>Hőmérsékleti feszültségek:</strong> Belső repedések</li>
+            <li>• <strong>Berendezés túlmelegedés:</strong> Szolgáltatási problémák</li>
+          </ul>
+        </div>
+        
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-blue-800 mb-3">❄️ Hidegben (<5°C)</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Lassult hidratáció:</strong> Hosszú kötési idő</li>
+            <li>• <strong>Fagyási kockázat:</strong> Szilárdság vesztés</li>
+            <li>• <strong>Adalékanyag problémák:</strong> Fagyott adalékok</li>
+            <li>• <strong>Berendezés hatékonysága:</strong> Csökkent teljesítmény</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Csapadék hatása</h3>
+
+      <div class="bg-gray-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">☔ Esős időjárás kezelése:</h4>
+        <ul class="text-sm space-y-2">
+          <li>• <strong>Friss beton védelme:</strong> Teltakarás, sátor alkalmazása</li>
+          <li>• <strong>Víz/cement arány védelem:</strong> Hígítás elkerülése</li>
+          <li>• <strong>Felületi károk megelőzése:</strong> Simítás előtti védelem</li>
+          <li>• <strong>Utókezelés biztosítása:</strong> Felületi nedvesség ellenőrzése</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Zsaluzási hibák</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Zsaluzat tervezési és kivitelezési problémák</h3>
+
+      <div class="space-y-4 mb-6">
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🏗️ Szerkezeti hibák</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Gyakori problémák:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Elégtelen merevség → deformáció</li>
+                <li>Helytelen alátámasztás</li>
+                <li>Kapcsolatok lazasága</li>
+                <li>Túlnyomás nem megfelelő kezelése</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Következmények:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Méreteltérések</li>
+                <li>Felületi hibák</li>
+                <li>Kiömlések</li>
+                <li>Balesetveszély</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🛠️ Kivitelezési hiányosságok</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Tömítési problémák:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Hézagok a zsaluzat elemek között</li>
+                <li>Elhasznált tömítések</li>
+                <li>Helytelen rögzítés</li>
+                <li>Váltócsonkok hibái</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Eredmények:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Cement-tej kiömlése</li>
+                <li>Bordás felületek</li>
+                <li>Szögletek kerekítése</li>
+                <li>Textúra problémák</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Minőség-ellenőrzési hiányosságok</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Elmaradt vagy hibás tesztelések</h3>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Teszt típusa</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Gyakoriság</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Kritikus paraméter</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Hiba költsége</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Konsisztencia mérés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Minden keverőnél</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Roskadási érték</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">500k-2M Ft</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Légtartalom mérés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Naponta 2-3×</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">4-8% tartomány</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">1-5M Ft</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Kocka vizsgálatok</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">100 m³-enként</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">28 napos szilárdság</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3-15M Ft</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Hőmérséklet mérés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Öntéskor és utána</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">5-32°C tartomány</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2-8M Ft</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Megelőzési stratégiák</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Minőségbiztosítási rendszer</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-green-800 mb-3">✅ Tervezési szakasz</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Részletes betonozási terv készítése</li>
+            <li>• Keverékösszetétel optimalizálása</li>
+            <li>• Időjárási tényezők figyelembe vétele</li>
+            <li>• Szakértői konzultáció</li>
+            <li>• Kockázatelemzés elvégzése</li>
+          </ul>
+        </div>
+        
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-blue-800 mb-3">🔧 Kivitelezési szakasz</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Képzett szakemberek alkalmazása</li>
+            <li>• Megfelelő eszközpark biztosítása</li>
+            <li>• Folyamatos minőség-ellenőrzés</li>
+            <li>• Dokumentálás és nyomon követés</li>
+            <li>• Azonnali hibajavítás</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Képzés és oktatás</h3>
+
+      <div class="bg-yellow-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">👨‍🏫 Szakmai képzési területek:</h4>
+        <ul class="text-sm space-y-2">
+          <li>• <strong>Betonozási technológia:</strong> Elméleti alapok és gyakorlat</li>
+          <li>• <strong>Minőség-ellenőrzés:</strong> Tesztelési módszerek</li>
+          <li>• <strong>Hibafelismerés:</strong> Korai jelzések értékelése</li>
+          <li>• <strong>Eszközhasználat:</strong> Modern berendezések kezelése</li>
+          <li>• <strong>Biztonság:</strong> Munkavédelmi előírások</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Hibák javítása</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Javítási módszerek hibatípus szerint</h3>
+
+      <div class="space-y-6 mb-6">
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🔨 Felületi hibák javítása</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Kisebb problémák:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Felületi csiszolás és simítás</li>
+                <li>Repedések injektálása</li>
+                <li>Pótlólagos vakolás</li>
+                <li>Színezett javítóhabarcsok</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Komolyabb hibák:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Részleges újraöntés</li>
+                <li>Megerősítő réteg alkalmazása</li>
+                <li>Szerkezeti javítások</li>
+                <li>Teljes felületcseré</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">⚙️ Szerkezeti hibák kezelése</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Szilárdság problémák:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Magvizsgálatok végzése</li>
+                <li>Teherbírási számítások</li>
+                <li>Megerősítési tervek</li>
+                <li>FRP rendszerek alkalmazása</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Geometriai hibák:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Felmérés és dokumentálás</li>
+                <li>Tűréshatárok ellenőrzése</li>
+                <li>Kompenzációs megoldások</li>
+                <li>Újjáépítési döntések</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Esetpéldák Budapest területéről</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Tipikus hibaeseteke és tanulságaik</h3>
+
+      <div class="space-y-6 mb-6">
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">📍 Eset #1: Irodaház alaplemez hibái</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Probléma:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Egyenlőtlen szilárdságeloszlás</li>
+                <li>Felületi repedéshálózat</li>
+                <li>Porképződés nagy területeken</li>
+                <li>2500 m² érintett terület</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Ok és megoldás:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Elégtelen tömörítés volt a probléma</li>
+                <li>Hibás víz/cement arány</li>
+                <li>Gyémántcsiszolás + keményítő</li>
+                <li>Javítási költség: 18 millió Ft</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🏠 Eset #2: Lakóház teraszának hibái</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Tünetek:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Téli fagyási károk</li>
+                <li>Vízszivárgás a szerkezetben</li>
+                <li>Vasalás korrózió jelei</li>
+                <li>80 m² terasz</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Diagnózis és kezelés:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Nem megfelelő fagyálló adalék</li>
+                <li>Hibás vízszigetelés</li>
+                <li>Teljes újrakészítés szükséges</li>
+                <li>Költség: 3.8 millió Ft</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Gyakran ismételt kérdések</h2>
+
+      <div class="space-y-6 mb-8">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Mi a leggyakoribb betonozási hiba?</h4>
+          <p class="text-sm">A helytelen víz/cement arány használata, amely a projektek közel 40%-ában fordul elő. Ez minden további hibának a alapja lehet, így különösen fontos a pontos betartás.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Mennyibe kerül egy átlagos hibajavítás?</h4>
+          <p class="text-sm">A javítási költségek általában a eredeti betonozási ár 2-5-szörösébe kerülnek. Komoly szerkezeti hibák esetén akár 10-15-szörös költséggel is számolni kell.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Lehet-e minden betonhiba javítani?</h4>
+          <p class="text-sm">A felületi és kisebb szerkezeti hibák általában javíthatóak, de súlyos alapvető problémák esetén teljes újrakészítés lehet szükséges. A gazdaságossági szempontok itt is fontosak.</p>
+        </div>
+      </div>
+
+      <div class="bg-red-600 text-white p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-4">Hibamentes betonozás Budapesten</h3>
+        <p class="mb-4">Szakértői betonozási szolgáltatások hibamegelőzéssel és minőségbiztosítással. 15 éves tapasztalat és teljes körű garancia!</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div>
+            <strong>📞 Telefon:</strong> +36 1 234 5678<br>
+            <strong>📧 Email:</strong> info@betonozas-budapest.hu
+          </div>
+          <div>
+            <strong>🔍 Szolgáltatás:</strong> Ingyenes hibafelderítés és ajánlat<br>
+            <strong>⏰ Garanciaidő:</strong> 5 év szakszerű munkavégzésre
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>

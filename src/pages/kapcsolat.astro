@@ -1,0 +1,310 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { generateSchemasForPage } from '../schema-config.js';
+
+// Generate local business schema for contact page
+const contactSchemas = generateSchemasForPage('contact', {
+    name: "Betonozás Budapest",
+    description: "Professzionális betonozási szolgáltatások Budapesten",
+    telephone: "+36 30 123 4567",
+    email: "info@betonozasbudapest.hu",
+    address: {
+        streetAddress: "Példa utca 123",
+        addressLocality: "Budapest",
+        postalCode: "1011",
+        addressCountry: "HU"
+    },
+    geo: {
+        latitude: "47.4979",
+        longitude: "19.0402"
+    },
+    url: "https://betonozasbudapest.hu",
+    priceRange: "$$",
+    openingHours: ["Mo-Fr 08:00-17:00"]
+});
+---
+
+<Layout title="Kapcsolat - Betonozás Budapest" description="Vedd fel velünk a kapcsolatot ingyenes ajánlatkérésért. Tapasztalt betonozási szakembereink készséggel állnak rendelkezésedre.">
+    <!-- Local Business Schema -->
+    {contactSchemas.map(schema => (
+        <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+    ))}
+    
+    <Header />
+    
+    <!-- Contact Hero -->
+    <section class="bg-gradient-to-br from-concrete-50 to-concrete-100 py-16 lg:py-20">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-5xl font-bold text-concrete-800 font-heading mb-6">
+                    Kapcsolat
+                </h1>
+                <p class="text-xl text-concrete-600 max-w-3xl mx-auto">
+                    Várjuk megkeresését! Ingyenes ajánlatot készítünk minden betonozási projektre.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold text-concrete-800 font-heading mb-8">
+                        Kérj ajánlatot
+                    </h2>
+                    
+                    <form class="space-y-6" method="POST" action="#" id="contactForm">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-concrete-700 mb-2">
+                                    Név *
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    required
+                                    class="w-full px-4 py-3 border border-concrete-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"
+                                    placeholder="Teljes neved"
+                                >
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-concrete-700 mb-2">
+                                    Telefon *
+                                </label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    required
+                                    class="w-full px-4 py-3 border border-concrete-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"
+                                    placeholder="+36 30 123 4567"
+                                >
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-concrete-700 mb-2">
+                                E-mail *
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                class="w-full px-4 py-3 border border-concrete-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"
+                                placeholder="email@example.com"
+                            >
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-concrete-700 mb-2">
+                                Szolgáltatás típusa
+                            </label>
+                            <select 
+                                id="service" 
+                                name="service"
+                                class="w-full px-4 py-3 border border-concrete-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"
+                            >
+                                <option value="">Válassz szolgáltatást</option>
+                                <option value="alapozas">Alapozás</option>
+                                <option value="vasbetonozas">Vasbetonozás</option>
+                                <option value="jardalap">Járdalap készítés</option>
+                                <option value="teraszbeton">Teraszbeton</option>
+                                <option value="egyeb">Egyéb</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="area" class="block text-sm font-medium text-concrete-700 mb-2">
+                                    Terület mérete (m²)
+                                </label>
+                                <input 
+                                    type="number" 
+                                    id="area" 
+                                    name="area"
+                                    class="w-full px-4 py-3 border border-concrete-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"
+                                    placeholder="pl. 50"
+                                >
+                            </div>
+                            <div>
+                                <label for="timeline" class="block text-sm font-medium text-concrete-700 mb-2">
+                                    Tervezett kezdés
+                                </label>
+                                <select 
+                                    id="timeline" 
+                                    name="timeline"
+                                    class="w-full px-4 py-3 border border-concrete-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"
+                                >
+                                    <option value="">Válassz időpontot</option>
+                                    <option value="azonnal">Azonnal</option>
+                                    <option value="1-2-het">1-2 héten belül</option>
+                                    <option value="1-honap">1 hónapon belül</option>
+                                    <option value="tavasz">Tavasszal</option>
+                                    <option value="nyar">Nyáron</option>
+                                    <option value="egyeb">Egyéb</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-concrete-700 mb-2">
+                                Üzenet
+                            </label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="4"
+                                class="w-full px-4 py-3 border border-concrete-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors resize-none"
+                                placeholder="Írd le részletesen a projekted, hogy pontos ajánlatot tudjunk készíteni..."
+                            ></textarea>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <input 
+                                id="privacy" 
+                                name="privacy" 
+                                type="checkbox" 
+                                required
+                                class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-concrete-300 rounded"
+                            >
+                            <label for="privacy" class="ml-2 block text-sm text-concrete-700">
+                                Elfogadom az <a href="/adatvedelmi-tajekoztato" class="text-primary-600 hover:text-primary-700 underline">adatvédelmi tájékoztatót</a> *
+                            </label>
+                        </div>
+                        
+                        <button 
+                            type="submit" 
+                            class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200"
+                        >
+                            Ajánlat kérése
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl font-bold text-concrete-800 font-heading mb-8">
+                        Elérhetőségeink
+                    </h2>
+                    
+                    <div class="space-y-8">
+                        <!-- Phone -->
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 p-3 rounded-lg mr-4">
+                                <svg class="w-6 h-6 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-concrete-800 mb-1">Telefon</h3>
+                                <p class="text-concrete-600">+36 30 123 4567</p>
+                                <p class="text-sm text-concrete-500">Hétfő-Péntek: 8:00-17:00</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 p-3 rounded-lg mr-4">
+                                <svg class="w-6 h-6 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-concrete-800 mb-1">E-mail</h3>
+                                <p class="text-concrete-600">info@betonozasbudapest.hu</p>
+                                <p class="text-sm text-concrete-500">24 órán belül válaszolunk</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Address -->
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 p-3 rounded-lg mr-4">
+                                <svg class="w-6 h-6 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-concrete-800 mb-1">Cím</h3>
+                                <p class="text-concrete-600">Budapest, Magyarország</p>
+                                <p class="text-sm text-concrete-500">Kiszállás egész Budapesten</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency -->
+                    <div class="mt-8 p-6 bg-red-50 border border-red-200 rounded-lg">
+                        <h3 class="text-lg font-semibold text-red-800 mb-2">Sürgős eset?</h3>
+                        <p class="text-red-700 mb-3">Hívj minket azonnal!</p>
+                        <a href="tel:+36301234567" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg inline-block transition-colors duration-200">
+                            📞 Azonnali hívás
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Service Areas -->
+    <section class="py-16 bg-concrete-50">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-concrete-800 font-heading mb-4">
+                    Szolgáltatási területeink
+                </h2>
+                <p class="text-xl text-concrete-600">
+                    Budapesten és környékén vállalunk betonozási munkákat
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                <div class="p-4">
+                    <h3 class="font-semibold text-concrete-800">Budapest</h3>
+                    <p class="text-concrete-600">Összes kerület</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-concrete-800">Pest megye</h3>
+                    <p class="text-concrete-600">+30 km Budapest körül</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-concrete-800">Budakeszi</h3>
+                    <p class="text-concrete-600">Teljes terület</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-concrete-800">Szentendre</h3>
+                    <p class="text-concrete-600">És környéke</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>
+
+<script>
+// Simple form validation
+document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Basic validation
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const privacy = document.getElementById('privacy').checked;
+    
+    if (!name || !phone || !email || !privacy) {
+        alert('Kérjük töltsd ki az összes kötelező mezőt!');
+        return;
+    }
+    
+    // Here you would normally send the form data to your server
+    alert('Köszönjük megkeresésed! Hamarosan felvesszük veled a kapcsolatot.');
+});
+</script>

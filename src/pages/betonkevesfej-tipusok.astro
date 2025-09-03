@@ -1,0 +1,181 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="Betonkeverőfej típusok - Keverőberendezések összehasonlítása">
+  <Header />
+  
+  <section class="bg-gradient-to-br from-concrete-50 to-concrete-100 py-20 lg:py-28">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl lg:text-6xl font-bold text-concrete-800 font-heading mb-6">
+            Betonkeverőfej <span class="text-primary-600">típusok</span>
+          </h1>
+          <p class="text-xl text-concrete-600 mb-8 leading-relaxed">
+            Keverőberendezések összehasonlítása és kiválasztási szempontjai. 
+            Melyik keverőfej típus a legmegfelelőbb az Ön projektjéhez?
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/kapcsolat" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-center">
+              Keverőberendezés
+            </a>
+            <a href="tel:+36301234567" class="border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-center">
+              +36 30 123 4567
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="bg-concrete-200 rounded-2xl h-96 flex items-center justify-center">
+            <span class="text-concrete-500 text-lg">Betonkeverő Gépek</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-16 text-center">
+        Keverőfej típusok áttekintése
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-xl p-8 text-center hover:shadow-xl transition-shadow duration-300 border">
+          <div class="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-concrete-800 mb-4">Bolygókeverő</h3>
+          <div class="text-2xl font-bold text-primary-600 mb-2">Prémium</div>
+          <p class="text-concrete-600 text-sm mb-4">Háromdimenziós keverés</p>
+          <ul class="text-sm text-concrete-600 space-y-1">
+            <li>• Homogenitás: 95-98%</li>
+            <li>• Keverési idő: 60-90 s</li>
+            <li>• Energiaigény: közepes</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-xl p-8 text-center hover:shadow-xl transition-shadow duration-300 border">
+          <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-concrete-800 mb-4">Kétkartengely</h3>
+          <div class="text-2xl font-bold text-green-600 mb-2">Standard</div>
+          <p class="text-concrete-600 text-sm mb-4">Intenzív keverés</p>
+          <ul class="text-sm text-concrete-600 space-y-1">
+            <li>• Homogenitás: 90-95%</li>
+            <li>• Keverési idő: 45-75 s</li>
+            <li>• Energiaigény: nagy</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-xl p-8 text-center hover:shadow-xl transition-shadow duration-300 border">
+          <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-concrete-800 mb-4">Forgódob</h3>
+          <div class="text-2xl font-bold text-blue-600 mb-2">Klasszikus</div>
+          <p class="text-concrete-600 text-sm mb-4">Gravitációs keverés</p>
+          <ul class="text-sm text-concrete-600 space-y-1">
+            <li>• Homogenitás: 80-90%</li>
+            <li>• Keverési idő: 90-150 s</li>
+            <li>• Energiaigény: alacsony</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-xl p-8 text-center hover:shadow-xl transition-shadow duration-300 border">
+          <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-concrete-800 mb-4">Csigakeverő</h3>
+          <div class="text-2xl font-bold text-yellow-600 mb-2">Speciális</div>
+          <p class="text-concrete-600 text-sm mb-4">Folyamatos üzem</p>
+          <ul class="text-sm text-concrete-600 space-y-1">
+            <li>• Homogenitás: 85-92%</li>
+            <li>• Folyamatos üzem</li>
+            <li>• Energiaigény: közepes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-24 bg-concrete-50">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-12 text-center">
+        Részletes összehasonlítás
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+          <thead class="bg-primary-600 text-white">
+            <tr>
+              <th class="px-6 py-4 text-left">Tulajdonság</th>
+              <th class="px-6 py-4 text-center">Bolygókeverő</th>
+              <th class="px-6 py-4 text-center">Kétkartengely</th>
+              <th class="px-6 py-4 text-center">Forgódob</th>
+              <th class="px-6 py-4 text-center">Csigakeverő</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-concrete-200">
+            <tr>
+              <td class="px-6 py-4 font-semibold text-concrete-800">Keverési hatékonyság</td>
+              <td class="px-6 py-4 text-center text-green-600">⭐⭐⭐⭐⭐</td>
+              <td class="px-6 py-4 text-center text-green-600">⭐⭐⭐⭐</td>
+              <td class="px-6 py-4 text-center text-yellow-600">⭐⭐⭐</td>
+              <td class="px-6 py-4 text-center text-green-600">⭐⭐⭐⭐</td>
+            </tr>
+            <tr class="bg-concrete-50">
+              <td class="px-6 py-4 font-semibold text-concrete-800">Energiafelhasználás</td>
+              <td class="px-6 py-4 text-center text-yellow-600">⭐⭐⭐</td>
+              <td class="px-6 py-4 text-center text-red-600">⭐⭐</td>
+              <td class="px-6 py-4 text-center text-green-600">⭐⭐⭐⭐⭐</td>
+              <td class="px-6 py-4 text-center text-green-600">⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 font-semibold text-concrete-800">Karbantartás</td>
+              <td class="px-6 py-4 text-center text-yellow-600">⭐⭐⭐</td>
+              <td class="px-6 py-4 text-center text-red-600">⭐⭐</td>
+              <td class="px-6 py-4 text-center text-green-600">⭐⭐⭐⭐⭐</td>
+              <td class="px-6 py-4 text-center text-yellow-600">⭐⭐⭐</td>
+            </tr>
+            <tr class="bg-concrete-50">
+              <td class="px-6 py-4 font-semibold text-concrete-800">Beruházási költség</td>
+              <td class="px-6 py-4 text-center text-red-600">⭐⭐</td>
+              <td class="px-6 py-4 text-center text-yellow-600">⭐⭐⭐</td>
+              <td class="px-6 py-4 text-center text-green-600">⭐⭐⭐⭐⭐</td>
+              <td class="px-6 py-4 text-center text-green-600">⭐⭐⭐⭐</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-24 bg-primary-600 text-white">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-6 font-heading">
+        Megfelelő keverőberendezésre van szüksége?
+      </h2>
+      <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+        Tapasztalt csapatunk segít kiválasztani a projekthez legmegfelelőbb 
+        keverőberendezést és biztosítja a szakszerű üzemeltetést!
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/kapcsolat" class="bg-white text-primary-600 hover:bg-concrete-50 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+          Berendezés Konzultáció
+        </a>
+        <a href="tel:+36301234567" class="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+          Hívjon Most: +36 30 123 4567
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

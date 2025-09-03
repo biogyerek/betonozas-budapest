@@ -1,0 +1,965 @@
+---
+export const prerender = true;
+
+const title = "Téli Betonozás Titkai - Fagyvédelem és Technológiák | Betonozás Budapest";
+const description = "Téli betonozás szakmai útmutató ✓ Fagyvédő adalékok ✓ Fűtött zsaluzás ✓ -10°C alatti munkavégzés ✓ Minőségi betonozás hidegben.";
+const canonical = "https://betonozasbudapest.hu/teli-betonozas";
+
+import Layout from '../components/Layout.astro';
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <Header />
+  <div class="min-h-screen bg-gray-50">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Téli Betonozás Titkai</h1>
+          <p class="text-xl mb-8">
+            Professzionális útmutató a téli betonozáshoz. Fagyvédelem, speciális adalékok és 
+            technikák, amelyekkel -10°C alatt is minőségi betonozás végezhető.
+          </p>
+          <div class="flex items-center justify-center space-x-6 text-sm">
+            <span class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              14 perc olvasás
+            </span>
+            <span class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              2024. március 20.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <div class="prose prose-lg max-w-none">
+              <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                A téli betonozás különleges kihívásokat jelent, de megfelelő felkészüléssel és 
+                szakmai tudással akár -10°C alatt is lehet minőségi munkát végezni. A kulcs 
+                a fagypont alatti hőmérséklet hatásainak megértése és a megfelelő technológiák alkalmazása.
+              </p>
+              
+              <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+                <h3 class="text-lg font-semibold text-blue-800 mb-2">Miért fontos a téli betonozás ismerete?</h3>
+                <ul class="text-blue-700 space-y-2">
+                  <li>• Magyarország klimatikus adottságai miatt gyakran szükséges</li>
+                  <li>• Építési határidők betartása télen is</li>
+                  <li>• Gazdasági megfontolások: téli munkák gyakran kedvezőbb árúak</li>
+                  <li>• Sürgős javítások és karbantartások télen sem várhatnak</li>
+                  <li>• Professzionális tudással minden évszakban dolgozhatunk</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Temperature Effects -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">A Hideg Hatása a Betonra</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Hőmérséklet és Hidratáció</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">A Hidratációs Folyamat</h4>
+                  <p class="text-gray-600 mb-4">
+                    A beton szilárdságát a cement és víz között lejátszódó kémiai reakció, 
+                    a hidratáció biztosítja. Ez a folyamat erősen hőmérsékletfüggő:
+                  </p>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>+20°C:</strong> Optimális hidratációs sebesség</li>
+                    <li><strong>+10°C:</strong> 50%-kal lassabb folyamat</li>
+                    <li><strong>+5°C:</strong> Jelentősen lelassul</li>
+                    <li><strong>0°C:</strong> Gyakorlatilag megáll</li>
+                    <li><strong>-5°C:</strong> Víz megfagyása, folyamat leáll</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Fagy Káros Hatásai</h4>
+                  <p class="text-gray-600 mb-4">
+                    Ha a friss beton megfagy, visszafordíthatatlan károk keletkeznek:
+                  </p>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Térfogat növekedés:</strong> Víz megfagyva 9%-kal több helyet foglal</li>
+                    <li><strong>Kristályszerkezet tönkremenetele:</strong> Belső feszültségek</li>
+                    <li><strong>Szilárdságvesztés:</strong> 30-50%-os csökkenés</li>
+                    <li><strong>Tartóssági problémák:</strong> Fokozott mállás, repedés</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-8 bg-red-50 border border-red-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-red-800 mb-2">Kritikus időszak:</h4>
+                <p class="text-red-700">
+                  Az első 24-48 óra a legkritikusabb! Ha ebben az időszakban megfagy a beton, 
+                  a károk már nem orvosolhatók. A beton minimum 5 MPa nyomószilárdságot kell 
+                  elérjen a fagykár elkerüléséhez.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Hőmérsékleti Zónák és Intézkedések</h3>
+              
+              <div class="space-y-6">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                  <div class="bg-green-100 px-6 py-3 border-b border-gray-200">
+                    <h4 class="font-semibold text-green-800">+5°C - +15°C: Enyhe Hideg</h4>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-gray-600 mb-3"><strong>Intézkedések:</strong></p>
+                    <ul class="text-gray-600 space-y-1 text-sm">
+                      <li>• Melegebb víz használata (max. 60°C)</li>
+                      <li>• Takarás ponyvával</li>
+                      <li>• Zsalubontás késleltetése</li>
+                      <li>• Gyorsító adalék mérlegelése</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                  <div class="bg-yellow-100 px-6 py-3 border-b border-gray-200">
+                    <h4 class="font-semibold text-yellow-800">0°C - +5°C: Mérsékelt Fagy</h4>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-gray-600 mb-3"><strong>Intézkedések:</strong></p>
+                    <ul class="text-gray-600 space-y-1 text-sm">
+                      <li>• Gyorsító adalék kötelező</li>
+                      <li>• Hőszigetelő takarás</li>
+                      <li>• Fűtött alapanyagok</li>
+                      <li>• Folyamatos hőmérséklet-monitoring</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                  <div class="bg-orange-100 px-6 py-3 border-b border-gray-200">
+                    <h4 class="font-semibold text-orange-800">-5°C - 0°C: Erős Fagy</h4>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-gray-600 mb-3"><strong>Intézkedések:</strong></p>
+                    <ul class="text-gray-600 space-y-1 text-sm">
+                      <li>• Fűtött zsaluzás vagy sátor</li>
+                      <li>• Erős gyorsító adalékok</li>
+                      <li>• Hőt fejlesztő keverék</li>
+                      <li>• Szakaszos betonozás</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                  <div class="bg-red-100 px-6 py-3 border-b border-gray-200">
+                    <h4 class="font-semibold text-red-800">-10°C alatt: Szélsőséges Hideg</h4>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-gray-600 mb-3"><strong>Intézkedések:</strong></p>
+                    <ul class="text-gray-600 space-y-1 text-sm">
+                      <li>• Teljes körű fűtött környezet</li>
+                      <li>• Speciális fagyvédő betonok</li>
+                      <li>• Folyamatos hőmérséklet-szabályozás</li>
+                      <li>• Csak tapasztalt szakemberekkel</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frost Protection Additives -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Fagyvédő Adalékok</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Gyorsító Adalékok Típusai</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Hagyományos Gyorsítók</h4>
+                  
+                  <div class="space-y-4">
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                      <h5 class="font-semibold text-gray-800 mb-2">Kalcium-klorid (CaCl₂)</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li><strong>Adagolás:</strong> 1-2% cement tömegére</li>
+                        <li><strong>Hatás:</strong> 30-50% gyorsabb kötés</li>
+                        <li><strong>Figyelem:</strong> Korróziót okoz vasban!</li>
+                        <li><strong>Költség:</strong> 150-200 Ft/kg</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                      <h5 class="font-semibold text-gray-800 mb-2">Nátrium-aluminát</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li><strong>Adagolás:</strong> 0,5-1% cement tömegére</li>
+                        <li><strong>Hatás:</strong> Nagyon gyors kötés</li>
+                        <li><strong>Előny:</strong> Nem korrodál</li>
+                        <li><strong>Költség:</strong> 800-1200 Ft/kg</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Modern Gyorsítók</h4>
+                  
+                  <div class="space-y-4">
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                      <h5 class="font-semibold text-gray-800 mb-2">Lítium-karbonát</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li><strong>Adagolás:</strong> 0,3-0,8% cement tömegére</li>
+                        <li><strong>Hatás:</strong> Egyenletes gyorsítás</li>
+                        <li><strong>Előny:</strong> Nincs korróziós hatás</li>
+                        <li><strong>Költség:</strong> 2000-3000 Ft/kg</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                      <h5 class="font-semibold text-gray-800 mb-2">Szerves gyorsítók</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li><strong>Adagolás:</strong> 0,5-2% cement tömegére</li>
+                        <li><strong>Hatás:</strong> Szabályozható gyorsítás</li>
+                        <li><strong>Előny:</strong> Környezetbarát</li>
+                        <li><strong>Költség:</strong> 1500-2500 Ft/kg</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-blue-800 mb-2">Adagolási szabályok:</h4>
+                <ul class="text-blue-700 space-y-1">
+                  <li>• Gyorsítót mindig a vízben oldva adjuk a betonhoz</li>
+                  <li>• Soha ne adjunk száraz port közvetlenül a cementhez</li>
+                  <li>• Több adalék együttes használata szakértői jóváhagyás kell</li>
+                  <li>• Minden esetben próbakeveréket kell készíteni</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Fagyvédő Adalékok Kombinálása</h3>
+              
+              <div class="overflow-x-auto mb-6">
+                <table class="w-full border-collapse border border-gray-300">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 px-4 py-2 text-left">Hőmérséklet</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Elsődleges adalék</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Kiegészítő adalék</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Védelem időtartama</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">0 - +5°C</td>
+                      <td class="border border-gray-300 px-4 py-2">CaCl₂ 1%</td>
+                      <td class="border border-gray-300 px-4 py-2">-</td>
+                      <td class="border border-gray-300 px-4 py-2">24 óra</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">-3 - 0°C</td>
+                      <td class="border border-gray-300 px-4 py-2">CaCl₂ 1,5%</td>
+                      <td class="border border-gray-300 px-4 py-2">Folyósító</td>
+                      <td class="border border-gray-300 px-4 py-2">48 óra</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">-7 - -3°C</td>
+                      <td class="border border-gray-300 px-4 py-2">Lítium 0,6%</td>
+                      <td class="border border-gray-300 px-4 py-2">Folyósító</td>
+                      <td class="border border-gray-300 px-4 py-2">72 óra</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">-10 - -7°C</td>
+                      <td class="border border-gray-300 px-4 py-2">Speciális keverék</td>
+                      <td class="border border-gray-300 px-4 py-2">Fűtés kötelező</td>
+                      <td class="border border-gray-300 px-4 py-2">Folyamatos</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-yellow-800 mb-2">Figyelem - Mellékhatások:</h4>
+                <ul class="text-yellow-700 space-y-1">
+                  <li>• <strong>Gyorsabb száradás:</strong> Fokozott zsugorodás</li>
+                  <li>• <strong>Színváltozás:</strong> Egyes adalékok barníthatnak</li>
+                  <li>• <strong>Hosszútávú hatások:</strong> Egyesek csökkenthetik a tartósságot</li>
+                  <li>• <strong>Költségnövekedés:</strong> 5-15% többletköltség</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Heating Methods -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Fűtési Módszerek</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Alapanyagok Fűtése</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Víz Melegítése</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Optimális hőmérséklet:</strong> 40-60°C</li>
+                    <li><strong>Maximum:</strong> 80°C (károsítja a cementet)</li>
+                    <li><strong>Módszerek:</strong> Kazán, forralótartály, gőzfűtés</li>
+                    <li><strong>Költség:</strong> 50-100 Ft/m³ beton</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-green-50 rounded-lg">
+                    <p class="text-green-800 text-sm">
+                      <strong>Pro Tip:</strong> A víz melegítése a leghatékonyabb és legolcsóbb módszer!
+                    </p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Adalékanyagok Melegítése</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Gőzfűtés:</strong> Kavics és homok melegítése</li>
+                    <li><strong>Hőmérséklet:</strong> Maximum 60°C</li>
+                    <li><strong>Időtartam:</strong> Legalább 2 óra előmelegítés</li>
+                    <li><strong>Költség:</strong> 200-400 Ft/m³ beton</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-orange-50 rounded-lg">
+                    <p class="text-orange-800 text-sm">
+                      <strong>Figyelem:</strong> Jég és hó eltávolítása kötelező!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Beton Utókezelési Fűtés</h3>
+              
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Sátorfűtés</h4>
+                  <ul class="text-sm text-gray-600 space-y-2">
+                    <li><strong>Alkalmazás:</strong> Kisebb területek</li>
+                    <li><strong>Hőforrás:</strong> Gázfűtő, elektromos</li>
+                    <li><strong>Előny:</strong> Mobilis, rugalmas</li>
+                    <li><strong>Hátrány:</strong> Magas üzemköltség</li>
+                    <li><strong>Költség:</strong> 5000-8000 Ft/nap/m²</li>
+                  </ul>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Fűtött Zsaluzás</h4>
+                  <ul class="text-sm text-gray-600 space-y-2">
+                    <li><strong>Alkalmazás:</strong> Falak, oszlopok</li>
+                    <li><strong>Hőforrás:</strong> Elektromos fűtőszálak</li>
+                    <li><strong>Előny:</strong> Egyenletes hőeloszlás</li>
+                    <li><strong>Hátrány:</strong> Speciális zsaluzat kell</li>
+                    <li><strong>Költség:</strong> 3000-5000 Ft/nap/m²</li>
+                  </ul>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Gőzfűtés</h4>
+                  <ul class="text-sm text-gray-600 space-y-2">
+                    <li><strong>Alkalmazás:</strong> Nagy felületek</li>
+                    <li><strong>Hőforrás:</strong> Kazán + gőzcső</li>
+                    <li><strong>Előny:</strong> Nagy területek hatékony fűtése</li>
+                    <li><strong>Hátrány:</strong> Bonyolult rendszer</li>
+                    <li><strong>Költség:</strong> 2000-4000 Ft/nap/m²</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Hőszigetelő Takarás</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Hőszigetelő Anyagok</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Szalma:</strong> Hagyományos, olcsó (300-500 Ft/m²)</li>
+                    <li><strong>Hungarocell:</strong> Közepes szigetelés (800-1200 Ft/m²)</li>
+                    <li><strong>Ásványgyapot:</strong> Jó szigetelés (1500-2500 Ft/m²)</li>
+                    <li><strong>Speciális takarók:</strong> Profi megoldás (3000-5000 Ft/m²)</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Takarási Technikák</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Rétegrendszer:</strong> Több vékony réteg</li>
+                    <li><strong>Szélvédelem:</strong> Ponyva vagy fólia</li>
+                    <li><strong>Légáramlás:</strong> Zárt tér kialakítása</li>
+                    <li><strong>Rögzítés:</strong> Szél elleni védelem</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-blue-800 mb-2">Hatékonyság növelése:</h4>
+                <ul class="text-blue-700 space-y-1">
+                  <li>• Többrétegű takarás használata</li>
+                  <li>• Hőhidak megszakítása</li>
+                  <li>• Páralecsapódás megakadályozása</li>
+                  <li>• Hőmérséklet monitoring rendszer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Temperature Monitoring -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Hőmérséklet-monitorozás és Ellenőrzés</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Mérési Pontok és Módszerek</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Mérési Helyek</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Beton mag:</strong> 10-15 cm mélységben</li>
+                    <li><strong>Beton felszín:</strong> Közvetlenül a felszínen</li>
+                    <li><strong>Környezeti levegő:</strong> 1-2 m magasságban</li>
+                    <li><strong>Zsaluzat belső oldal:</strong> Kontakt hőmérséklet</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Mérőeszközök</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Digitális hőmérő:</strong> -20°C - +80°C tartomány</li>
+                    <li><strong>Adatgyűjtő rendszer:</strong> Folyamatos monitoring</li>
+                    <li><strong>Riasztórendszer:</strong> Kritikus értékek jelzése</li>
+                    <li><strong>Távfelügyeleti rendszer:</strong> Okostelefonos appok</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-yellow-800 mb-2">Kritikus értékek:</h4>
+                <div class="grid md:grid-cols-2 gap-4 text-yellow-700">
+                  <div>
+                    <p><strong>Betonhőmérséklet:</strong></p>
+                    <ul class="text-sm space-y-1">
+                      <li>• Minimum: +5°C</li>
+                      <li>• Optimális: +15-25°C</li>
+                      <li>• Maximum: +32°C</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p><strong>Környezeti hőmérséklet:</strong></p>
+                    <ul class="text-sm space-y-1">
+                      <li>• Munka beszüntetése: -15°C alatt</li>
+                      <li>• Különleges intézkedés: -10°C alatt</li>
+                      <li>• Fokozott figyelem: -5°C alatt</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Dokumentálás és Nyomon Követés</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Kötelező Dokumentáció</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Hőmérsékleti napló:</strong> Órás bontásban</li>
+                    <li><strong>Adalék mennyiségek:</strong> Pontos receptúra</li>
+                    <li><strong>Környezeti körülmények:</strong> Szél, csapadék, pártatalom</li>
+                    <li><strong>Intézkedési terv:</strong> Milyen lépések történtek</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Minőségbiztosítás</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Próbakockák készítése:</strong> Minden műszakban</li>
+                    <li><strong>Gyorsított vizsgálat:</strong> 24-48 órás szilárdság</li>
+                    <li><strong>Roncsolásmentes vizsgálat:</strong> Schmidt-kalapács</li>
+                    <li><strong>Hosszútávú követés:</strong> 7, 14, 28 napos kontroll</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-6 p-6 bg-green-50 border border-green-200 rounded-lg">
+                <h4 class="text-lg font-semibold text-green-800 mb-2">Jó gyakorlat:</h4>
+                <p class="text-green-700">
+                  Modern építkezéseken digitális monitoring rendszereket használunk, amelyek 
+                  valós időben küldik az adatokat és riasztást adnak kritikus helyzetek esetén. 
+                  Ez jelentősen csökkenti a hibák lehetőségét és növeli a munka biztonságát.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Special Concrete Types -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Speciális Téli Betonok</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Fagyvédő Betonkeverékek</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Magas Cementtartalmú Beton</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Cementtartalom:</strong> 380-420 kg/m³</li>
+                    <li><strong>Víz-cement tényező:</strong> 0,45-0,50</li>
+                    <li><strong>Előny:</strong> Gyorsabb hőfejlődés</li>
+                    <li><strong>Adalék:</strong> Gyorsító + folyósító</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                    <p class="text-blue-800 text-sm">
+                      <strong>Keverék példa (1 m³):</strong><br>
+                      CEM I 42,5 R: 400 kg<br>
+                      Víz: 180 l<br>
+                      CaCl₂: 4 kg<br>
+                      Folyósító: 2 l
+                    </p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Alacsony Fagy Pontú Beton</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Speciális adalékok:</strong> Glikol származékok</li>
+                    <li><strong>Fagypont csökkentés:</strong> -5 - -8°C</li>
+                    <li><strong>Alkalmazás:</strong> Extrém körülmények között</li>
+                    <li><strong>Költség:</strong> 2-3× drágább</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-orange-50 rounded-lg">
+                    <p class="text-orange-800 text-sm">
+                      <strong>Figyelem:</strong> Speciális engedély szükséges!<br>
+                      Csak szakértő tervezéssel alkalmazható.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Gyorskötő Betonok Téli Alkalmazása</h3>
+              
+              <div class="space-y-6">
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Szulfátaluminát Cement Beton</h4>
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h5 class="font-semibold text-gray-700 mb-2">Jellemzők:</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Kötési idő: 10-30 perc</li>
+                        <li>• Korai szilárdság: 20-30 MPa 24 órában</li>
+                        <li>• Hőfejlődés: Nagy mennyiségű</li>
+                        <li>• Alkalmazható: -10°C-ig</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-gray-700 mb-2">Alkalmazási területek:</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Javítások, tömítések</li>
+                        <li>• Sürgős építési munkák</li>
+                        <li>• Víz alatti betonozás</li>
+                        <li>• Fagyos körülmények között</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Polimer-módosított Betonok</h4>
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h5 class="font-semibold text-gray-700 mb-2">Tulajdonságok:</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Jobb fagyállóság</li>
+                        <li>• Csökkentett vízveszteség</li>
+                        <li>• Nagyobb rugalmasság</li>
+                        <li>• Jobb tapadás</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-gray-700 mb-2">Téli előnyök:</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Kevésbé fagykár-érzékeny</li>
+                        <li>• Gyorsabb feldolgozható</li>
+                        <li>• Jobb munkaképesség hidegben</li>
+                        <li>• Hosszabb feldolgozási idő</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-6 bg-red-50 border-l-4 border-red-500 p-6">
+                <h4 class="text-lg font-semibold text-red-800 mb-2">Speciális betonok használata:</h4>
+                <p class="text-red-700">
+                  A speciális téli betonok használata mindig szakértői konzultációt igényel. 
+                  Az alkalmazás előtt próbakeverékeket kell készíteni és vizsgálni. 
+                  Soha ne kísérletezzen ismeretlen keverékekkel valós projektben!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Common Mistakes -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Gyakori Hibák és Elkerülésük</h2>
+            
+            <div class="space-y-8">
+              <div class="border border-red-200 rounded-lg overflow-hidden">
+                <div class="bg-red-50 px-6 py-3 border-b border-red-200">
+                  <h3 class="text-lg font-semibold text-red-800">Hiba #1: Nem megfelelő hőmérséklet-monitoring</h3>
+                </div>
+                <div class="p-6">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 class="font-semibold text-gray-800 mb-2">Probléma:</h4>
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Csak felszíni hőmérséklet mérése</li>
+                        <li>• Éjszakai ellenőrzés hiánya</li>
+                        <li>• Egy mérőponttal dolgoznak</li>
+                        <li>• Dokumentáció hiánya</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800 mb-2">Megoldás:</h4>
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Mag és felszín egyaránt mérése</li>
+                        <li>• 24 órás monitoring</li>
+                        <li>• Több mérőpont alkalmazása</li>
+                        <li>• Részletes hőmérsékleti napló</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border border-red-200 rounded-lg overflow-hidden">
+                <div class="bg-red-50 px-6 py-3 border-b border-red-200">
+                  <h3 class="text-lg font-semibold text-red-800">Hiba #2: Túladagolt gyorsító adalékok</h3>
+                </div>
+                <div class="p-6">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 class="font-semibold text-gray-800 mb-2">Probléma:</h4>
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• "Bőven" adagolják az adalékot</li>
+                        <li>• Hibás arányok használata</li>
+                        <li>• Adalékok kombinálása szakértő nélkül</li>
+                        <li>• Próbakeverék hiánya</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800 mb-2">Megoldás:</h4>
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Precíz mérés és adagolás</li>
+                        <li>• Gyártói ajánlások követése</li>
+                        <li>• Szakértői konzultáció</li>
+                        <li>• Előzetes próbakeverékek</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border border-red-200 rounded-lg overflow-hidden">
+                <div class="bg-red-50 px-6 py-3 border-b border-red-200">
+                  <h3 class="text-lg font-semibold text-red-800">Hiba #3: Nem megfelelő szigetelés és takarás</h3>
+                </div>
+                <div class="p-6">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 class="font-semibold text-gray-800 mb-2">Probléma:</h4>
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Vékony vagy nem megfelelő takarás</li>
+                        <li>• Szél általi hőelvonás</li>
+                        <li>• Hőhidak kialakítása</li>
+                        <li>• Részleges lefedés</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800 mb-2">Megoldás:</h4>
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Többrétegű szigetelés</li>
+                        <li>• Szélvédő ponyva</li>
+                        <li>• Hőhidak megszakítása</li>
+                        <li>• Teljes körű lefedés</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border border-red-200 rounded-lg overflow-hidden">
+                <div class="bg-red-50 px-6 py-3 border-b border-red-200">
+                  <h3 class="text-lg font-semibold text-red-800">Hiba #4: Korai zsalubontás</h3>
+                </div>
+                <div class="p-6">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 class="font-semibold text-gray-800 mb-2">Probléma:</h4>
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Normál időben bontják a zsalut</li>
+                        <li>• Szilárdság ellenőrzése nélkül</li>
+                        <li>• Környezeti hatásokat nem veszik figyelembe</li>
+                        <li>• Utókezelést abbahagyják</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800 mb-2">Megoldás:</h4>
+                      <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Dupla várakozási idő télen</li>
+                        <li>• Szilárdságvizsgálat kötelező</li>
+                        <li>• Hőmérséklet-korrekció alkalmazása</li>
+                        <li>• Folyamatos utókezelés</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-8 bg-green-50 border border-green-200 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-green-800 mb-2">Megelőzési stratégia:</h3>
+              <p class="text-green-700 mb-3">
+                A téli betonozási hibák 90%-a megelőzhető megfelelő tervezéssel és körültekintő munkavégzéssel:
+              </p>
+              <ul class="text-green-700 space-y-1">
+                <li>• Részletes téli betonozási terv készítése</li>
+                <li>• Tapasztalt, képzett munkaerő alkalmazása</li>
+                <li>• Megfelelő eszközök és anyagok biztosítása</li>
+                <li>• Folyamatos monitoring és dokumentálás</li>
+                <li>• Szükség esetén munka felfüggesztése</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Cost Analysis -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Téli Betonozás Költségelemzése</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Többletköltségek Kalkulációja</h3>
+              
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 px-4 py-2 text-left">Tétel</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Normál időszak</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Téli időszak</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Többletköltség</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Alap betonköltség</td>
+                      <td class="border border-gray-300 px-4 py-2">30.000 Ft/m³</td>
+                      <td class="border border-gray-300 px-4 py-2">30.000 Ft/m³</td>
+                      <td class="border border-gray-300 px-4 py-2 text-center">-</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Fagyvédő adalékok</td>
+                      <td class="border border-gray-300 px-4 py-2">-</td>
+                      <td class="border border-gray-300 px-4 py-2">1.500 Ft/m³</td>
+                      <td class="border border-gray-300 px-4 py-2 text-red-600">+1.500 Ft/m³</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Melegvíz használat</td>
+                      <td class="border border-gray-300 px-4 py-2">-</td>
+                      <td class="border border-gray-300 px-4 py-2">300 Ft/m³</td>
+                      <td class="border border-gray-300 px-4 py-2 text-red-600">+300 Ft/m³</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Hőszigetelő takarás</td>
+                      <td class="border border-gray-300 px-4 py-2">500 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2">1.200 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2 text-red-600">+700 Ft/m²</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Fűtés (ha szükséges)</td>
+                      <td class="border border-gray-300 px-4 py-2">-</td>
+                      <td class="border border-gray-300 px-4 py-2">3.000 Ft/nap/m²</td>
+                      <td class="border border-gray-300 px-4 py-2 text-red-600">+3.000 Ft/nap/m²</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Monitoring rendszer</td>
+                      <td class="border border-gray-300 px-4 py-2">-</td>
+                      <td class="border border-gray-300 px-4 py-2">200 Ft/nap</td>
+                      <td class="border border-gray-300 px-4 py-2 text-red-600">+200 Ft/nap</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Hosszabb várakozási idő</td>
+                      <td class="border border-gray-300 px-4 py-2">3 nap</td>
+                      <td class="border border-gray-300 px-4 py-2">7 nap</td>
+                      <td class="border border-gray-300 px-4 py-2 text-red-600">+4 nap költség</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="p-6 bg-red-50 border border-red-200 rounded-lg">
+                <h4 class="text-lg font-semibold text-red-800 mb-3">Összesített Többletköltségek</h4>
+                <ul class="text-red-700 space-y-2">
+                  <li><strong>Enyhén fagyos időben (0 - -5°C):</strong><br>+15-25% a normál költséghez képest</li>
+                  <li><strong>Erősen fagyos időben (-5 - -10°C):</strong><br>+30-50% a normál költséghez képest</li>
+                  <li><strong>Szélsőségesen hideg időben (-10°C alatt):</strong><br>+50-100% a normál költséghez képest</li>
+                </ul>
+              </div>
+              
+              <div class="p-6 bg-green-50 border border-green-200 rounded-lg">
+                <h4 class="text-lg font-semibold text-green-800 mb-3">Költségoptimalizálási Lehetőségek</h4>
+                <ul class="text-green-700 space-y-2">
+                  <li>• <strong>Időzítés:</strong> Kevésbé fagyos napok kiválasztása</li>
+                  <li>• <strong>Tervezés:</strong> Téli munkafázisok minimalizálása</li>
+                  <li>• <strong>Technológia:</strong> Hatékonyabb módszerek választása</li>
+                  <li>• <strong>Kombinálás:</strong> Több intézkedés együttes alkalmazása</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
+              <h4 class="text-lg font-semibold text-blue-800 mb-2">Gazdasági megfontolások:</h4>
+              <p class="text-blue-700">
+                Bár a téli betonozás drágább, gyakran indokolt lehet, ha figyelembe vesszük 
+                a projektbefejezés halasztásának költségeit, a téli kedvezményeket, 
+                és a munkaerő elérhetőségét. Fontos a teljes költség-haszon elemzés elvégzése.
+              </p>
+            </div>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Összefoglalás</h2>
+            <div class="prose prose-lg max-w-none">
+              <p class="text-gray-700 leading-relaxed mb-6">
+                A téli betonozás sikeres végrehajtása alapos felkészülést, megfelelő technológiai 
+                ismereteket és folyamatos figyelmet igényel. A modern adalékok és fűtési 
+                technológiák lehetővé teszik, hogy akár -10°C alatt is minőségi munkát végezzünk.
+              </p>
+              
+              <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
+                <h3 class="text-lg font-semibold text-blue-800 mb-3">A sikeres téli betonozás kulcsai:</h3>
+                <ul class="text-blue-700 space-y-2">
+                  <li>• <strong>Megfelelő tervezés:</strong> Minden lépés előzetes átgondolása</li>
+                  <li>• <strong>Minőségi adalékok:</strong> Bevált fagyvédő rendszerek használata</li>
+                  <li>• <strong>Hatékony fűtés:</strong> Optimális hőmérsékleti viszonyok biztosítása</li>
+                  <li>• <strong>Folyamatos monitoring:</strong> Valós idejű hőmérséklet-követés</li>
+                  <li>• <strong>Szakértő kivitelezés:</strong> Tapasztalt munkavállalók alkalmazása</li>
+                </ul>
+              </div>
+              
+              <p class="text-gray-700 leading-relaxed">
+                A téli betonozás nem akadály, hanem kihívás, amely megfelelő felkészültséggel 
+                leküzdhető. A befektetett energia és költségek megtérülnek a folyamatos 
+                munkavégzés lehetőségében és a határidők betartásában.
+              </p>
+            </div>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="bg-gradient-to-r from-blue-600 to-indigo-800 text-white rounded-lg p-8 text-center">
+            <h3 class="text-2xl font-bold mb-4">Téli Betonozásra van Szüksége?</h3>
+            <p class="text-xl mb-8">
+              15+ év téli betonozási tapasztalattal segítünk minden körülmények között 
+              minőségi munkát végezni!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="/kapcsolat" 
+                class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Téli Árajánlat
+              </a>
+              <a 
+                href="tel:+36123456789" 
+                class="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
+              >
+                📞 Sürgős Segítség
+              </a>
+            </div>
+          </div>
+
+          <!-- Related Articles -->
+          <div class="mt-16">
+            <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Kapcsolódó Cikkek</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-blue-200 flex items-center justify-center">
+                  <span class="text-blue-800 font-medium">Betonkeverés</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Betonkeverés Titkai és Adalékok
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    A tökéletes betonkeverék összeállításának professional útmutatója téli körülményekhez is.
+                  </p>
+                  <a href="/betonkeveres-titkai" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-green-200 flex items-center justify-center">
+                  <span class="text-green-800 font-medium">Alapozás</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Családi Ház Alapozásának Lépései
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Teljes útmutató az alapozási folyamathoz, téli munkavégzési szempontokkal.
+                  </p>
+                  <a href="/alapozas-lepései" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-purple-200 flex items-center justify-center">
+                  <span class="text-purple-800 font-medium">Minőségbiztosítás</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Betonozás Minőségbiztosítási Útmutató
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Vizsgálatok, tesztek és ellenőrzési pontok téli betonozás során.
+                  </p>
+                  <a href="/minosegbiztositas" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</Layout>

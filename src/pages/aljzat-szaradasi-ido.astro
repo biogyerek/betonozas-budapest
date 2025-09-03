@@ -1,0 +1,277 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="Aljzat szaradási idő - Mennyi időt kell várni a burkolás előtt?">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-concrete-50 to-concrete-100 py-20 lg:py-28">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl lg:text-6xl font-bold text-concrete-800 font-heading mb-6">
+            Aljzat <span class="text-primary-600">szaradási idő</span>
+          </h1>
+          <p class="text-xl text-concrete-600 mb-8 leading-relaxed">
+            Mennyi időt kell várni a burkolás előtt? Részletes útmutató az aljzatok 
+            helyes szaradásáról és a várakozási időkről.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/kapcsolat" class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-center">
+              Aljzat Szakértő
+            </a>
+            <a href="tel:+36301234567" class="border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-center">
+              +36 30 123 4567
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="bg-concrete-200 rounded-2xl h-96 flex items-center justify-center">
+            <span class="text-concrete-500 text-lg">Aljzat Szaradás</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Szaradás folyamata -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-12 text-center">
+        Az aljzat szaradásának folyamata
+      </h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-lg text-concrete-600 mb-6">
+            Az aljzat megfelelő szaradása kritikus a tartós padlóburkolat számára. 
+            A túl korai burkolás károsodásokat, repedéseket és leválásokat okozhat.
+          </p>
+          <p class="text-lg text-concrete-600 mb-6">
+            A szaradási idő függ az aljzat típusától, vastagságától, hőmérséklettől, 
+            páratartalomtól és a légmozgástól.
+          </p>
+          <div class="bg-red-100 border-l-4 border-red-500 p-6 rounded-lg">
+            <h3 class="text-lg font-semibold text-red-800 mb-2">⚠️ Figyelem!</h3>
+            <p class="text-red-700 text-sm">
+              Túl korai burkolás következményei: leválás, hólyagképződés, 
+              penészedés, repedések.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="bg-concrete-100 rounded-xl p-8">
+            <h3 class="text-xl font-semibold text-concrete-800 mb-6">Szaradást befolyásoló tényezők:</h3>
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-concrete-700">Hőmérséklet</span>
+                <span class="text-primary-600 font-semibold">20-25°C optimális</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-concrete-700">Páratartalom</span>
+                <span class="text-primary-600 font-semibold">50-60% rel.</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-concrete-700">Légmozgás</span>
+                <span class="text-primary-600 font-semibold">Mérsékelten kell</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-concrete-700">Vastagság</span>
+                <span class="text-primary-600 font-semibold">1 hét/cm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Szaradási idők típusok szerint -->
+  <section class="py-16 lg:py-24 bg-concrete-50">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-16 text-center">
+        Szaradási idők aljzat típusok szerint
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
+          <div class="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-concrete-800 mb-4">Önterülő aljzat</h3>
+          <div class="text-3xl font-bold text-primary-600 mb-2">24-48h</div>
+          <p class="text-concrete-600 text-sm mb-4">járhatóság</p>
+          <div class="text-2xl font-bold text-green-600 mb-2">3-7 nap</div>
+          <p class="text-concrete-600 text-sm">burkolhatóság</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
+          <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-concrete-800 mb-4">Estrich aljzat</h3>
+          <div class="text-3xl font-bold text-primary-600 mb-2">3-5 nap</div>
+          <p class="text-concrete-600 text-sm mb-4">járhatóság</p>
+          <div class="text-2xl font-bold text-green-600 mb-2">14-28 nap</div>
+          <p class="text-concrete-600 text-sm">burkolhatóság</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
+          <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-concrete-800 mb-4">Padlófűtéses</h3>
+          <div class="text-3xl font-bold text-primary-600 mb-2">7-14 nap</div>
+          <p class="text-concrete-600 text-sm mb-4">járhatóság</p>
+          <div class="text-2xl font-bold text-green-600 mb-2">21-42 nap</div>
+          <p class="text-concrete-600 text-sm">burkolhatóság</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
+          <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-concrete-800 mb-4">Száraz aljzat</h3>
+          <div class="text-3xl font-bold text-primary-600 mb-2">Azonnal</div>
+          <p class="text-concrete-600 text-sm mb-4">járhatóság</p>
+          <div class="text-2xl font-bold text-green-600 mb-2">Azonnal</div>
+          <p class="text-concrete-600 text-sm">burkolhatóság</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Szaradás ellenőrzése -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-16 text-center">
+        Szaradás ellenőrzése
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-primary-50 border-l-4 border-primary-600 p-8 rounded-lg">
+          <h3 class="text-xl font-semibold text-primary-800 mb-6">🌡️ Nedvességmérő</h3>
+          <p class="text-primary-700 mb-4">Elektronikus nedvességmérő használata a legpontosabb módszer.</p>
+          <ul class="text-primary-600 space-y-2 text-sm">
+            <li>• CM módszer (Carbide Method)</li>
+            <li>• Relatív páratartalom mérése</li>
+            <li>• Többpontos mérés</li>
+            <li>• Dokumentálás</li>
+          </ul>
+          <div class="mt-4 p-3 bg-primary-100 rounded">
+            <p class="text-primary-800 font-medium text-sm">Elfogadható érték: <2% nedvesség</p>
+          </div>
+        </div>
+        
+        <div class="bg-green-50 border-l-4 border-green-600 p-8 rounded-lg">
+          <h3 class="text-xl font-semibold text-green-800 mb-6">🎯 Vizuális ellenőrzés</h3>
+          <p class="text-green-700 mb-4">Egyszerű, de fontos ellenőrzési módszerek.</p>
+          <ul class="text-green-600 space-y-2 text-sm">
+            <li>• Színváltás megfigyelése</li>
+            <li>• Tapintásos vizsgálat</li>
+            <li>• Fólia teszt</li>
+            <li>• Gőzölgés ellenőrzése</li>
+          </ul>
+          <div class="mt-4 p-3 bg-green-100 rounded">
+            <p class="text-green-800 font-medium text-sm">Tünet: sötét foltok = még nedves</p>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 border-l-4 border-blue-600 p-8 rounded-lg">
+          <h3 class="text-xl font-semibold text-blue-800 mb-6">⏰ Idő számítás</h3>
+          <p class="text-blue-700 mb-4">Tapasztalati szabályok a várakozási időre.</p>
+          <ul class="text-blue-600 space-y-2 text-sm">
+            <li>• 1 hét / 1 cm vastagság</li>
+            <li>• Nyáron 20-30% gyorsabb</li>
+            <li>• Télen 50% lassabb</li>
+            <li>• Fűtött terekben gyorsabb</li>
+          </ul>
+          <div class="mt-4 p-3 bg-blue-100 rounded">
+            <p class="text-blue-800 font-medium text-sm">Példa: 5 cm aljzat = 5 hét</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gyorsítás módjai -->
+  <section class="py-16 lg:py-24 bg-concrete-50">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl lg:text-4xl font-bold text-concrete-800 font-heading mb-12 text-center">
+        Szaradás gyorsítása
+      </h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-semibold text-concrete-800 mb-6">✅ Ajánlott módszerek</h3>
+          <div class="space-y-4">
+            <div class="bg-white p-6 rounded-lg border-l-4 border-green-500">
+              <h4 class="font-semibold text-green-800 mb-2">Mérsékelten meleg levegő</h4>
+              <p class="text-green-700 text-sm">20-25°C hőmérséklet fenntartása fűtéssel</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border-l-4 border-green-500">
+              <h4 class="font-semibold text-green-800 mb-2">Kontrollált légsebességnek</h4>
+              <p class="text-green-700 text-sm">Enyhe légmozgás ventilátorral</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border-l-4 border-green-500">
+              <h4 class="font-semibold text-green-800 mb-2">Párátlanítás</h4>
+              <p class="text-green-700 text-sm">Párátlanító berendezések használata</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border-l-4 border-green-500">
+              <h4 class="font-semibold text-green-800 mb-2">Gyorsabb kötésű anyagok</h4>
+              <p class="text-green-700 text-sm">Speciális gyorsszáradó aljzatok</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-concrete-800 mb-6">❌ Kerülendő módszerek</h3>
+          <div class="space-y-4">
+            <div class="bg-white p-6 rounded-lg border-l-4 border-red-500">
+              <h4 class="font-semibold text-red-800 mb-2">Magas hőmérséklet</h4>
+              <p class="text-red-700 text-sm">30°C felett repedéseket okozhat</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border-l-4 border-red-500">
+              <h4 class="font-semibold text-red-800 mb-2">Erős huzat</h4>
+              <p class="text-red-700 text-sm">Egyenetlen szaradás, repedés</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border-l-4 border-red-500">
+              <h4 class="font-semibold text-red-800 mb-2">Közvetlen napsütés</h4>
+              <p class="text-red-700 text-sm">Túl gyors szaradás a felszínen</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border-l-4 border-red-500">
+              <h4 class="font-semibold text-red-800 mb-2">Korai járás</h4>
+              <p class="text-red-700 text-sm">Benyomódások, sérülések</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA szekció -->
+  <section class="py-16 lg:py-24 bg-primary-600 text-white">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-6 font-heading">
+        Bizonytalan az aljzat szaradásával kapcsolatban?
+      </h2>
+      <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+        Szakértő csapatunk segít meghatározni a pontos várakozási időt és 
+        ellenőrzi az aljzat állapotát nedvességmérővel!
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/kapcsolat" class="bg-white text-primary-600 hover:bg-concrete-50 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+          Ingyenes Ellenőrzés
+        </a>
+        <a href="tel:+36301234567" class="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-block">
+          Hívjon Most: +36 30 123 4567
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

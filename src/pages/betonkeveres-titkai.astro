@@ -1,0 +1,708 @@
+---
+export const prerender = true;
+
+const title = "Betonkeverés Titkai - Professzionális Útmutató | Betonozás Budapest";
+const description = "A tökéletes betonkeverék összeállításának szakmai titkai ✓ Cement-víz arány ✓ Adalékok ✓ Keverési technikák ✓ 15+ év tapasztalat alapján.";
+const canonical = "https://betonozasbudapest.hu/betonkeveres-titkai";
+
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <Header />
+  <div class="min-h-screen bg-gray-50">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Betonkeverés Titkai</h1>
+          <p class="text-xl mb-8">
+            A tökéletes betonkeverék összeállításának professzionális útmutatója. 
+            15+ év tapasztalat alapján összegyűjtött szakmai tudás egy helyen.
+          </p>
+          <div class="flex items-center justify-center space-x-6 text-sm">
+            <span class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              12 perc olvasás
+            </span>
+            <span class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              2024. március 15.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <div class="prose prose-lg max-w-none">
+              <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                A betonkeverés nem egyszerű folyamat – ez egy igazi tudomány és művészet egyszerre. 
+                Minden sikeres betonozási projekt alapja a megfelelően összeállított keverék. 
+                Ebben a részletes útmutatóban megosztjuk 15+ év tapasztalatunkat a tökéletes betonkeverék elkészítéséről.
+              </p>
+              
+              <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+                <h3 class="text-lg font-semibold text-blue-800 mb-2">Mit tanul meg ebből a cikkből?</h3>
+                <ul class="text-blue-700 space-y-2">
+                  <li>• Az optimális cement-víz-kavics arányokat</li>
+                  <li>• A különböző adalékok szerepét és alkalmazását</li>
+                  <li>• A keverési technikák fortélyait</li>
+                  <li>• A gyakori hibák elkerülését</li>
+                  <li>• A minőségbiztosítás módszereit</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Content Sections -->
+          
+          <!-- Section 1: Alapanyagok -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">1. A Beton Alapanyagai</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Cement</h3>
+                <p class="text-gray-600 mb-4">
+                  A cement a beton kötőanyaga, amely a víz hozzáadásával hidratációs reakción megy keresztül. 
+                  A leggyakrabban használt típusok:
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                  <li><strong>CEM I 42,5N:</strong> Általános építési célokra</li>
+                  <li><strong>CEM I 42,5R:</strong> Gyors száradás esetén</li>
+                  <li><strong>CEM II:</strong> Adalékos cementek</li>
+                  <li><strong>CEM III:</strong> Kohósalak adalékkal</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Adalékanyagok</h3>
+                <p class="text-gray-600 mb-4">
+                  Az adalékanyagok a beton térfogatának 70-80%-át teszik ki:
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                  <li><strong>Homok (0-4 mm):</strong> Finom adalék, tömörség</li>
+                  <li><strong>Kavics (4-16 mm):</strong> Durva adalék, szilárdság</li>
+                  <li><strong>Zúzott kő (8-32 mm):</strong> Nagy szilárdság</li>
+                  <li><strong>Speciális adalékok:</strong> Könnyű-, nehéz adalékok</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+              <h4 class="text-lg font-semibold text-yellow-800 mb-2">Fontos tudnivaló:</h4>
+              <p class="text-yellow-700">
+                Az adalékanyagok tisztasága kulcsfontosságú. Szennyezett adalék (agyag, iszap, szerves anyagok) 
+                jelentősen ronthatja a beton minőségét és tartósságát.
+              </p>
+            </div>
+          </div>
+
+          <!-- Section 2: Arányok -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">2. Az Optimális Keverési Arányok</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Alapvető Arányok</h3>
+              <p class="text-gray-600 mb-6">
+                A betonkeverék összeállítása precíz számítást igényel. Az alapvető arányok:
+              </p>
+              
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 px-4 py-2 text-left">Betonminőség</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Cement (kg/m³)</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Víz (l/m³)</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Homok (m³)</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Kavics (m³)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">C16/20</td>
+                      <td class="border border-gray-300 px-4 py-2">280-300</td>
+                      <td class="border border-gray-300 px-4 py-2">160-180</td>
+                      <td class="border border-gray-300 px-4 py-2">0,35</td>
+                      <td class="border border-gray-300 px-4 py-2">0,65</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">C20/25</td>
+                      <td class="border border-gray-300 px-4 py-2">320-340</td>
+                      <td class="border border-gray-300 px-4 py-2">170-190</td>
+                      <td class="border border-gray-300 px-4 py-2">0,33</td>
+                      <td class="border border-gray-300 px-4 py-2">0,67</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">C25/30</td>
+                      <td class="border border-gray-300 px-4 py-2">360-380</td>
+                      <td class="border border-gray-300 px-4 py-2">180-200</td>
+                      <td class="border border-gray-300 px-4 py-2">0,32</td>
+                      <td class="border border-gray-300 px-4 py-2">0,68</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">C30/37</td>
+                      <td class="border border-gray-300 px-4 py-2">400-420</td>
+                      <td class="border border-gray-300 px-4 py-2">190-210</td>
+                      <td class="border border-gray-300 px-4 py-2">0,30</td>
+                      <td class="border border-gray-300 px-4 py-2">0,70</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-green-800 mb-3">Víz-cement tényező (v/c)</h4>
+                <p class="text-green-700 mb-3">
+                  Ez a legfontosabb paraméter, amely meghatározza a beton szilárdságát:
+                </p>
+                <ul class="text-green-700 space-y-1">
+                  <li>• <strong>0,4-0,5:</strong> Nagy szilárdságú beton</li>
+                  <li>• <strong>0,5-0,6:</strong> Közepes szilárdság</li>
+                  <li>• <strong>0,6-0,7:</strong> Alacsony szilárdság</li>
+                </ul>
+              </div>
+
+              <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-red-800 mb-3">Figyelem!</h4>
+                <p class="text-red-700">
+                  Minél több víz, annál gyengébb a beton. Soha ne adj több vizet a könnyű 
+                  keverhetőség érdekében – helyette használj folyósítót!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Adalékok -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">3. Adalékok és Hatásaik</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Folyósítók</h3>
+                <p class="text-gray-600 mb-4">
+                  A folyósítók csökkentik a víztartalmat, miközben javítják a keverhetőséget:
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                  <li><strong>Ligninszulfonát:</strong> Hagyományos folyósító</li>
+                  <li><strong>Polikarboszilátos (PCE):</strong> Modern, nagy hatású</li>
+                  <li><strong>Naphthalin-szulfonát:</strong> Közepes hatású</li>
+                </ul>
+                
+                <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                  <p class="text-blue-800 text-sm">
+                    <strong>Adagolás:</strong> Általában a cement tömeg 0,5-2%-a
+                  </p>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Gyorsítók és Lassítók</h3>
+                <p class="text-gray-600 mb-4">
+                  A kötési idő szabályozására szolgálnak:
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                  <li><strong>Kalcium-klorid:</strong> Gyorsító (nem rozsdamentes vasaláshoz!)</li>
+                  <li><strong>Nátrium-aluminát:</strong> Erős gyorsító</li>
+                  <li><strong>Ligninszulfonát:</strong> Enyhén lassító</li>
+                  <li><strong>Bórax:</strong> Lassító hatású</li>
+                </ul>
+                
+                <div class="mt-4 p-4 bg-orange-50 rounded-lg">
+                  <p class="text-orange-800 text-sm">
+                    <strong>Figyelem:</strong> Télen gyorsítók, nyáron lassítók szükségesek
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Speciális Adalékok</h3>
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">Légbuborékképzők</h4>
+                  <p class="text-gray-600 text-sm">
+                    Fagyvédelemhez és tartósság javításához. 4-6% légbuborék.
+                  </p>
+                </div>
+                
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">Vízálló adalékok</h4>
+                  <p class="text-gray-600 text-sm">
+                    Kristályképző anyagok, amelyek elzárják a kapilláris járatokat.
+                  </p>
+                </div>
+                
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">Színezőanyagok</h4>
+                  <p class="text-gray-600 text-sm">
+                    Vas-oxid alapú pigmentek tartós színezéshez.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: Keverési technikák -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">4. Keverési Technikák és Folyamat</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">A Helyes Keverési Sorrend</h3>
+              <div class="space-y-4">
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Száraz alapanyagok összekeverése</h4>
+                    <p class="text-gray-600">Cement és adalékanyagok egyenletes eloszlása 1-2 perc alatt.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Víz fokozatos hozzáadása</h4>
+                    <p class="text-gray-600">A víz 80%-át adj hozzá először, a maradékot fokozatosan.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Adalékok beadagolása</h4>
+                    <p class="text-gray-600">Folyósítók és egyéb adalékok a vízzel együtt vagy után.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Végső keverés</h4>
+                    <p class="text-gray-600">3-5 perc intenzív keverés egyenletes állag elérésig.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Keverőgép Típusok</h3>
+                <ul class="space-y-3 text-gray-600">
+                  <li>
+                    <strong>Tilting drum (billenő dohos):</strong><br>
+                    Kisebb mennyiségekhez, egyszerű kezelés
+                  </li>
+                  <li>
+                    <strong>Pan mixer (tányérkeverő):</strong><br>
+                    Intenzívebb keverés, jobb minőség
+                  </li>
+                  <li>
+                    <strong>Planetary mixer:</strong><br>
+                    Laboratóriumi és kis mennyiségű speciális keverékekhez
+                  </li>
+                  <li>
+                    <strong>Continuous mixer:</strong><br>
+                    Nagyüzemi, folyamatos gyártáshoz
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Keverési Idők</h3>
+                <div class="space-y-3">
+                  <div class="p-4 bg-gray-50 rounded-lg">
+                    <h4 class="font-semibold">Normál beton</h4>
+                    <p class="text-gray-600">3-5 perc keverési idő elegendő</p>
+                  </div>
+                  <div class="p-4 bg-gray-50 rounded-lg">
+                    <h4 class="font-semibold">Nagy szilárdságú beton</h4>
+                    <p class="text-gray-600">5-7 perc intenzívebb keverés</p>
+                  </div>
+                  <div class="p-4 bg-gray-50 rounded-lg">
+                    <h4 class="font-semibold">Adalékos beton</h4>
+                    <p class="text-gray-600">6-8 perc az adalékok egyenletes eloszlásáért</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-red-50 border-l-4 border-red-500 p-6">
+              <h4 class="text-lg font-semibold text-red-800 mb-2">Gyakori keverési hibák:</h4>
+              <ul class="text-red-700 space-y-1">
+                <li>• Túl rövid keverési idő → egyenetlen minőség</li>
+                <li>• Túl hosszú keverés → légbuborékok kilépése</li>
+                <li>• Rossz hozzáadási sorrend → csomósodás</li>
+                <li>• Túl gyors vízhozzáadás → inhomogén keverék</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Section 5: Minőségbiztosítás -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">5. Minőségbiztosítás és Ellenőrzés</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Friss Beton Vizsgálatok</h3>
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-3">Slump Teszt</h4>
+                  <p class="text-gray-600 mb-3">
+                    A konzisztencia mérésének alapvető módszere.
+                  </p>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• S1: 10-40 mm (kemény)</li>
+                    <li>• S2: 50-90 mm (merev)</li>
+                    <li>• S3: 100-150 mm (lágy)</li>
+                    <li>• S4: 160-210 mm (folyós)</li>
+                  </ul>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-3">Levegőtartalom</h4>
+                  <p class="text-gray-600 mb-3">
+                    Kritikus a fagyállóság szempontjából.
+                  </p>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Normál: 1-3%</li>
+                    <li>• Légbuborékos: 4-8%</li>
+                    <li>• Mérés: nyomásmérő módszer</li>
+                  </ul>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-3">Hőmérséklet</h4>
+                  <p class="text-gray-600 mb-3">
+                    Befolyásolja a kötési időt és minőséget.
+                  </p>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Optimális: 15-25°C</li>
+                    <li>• Minimum: +5°C</li>
+                    <li>• Maximum: +32°C</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Megszilárdult Beton Vizsgálata</h3>
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Nyomószilárdság Teszt</h4>
+                  <p class="text-gray-600 mb-4">
+                    150x150x150 mm-es kockák vagy 150x300 mm-es hengerek vizsgálata:
+                  </p>
+                  <ul class="text-gray-600 space-y-2">
+                    <li><strong>7 napos:</strong> ~70% a végső szilárdságnak</li>
+                    <li><strong>28 napos:</strong> Névleges szilárdság</li>
+                    <li><strong>90 napos:</strong> Végleges érték</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Egyéb Vizsgálatok</h4>
+                  <ul class="text-gray-600 space-y-2">
+                    <li><strong>Hasító-húzószilárdság:</strong> Indirekt húzásvissgálat</li>
+                    <li><strong>Hajlítószilárdság:</strong> Gerendák vizsgálata</li>
+                    <li><strong>Rugalmassági modulus:</strong> Deformációs tulajdonságok</li>
+                    <li><strong>Vízáteresztés:</strong> Tartóssági vizsgálat</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+              <h4 class="text-lg font-semibold text-green-800 mb-2">Pro Tip:</h4>
+              <p class="text-green-700">
+                Minden nagyobb munkahelyen készíts próbakockákat! Ez a legjobb módja a minőség 
+                dokumentálásának és a problémák korai felismerésének.
+              </p>
+            </div>
+          </div>
+
+          <!-- Section 6: Gyakorlati tanácsok -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">6. Gyakorlati Tanácsok és Tippek</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Időjárási Körülmények</h3>
+                
+                <div class="space-y-4">
+                  <div class="p-4 bg-blue-50 rounded-lg">
+                    <h4 class="font-semibold text-blue-800">Hideg időben (5-15°C)</h4>
+                    <ul class="text-blue-700 text-sm mt-2 space-y-1">
+                      <li>• Gyorsító adalék használata</li>
+                      <li>• Meleg víz alkalmazása (max 60°C)</li>
+                      <li>• Fűtött betontárolás</li>
+                      <li>• Hőszigetelő takarás</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="p-4 bg-orange-50 rounded-lg">
+                    <h4 class="font-semibold text-orange-800">Meleg időben (25-35°C)</h4>
+                    <ul class="text-orange-700 text-sm mt-2 space-y-1">
+                      <li>• Hideg víz és jeges adalékok</li>
+                      <li>• Lassító adalék alkalmazása</li>
+                      <li>• Árnyékolás és szélvédelem</li>
+                      <li>• Gyakori utónedvesítés</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Tároló és Szállítás</h3>
+                
+                <div class="space-y-4">
+                  <div class="p-4 bg-gray-50 rounded-lg">
+                    <h4 class="font-semibold text-gray-800">Cement tárolás</h4>
+                    <ul class="text-gray-600 text-sm mt-2 space-y-1">
+                      <li>• Száraz, jól szellőző helyiség</li>
+                      <li>• Földtől min. 20 cm magasságban</li>
+                      <li>• Maximum 3 hónapig tárolható</li>
+                      <li>• FIFO elv: first in, first out</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="p-4 bg-gray-50 rounded-lg">
+                    <h4 class="font-semibold text-gray-800">Adalékanyag tárolás</h4>
+                    <ul class="text-gray-600 text-sm mt-2 space-y-1">
+                      <li>• Külön frakciók, tiszta tárolás</li>
+                      <li>• Vízelvezetés biztosítása</li>
+                      <li>• Szennyeződéstől védett környezet</li>
+                      <li>• Téli fagymentesítés</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Betonozási Hibák és Megoldásaik</h3>
+              <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                  <div class="bg-red-50 px-6 py-3 border-b border-gray-200">
+                    <h4 class="font-semibold text-red-800">Problem: Szegregáció (Kiválás)</h4>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-gray-600 mb-3"><strong>Okok:</strong> Túl folyós keverék, rossz adalékgradáció, túl nagy ejtési magasság</p>
+                    <p class="text-gray-600"><strong>Megoldás:</strong> Konzisztencia csökkentése, gradáció javítása, betoncsatorna használata</p>
+                  </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                  <div class="bg-red-50 px-6 py-3 border-b border-gray-200">
+                    <h4 class="font-semibold text-red-800">Problem: Bleeding (Vízkiválás)</h4>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-gray-600 mb-3"><strong>Okok:</strong> Magas víztartalom, kevés finomszemcsés adalék</p>
+                    <p class="text-gray-600"><strong>Megoldás:</strong> Víztartalom csökkentése, finomhomok részarány növelése</p>
+                  </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                  <div class="bg-red-50 px-6 py-3 border-b border-gray-200">
+                    <h4 class="font-semibold text-red-800">Problem: Repedésképződés</h4>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-gray-600 mb-3"><strong>Okok:</strong> Gyors száradás, magas cementtartalom, rossz utókezelés</p>
+                    <p class="text-gray-600"><strong>Megoldás:</strong> Kontrollált száradás, utónedvesítés, zsugorodáscsökkentő adalék</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 7: Különleges alkalmazások -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">7. Különleges Betonkeverékek</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Öntömörödő Beton (SCC)</h3>
+                <p class="text-gray-600 mb-4">
+                  Vibrátor használata nélkül tömöríthető beton speciális adalékokkal:
+                </p>
+                <ul class="text-gray-600 space-y-2">
+                  <li>• <strong>Nagy folyósító tartalom:</strong> 0,8-2%</li>
+                  <li>• <strong>Stabilizátor:</strong> Viszkozitás módosító</li>
+                  <li>• <strong>Magas finomrész:</strong> Cement + pernye/salak</li>
+                  <li>• <strong>Slump flow:</strong> 550-850 mm</li>
+                </ul>
+                
+                <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                  <p class="text-blue-800 text-sm">
+                    <strong>Alkalmazás:</strong> Sűrű vasalású szerkezetek, nehezen hozzáférhető helyek
+                  </p>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Nagy Szilárdságú Beton (HSC)</h3>
+                <p class="text-gray-600 mb-4">
+                  C50/60-nál nagyobb szilárdságú betonok különleges összetétellel:
+                </p>
+                <ul class="text-gray-600 space-y-2">
+                  <li>• <strong>Alacsony v/c tényező:</strong> 0,25-0,35</li>
+                  <li>• <strong>Szilikapernye:</strong> 8-12% cement helyett</li>
+                  <li>• <strong>Nagy hatású folyósító:</strong> 1,5-3%</li>
+                  <li>• <strong>Prémium adalékanyag:</strong> Bazalt, gránit</li>
+                </ul>
+                
+                <div class="mt-4 p-4 bg-green-50 rounded-lg">
+                  <p class="text-green-800 text-sm">
+                    <strong>Alkalmazás:</strong> Felhőkarcolók, nagy fesztávú hidak, különleges építmények
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Könnyűbeton Keverékek</h3>
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">Habszilikát alapú</h4>
+                  <p class="text-gray-600 text-sm mb-2">Sűrűség: 400-800 kg/m³</p>
+                  <p class="text-gray-600 text-sm">Kiváló hőszigetelés, alacsony szilárdság</p>
+                </div>
+                
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">Expandált agyagkavics</h4>
+                  <p class="text-gray-600 text-sm mb-2">Sűrűség: 1000-1400 kg/m³</p>
+                  <p class="text-gray-600 text-sm">Jó teherbírás, mérsékelt szigetelés</p>
+                </div>
+                
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">Polisztirol gyöngys</h4>
+                  <p class="text-gray-600 text-sm mb-2">Sűrűség: 800-1200 kg/m³</p>
+                  <p class="text-gray-600 text-sm">Közepes szilárdság és szigetelés</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Összefoglalás</h2>
+            <div class="prose prose-lg max-w-none">
+              <p class="text-gray-700 leading-relaxed mb-6">
+                A tökéletes betonkeverék elkészítése komplex folyamat, amely számos tényező figyelembevételét igényli. 
+                A 15+ év tapasztalat alapján kijelenthetjük, hogy nincs egyetemes recept – minden projekt egyedi 
+                megközelítést és alapos tervezést igényel.
+              </p>
+              
+              <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
+                <h3 class="text-lg font-semibold text-blue-800 mb-3">A legfontosabb tanulságok:</h3>
+                <ul class="text-blue-700 space-y-2">
+                  <li>• <strong>Minőségi alapanyagok:</strong> Soha ne spórolj a cement és adalékok minőségén</li>
+                  <li>• <strong>Pontos mérés:</strong> A precíz adagolás a siker alapja</li>
+                  <li>• <strong>Helyes keverési sorrend:</strong> Kövesd a bevált módszereket</li>
+                  <li>• <strong>Folyamatos ellenőrzés:</strong> Tesztelj minden kritikus paramétert</li>
+                  <li>• <strong>Megfelelő tárolás:</strong> Az alapanyagok védett tárolása kulcsfontosságú</li>
+                </ul>
+              </div>
+              
+              <p class="text-gray-700 leading-relaxed">
+                Ha bizonytalan vagy bármely lépésben, ne habozz szakemberhez fordulni. A betonozás olyan terület, 
+                ahol a hibák javítása többnyire drágább, mint a kezdeti szakértői tanácsadás.
+              </p>
+            </div>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg p-8 text-center">
+            <h3 class="text-2xl font-bold mb-4">Szakértői Segítségre van Szüksége?</h3>
+            <p class="text-xl mb-8">
+              15+ év tapasztalat alapján segítünk a tökéletes betonkeverék összeállításában és kivitelezésében!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="/kapcsolat" 
+                class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Ingyenes Tanácsadás
+              </a>
+              <a 
+                href="tel:+36123456789" 
+                class="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
+              >
+                📞 Azonnali Kapcsolat
+              </a>
+            </div>
+          </div>
+
+          <!-- Related Articles -->
+          <div class="mt-16">
+            <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Kapcsolódó Cikkek</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-green-200 flex items-center justify-center">
+                  <span class="text-green-800 font-medium">Alapozás Lépései</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Családi Ház Alapozásának Lépései
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Részletes útmutató a családi házak alapozásához, a tervezéstől a kivitelezésig.
+                  </p>
+                  <a href="/alapozas-lepsei" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-orange-200 flex items-center justify-center">
+                  <span class="text-orange-800 font-medium">Téli Betonozás</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Téli Betonozás Titkai és Trükkjei
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Hogyan végezzünk minőségi betonozást hideg időszakban, fagyvédelem módszerei.
+                  </p>
+                  <a href="/teli-betonozas" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-purple-200 flex items-center justify-center">
+                  <span class="text-purple-800 font-medium">Minőségbiztosítás</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Betonozás Minőségbiztosítási Útmutató
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Vizsgálatok, tesztek és ellenőrzési pontok a hibátlan kivitelezésért.
+                  </p>
+                  <a href="/minosegbiztositas" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</Layout>

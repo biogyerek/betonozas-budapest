@@ -1,0 +1,1061 @@
+---
+export const prerender = true;
+
+const title = "Padlófűtés Betonozás Szakértői Útmutatója | Betonozás Budapest";
+const description = "Padlófűtéses aljzat betonozásának szakmai útmutatója ✓ Csőelhelyezés ✓ Betonkeverék összetétel ✓ Üzembehelyezés ✓ Gyakori hibák elkerülése.";
+const canonical = "https://betonozasbudapest.hu/padlofutes-betonozas";
+
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <Header />
+  <div class="min-h-screen bg-gray-50">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-orange-900 to-red-900 text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Padlófűtés Betonozás Szakértői Útmutatója</h1>
+          <p class="text-xl mb-8">
+            Professzionális útmutató a padlófűtéses aljzatok betonozásához. 
+            Csőelhelyezés, betonkeverék optimalizálás és üzembehelyezés - minden, 
+            amit tudnia kell a tökéletes eredményhez.
+          </p>
+          <div class="flex items-center justify-center space-x-6 text-sm">
+            <span class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              16 perc olvasás
+            </span>
+            <span class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              2024. március 22.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <div class="prose prose-lg max-w-none">
+              <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                A padlófűtéses rendszer bebetonozása az egyik legkritikusabb fázisa a padlófűtés 
+                kivitelezésének. Egy hibás betonozás évtizedekre meghatározza a fűtési rendszer 
+                hatékonyságát és élettartamát. Szakértői útmutatónkkal minden buktatót elkerülhet.
+              </p>
+              
+              <div class="bg-orange-50 border-l-4 border-orange-500 p-6 my-8">
+                <h3 class="text-lg font-semibold text-orange-800 mb-2">Miért kritikus a padlófűtés betonozása?</h3>
+                <ul class="text-orange-700 space-y-2">
+                  <li>• A beton a hőtároló és hőelosztó közeg</li>
+                  <li>• Hibás kivitelezés esetén javítás csak teljes felbontással lehetséges</li>
+                  <li>• A betonminőség befolyásolja a fűtés hatékonyságát</li>
+                  <li>• Repedések károsíthatják a fűtőcsöveket</li>
+                  <li>• A helyes technika évtizedekig tartó működést biztosít</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- System Overview -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Padlófűtési Rendszerek Típusai</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Nedves Rendszerek (Betonozással)</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Hagyományos Nedves Rendszer</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Rétegfelépítés:</strong> Szigetelés + csövek + estrich</li>
+                    <li><strong>Estrich vastagság:</strong> 45-65 mm</li>
+                    <li><strong>Hőtárolás:</strong> Kiváló (nagy tömeg)</li>
+                    <li><strong>Felfűtési idő:</strong> 4-6 óra</li>
+                    <li><strong>Alkalmazás:</strong> Újépítésű házak</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Alacsony Építésű Rendszer</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Rétegfelépítés:</strong> Vékony szigetelés + csövek + öntött estrich</li>
+                    <li><strong>Estrich vastagság:</strong> 30-45 mm</li>
+                    <li><strong>Hőtárolás:</strong> Közepes</li>
+                    <li><strong>Felfűtési idő:</strong> 2-4 óra</li>
+                    <li><strong>Alkalmazás:</strong> Alacsony belmagasságú terek</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-blue-800 mb-2">Nedves vs. száraz rendszerek:</h4>
+                <div class="grid md:grid-cols-2 gap-6 text-blue-700">
+                  <div>
+                    <h5 class="font-semibold mb-2">Nedves rendszer előnyei:</h5>
+                    <ul class="text-sm space-y-1">
+                      <li>• Nagyobb hőtárolás</li>
+                      <li>• Egyenletesebb hőeloszlás</li>
+                      <li>• Jobb hangszigeteló képesség</li>
+                      <li>• Tartósabb megoldás</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold mb-2">Nedves rendszer hátrányai:</h5>
+                    <ul class="text-sm space-y-1">
+                      <li>• Hosszabb kivitelezési idő</li>
+                      <li>• Magasabb rétegvastagság</li>
+                      <li>• Nehezebb szerkezet</li>
+                      <li>• Lassabb reagálás</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Rendszerkomponensek</h3>
+              
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Hőszigetelés</h4>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li><strong>EPS T4500:</strong> 3-8 cm</li>
+                    <li><strong>XPS:</strong> 4-10 cm</li>
+                    <li><strong>Ásványgyapot:</strong> 5-12 cm</li>
+                    <li><strong>Funkció:</strong> Lefelé irányuló hőveszteség csökkentése</li>
+                  </ul>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Fűtőcsövek</h4>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li><strong>PE-RT:</strong> Ø16-20 mm</li>
+                    <li><strong>PE-X:</strong> Ø16-20 mm</li>
+                    <li><strong>PP-R:</strong> Ø16-20 mm</li>
+                    <li><strong>Funkció:</strong> Hordozza a fűtővizet</li>
+                  </ul>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Estrich Beton</h4>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li><strong>CT-C25-F4:</strong> Standard</li>
+                    <li><strong>Folyékony:</strong> Öntött estrich</li>
+                    <li><strong>Adalékok:</strong> Csúszásgátló, gyorsító</li>
+                    <li><strong>Funkció:</strong> Hővezető közeg</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Planning and Design -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Tervezés és Előkészítés</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Hőtechnikai Számítások</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Hőszükséglet Meghatározása</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Fajlagos hőszükséglet:</strong> 50-120 W/m²</li>
+                    <li><strong>Csőtávolság:</strong> 10-30 cm (hőszükséglettől függően)</li>
+                    <li><strong>Fűtővíz hőmérséklet:</strong> 35-55°C</li>
+                    <li><strong>Padlófelszín hőmérséklet:</strong> Max. 29°C (tartózkodási zóna)</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-green-50 rounded-lg">
+                    <p class="text-green-800 text-sm">
+                      <strong>Példa számítás:</strong><br>
+                      20 m² szoba, 80 W/m² hőszükséglet<br>
+                      Teljes hőigény: 1600 W<br>
+                      Ajánlott csőtávolság: 15 cm
+                    </p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Csőelrendezés Típusai</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Spirál elrendezés:</strong> Egyenletes hőeloszlás</li>
+                    <li><strong>Meander elrendezés:</strong> Egyszerűbb fektetés</li>
+                    <li><strong>Kettős spirál:</strong> Nagy hőszükségletű területekhez</li>
+                    <li><strong>Vegyes elrendezés:</strong> Optimalizált megoldás</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-orange-50 rounded-lg">
+                    <p class="text-orange-800 text-sm">
+                      <strong>Ajánlás:</strong> Fürdőszobákban és hideg zónákban 
+                      sűrűbb csőelrendezést használjunk (10-12 cm).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Alépítmény Előkészítése</h3>
+              
+              <div class="space-y-6">
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">1. Alapozó Réteg</h4>
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h5 class="font-semibold text-gray-700 mb-2">Betonalap esetén:</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Felület tisztítása és simítása</li>
+                        <li>• Repedések javítása</li>
+                        <li>• Szintezés szükség esetén</li>
+                        <li>• Primer alapozás</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-gray-700 mb-2">Föld alap esetén:</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Tömörítés vibrálólappal</li>
+                        <li>• PE fólia vízzáró réteg</li>
+                        <li>• 10-15 cm kavics réteg</li>
+                        <li>• Újabb tömörítés</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">2. Peremszigeteló Szalag</h4>
+                  <ul class="text-gray-600 space-y-2">
+                    <li><strong>Anyag:</strong> PE hab vagy ásványgyapot szalag</li>
+                    <li><strong>Vastagság:</strong> 8-10 mm</li>
+                    <li><strong>Magasság:</strong> Estrich vastagság + 2-3 cm</li>
+                    <li><strong>Funkció:</strong> Hőhidak és hangtechnikai leválasztás</li>
+                  </ul>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">3. Hőszigetelő Réteg</h4>
+                  <ul class="text-gray-600 space-y-2">
+                    <li><strong>Alapterületen:</strong> EPS T4500, 30-80 mm vastagság</li>
+                    <li><strong>Fürdőszobákban:</strong> XPS vagy ásványgyapot (nedvességálló)</li>
+                    <li><strong>Illesztés:</strong> Lépcsőzött élillesztés</li>
+                    <li><strong>Rögzítés:</strong> Ragasztócsíkok vagy mechanikai rögzítés</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Csőhálózat Tervezése</h3>
+              
+              <div class="overflow-x-auto mb-6">
+                <table class="w-full border-collapse border border-gray-300">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 px-4 py-2 text-left">Helyiség típus</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Hőszükséglet (W/m²)</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Csőtávolság (cm)</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Max. hurok (m)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Nappali</td>
+                      <td class="border border-gray-300 px-4 py-2">60-80</td>
+                      <td class="border border-gray-300 px-4 py-2">20-25</td>
+                      <td class="border border-gray-300 px-4 py-2">120</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Hálószoba</td>
+                      <td class="border border-gray-300 px-4 py-2">50-70</td>
+                      <td class="border border-gray-300 px-4 py-2">20-30</td>
+                      <td class="border border-gray-300 px-4 py-2">120</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Fürdőszoba</td>
+                      <td class="border border-gray-300 px-4 py-2">100-120</td>
+                      <td class="border border-gray-300 px-4 py-2">10-15</td>
+                      <td class="border border-gray-300 px-4 py-2">80</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Konyha</td>
+                      <td class="border border-gray-300 px-4 py-2">70-90</td>
+                      <td class="border border-gray-300 px-4 py-2">15-20</td>
+                      <td class="border border-gray-300 px-4 py-2">100</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Előtér</td>
+                      <td class="border border-gray-300 px-4 py-2">80-100</td>
+                      <td class="border border-gray-300 px-4 py-2">15-20</td>
+                      <td class="border border-gray-300 px-4 py-2">100</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-yellow-800 mb-2">Tervezési alapelvek:</h4>
+                <ul class="text-yellow-700 space-y-1">
+                  <li>• Minden hurok hossza közel azonos legyen (±10%)</li>
+                  <li>• Hidraulikus kiegyenlítés biztosítása</li>
+                  <li>• Dilatációs hézagok figyelembevétele</li>
+                  <li>• Beépített elemek (radiátorok, WC) körüli csővezetés</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pipe Installation -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Csőelhelyezés és Rögzítés</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Csőfektetési Módszerek</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Sínrendszeres Rögzítés</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Anyag:</strong> Műanyag sínrendszer</li>
+                    <li><strong>Rögzítés:</strong> Sínek közé kattintás</li>
+                    <li><strong>Előny:</strong> Gyors, pontos, mozgatható</li>
+                    <li><strong>Hátrány:</strong> Drágább megoldás</li>
+                    <li><strong>Alkalmazás:</strong> Professzionális kivitelezés</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                    <p class="text-blue-800 text-sm">
+                      <strong>Költség:</strong> 800-1200 Ft/m² sínrendszer
+                    </p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Tűzőkapcsós Rögzítés</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Anyag:</strong> Horganyzott drótkkapcsok</li>
+                    <li><strong>Rögzítés:</strong> Szigetelésbe szorítás</li>
+                    <li><strong>Előny:</strong> Olcsóbb, rugalmas</li>
+                    <li><strong>Hátrány:</strong> Munkaigényesebb</li>
+                    <li><strong>Alkalmazás:</strong> Költségérzékeny projektek</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-green-50 rounded-lg">
+                    <p class="text-green-800 text-sm">
+                      <strong>Költség:</strong> 200-400 Ft/m² rögzítés
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-8">
+                <h4 class="text-lg font-semibold text-gray-800 mb-3">Hálós Rögzítési Rendszer</h4>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h5 class="font-semibold text-gray-700 mb-2">Jellemzők:</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Hegesztett drótháló 150×150 mm</li>
+                        <li>• Műanyag csőkapcsokkal rögzítés</li>
+                        <li>• Egyidejűleg szerkezeti vasalás is</li>
+                        <li>• Gyors és biztonságos megoldás</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-gray-700 mb-2">Alkalmazási terület:</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Nagy alapterületű helyiségek</li>
+                        <li>• Irodák, üzletek</li>
+                        <li>• Ipari és logisztikai terek</li>
+                        <li>• Ahol szükséges az erősítés</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Csőfektetés Menete</h3>
+              
+              <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Szigetelő Réteg és Fólia Elhelyezése</h4>
+                    <p class="text-gray-600 mt-1">
+                      Hőszigetelő lemezek illesztése, PE fólia lefektetése átlapolt varratokkal, 
+                      peremszigeteló szalag felhelyezése a falak mentén.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Rögzítőrendszer Kiépítése</h4>
+                    <p class="text-gray-600 mt-1">
+                      Sínek vagy hálók elhelyezése a tervrajz szerint. Osztótávolságok és 
+                      irányok pontos betartása. Sarkok és bejáratok körüli kiképzés.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Csövek Lefektetése</h4>
+                    <p class="text-gray-600 mt-1">
+                      Fűtőcsövek elhelyezése a tervezett útvonal szerint. Spirál vagy meander 
+                      elrendezés alkalmazása. Minimális hajlítási sugár betartása.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Csatlakozások és Gyűjtő</h4>
+                    <p class="text-gray-600 mt-1">
+                      Csövek csatlakoztatása az elosztóhoz. Tömítettség ellenőrzése. 
+                      Elosztószekrény helyének kialakítása.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold">5</div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Nyomáspróba</h4>
+                    <p class="text-gray-600 mt-1">
+                      Rendszer feltöltése és nyomáspróba elvégzése. 6 bar nyomáson 24 óra 
+                      teszt. Szivárgások ellenőrzése és dokumentálása.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Kritikus Pontok és Hibák</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 bg-red-50 border border-red-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-red-800 mb-3">Gyakori Hibák</h4>
+                  <ul class="text-red-700 space-y-2">
+                    <li><strong>Túl kicsi hajlítási sugár:</strong> Cső károsodás</li>
+                    <li><strong>Egyenetlen csőtávolságok:</strong> Foltosodás</li>
+                    <li><strong>Rossz rögzítés:</strong> Csövek elmozdul</li>
+                    <li><strong>Sérült szigetelés:</strong> Hőhidak</li>
+                    <li><strong>Hiányos nyomáspróba:</strong> Rejtett szivárgás</li>
+                  </ul>
+                </div>
+                
+                <div class="p-6 bg-green-50 border border-green-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-green-800 mb-3">Megoldások</h4>
+                  <ul class="text-green-700 space-y-2">
+                    <li><strong>Min. 5× cső átmérő:</strong> Hajlítási sugár</li>
+                    <li><strong>Pontos kitűzés:</strong> Lézerszintezővel</li>
+                    <li><strong>Dupla rögzítés:</strong> Biztos tartás</li>
+                    <li><strong>Átlapolt varratok:</strong> Szigetelésben</li>
+                    <li><strong>Hosszú teszt:</strong> 24 órás próba</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-yellow-800 mb-2">Ellenőrzési lista:</h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <ul class="text-yellow-700 space-y-1 text-sm">
+                    <li>☐ Szigetelő réteg folytonos</li>
+                    <li>☐ Peremszigeteló folyamatos</li>
+                    <li>☐ Csőtávolságok egyenletesek</li>
+                    <li>☐ Rögzítés minden 50-70 cm-en</li>
+                  </ul>
+                  <ul class="text-yellow-700 space-y-1 text-sm">
+                    <li>☐ Átvezetések szigeteltek</li>
+                    <li>☐ Nyomáspróba sikeres</li>
+                    <li>☐ Dokumentáció készre</li>
+                    <li>☐ Védelem elhelyezve</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Concrete Mix and Installation -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Estrich Betonozás</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Padlófűtéses Estrich Keverékek</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Hagyományos Cement Estrich</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Jelölés:</strong> CT-C25-F4</li>
+                    <li><strong>Cementtartalom:</strong> 300-350 kg/m³</li>
+                    <li><strong>Víz-cement tényező:</strong> 0,45-0,50</li>
+                    <li><strong>Konzisztencia:</strong> Földnedves-műagyagszerű</li>
+                    <li><strong>Szilárság:</strong> 25 MPa (28 nap)</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-gray-50 rounded-lg">
+                    <p class="text-gray-800 text-sm">
+                      <strong>Keverék receptúra (1 m³):</strong><br>
+                      CEM II 42,5: 320 kg<br>
+                      Homok 0-4 mm: 1580 kg<br>
+                      Víz: 160 l<br>
+                      Adalék: szükség szerint
+                    </p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Folyékony Estrich (CAF)</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Jelölés:</strong> CA-C30-F5</li>
+                    <li><strong>Cementtartalom:</strong> 280-320 kg/m³</li>
+                    <li><strong>Víz-cement tényező:</strong> 0,40-0,45</li>
+                    <li><strong>Konzisztencia:</strong> Öntött, folyós</li>
+                    <li><strong>Szilárság:</strong> 30 MPa (28 nap)</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                    <p class="text-blue-800 text-sm">
+                      <strong>Előnyök:</strong> Önszintező, egyenletes vastagság, 
+                      gyors alkalmazás, kiváló hővezető képesség
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-8">
+                <h4 class="text-lg font-semibold text-gray-800 mb-3">Speciális Adalékok Padlófűtéshez</h4>
+                <div class="overflow-x-auto">
+                  <table class="w-full border-collapse border border-gray-300">
+                    <thead>
+                      <tr class="bg-gray-100">
+                        <th class="border border-gray-300 px-4 py-2 text-left">Adalék típusa</th>
+                        <th class="border border-gray-300 px-4 py-2 text-left">Adagolás</th>
+                        <th class="border border-gray-300 px-4 py-2 text-left">Hatás</th>
+                        <th class="border border-gray-300 px-4 py-2 text-left">Költség</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">Folyósító</td>
+                        <td class="border border-gray-300 px-4 py-2">0,5-1%</td>
+                        <td class="border border-gray-300 px-4 py-2">Jobb feldolgozhatóság</td>
+                        <td class="border border-gray-300 px-4 py-2">+300 Ft/m³</td>
+                      </tr>
+                      <tr class="bg-gray-50">
+                        <td class="border border-gray-300 px-4 py-2">Légbuborék képző</td>
+                        <td class="border border-gray-300 px-4 py-2">0,1-0,3%</td>
+                        <td class="border border-gray-300 px-4 py-2">Fagyállóság javítása</td>
+                        <td class="border border-gray-300 px-4 py-2">+200 Ft/m³</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">Zsugorodáscsökkentő</td>
+                        <td class="border border-gray-300 px-4 py-2">0,2-0,5%</td>
+                        <td class="border border-gray-300 px-4 py-2">Repedések megakadályozása</td>
+                        <td class="border border-gray-300 px-4 py-2">+500 Ft/m³</td>
+                      </tr>
+                      <tr class="bg-gray-50">
+                        <td class="border border-gray-300 px-4 py-2">Hővezető adalék</td>
+                        <td class="border border-gray-300 px-4 py-2">2-5 kg/m³</td>
+                        <td class="border border-gray-300 px-4 py-2">Hővezető képesség javítás</td>
+                        <td class="border border-gray-300 px-4 py-2">+800 Ft/m³</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Betonozási Folyamat</h3>
+              
+              <div class="space-y-6">
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">1. Előkészítés és Védelem</h4>
+                  <ul class="text-gray-600 space-y-2">
+                    <li><strong>Csővédelem:</strong> Védőfólia vagy szerelőlap csövek felett</li>
+                    <li><strong>Elzárók:</strong> Rendszer legyen nyomás alatt (2-3 bar)</li>
+                    <li><strong>Hőmérséklet:</strong> 15-20°C közötti vízzel feltöltött rendszer</li>
+                    <li><strong>Tisztítás:</strong> Felület letakarítása, idegen anyagok eltávolítása</li>
+                  </ul>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">2. Estrich Öntés</h4>
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h5 class="font-semibold text-gray-700 mb-2">Hagyományos estrich:</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Szórás és húzózás lécrrel</li>
+                        <li>• Egyenletes vastagság biztosítása</li>
+                        <li>• Vibráló simítás</li>
+                        <li>• Szakaszos munkavégzés</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-gray-700 mb-2">Folyékony estrich:</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Öntés szivattyúval</li>
+                        <li>• Önszintező tulajdonság</li>
+                        <li>• Gyors lefedés</li>
+                        <li>• Minimális utókezelés</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">3. Vastagságellenőrzés</h4>
+                  <ul class="text-gray-600 space-y-2">
+                    <li><strong>Minimális fedés:</strong> 45 mm csőtető felett</li>
+                    <li><strong>Egyenletesség:</strong> ±5 mm eltérés megengedett</li>
+                    <li><strong>Mérési módszer:</strong> Szúró mérőrúd vagy ultrahangos</li>
+                    <li><strong>Korrekció:</strong> Friss állapotban még lehetséges</li>
+                  </ul>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">4. Felszínképzés és Utókezelés</h4>
+                  <ul class="text-gray-600 space-y-2">
+                    <li><strong>Simítás:</strong> Fa vagy műanyag simadeszkával</li>
+                    <li><strong>Utónedvesítés:</strong> 7 napon keresztül</li>
+                    <li><strong>Védelem:</strong> Huzat és közvetlen napsugárzás ellen</li>
+                    <li><strong>Sétatás:</strong> 24-48 óra után lehetséges</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Dilatációs Hézagok</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Hézag Típusok</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Peremhézag:</strong> Falak mentén 8-10 mm</li>
+                    <li><strong>Mozgási hézag:</strong> 40 m² felett kötelező</li>
+                    <li><strong>Szerkezeti hézag:</strong> Építmény mozgási hézagai</li>
+                    <li><strong>Kapcsolási hézag:</strong> Különböző anyagok között</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Kivitelezés</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Anyag:</strong> PE szalag vagy profil</li>
+                    <li><strong>Mélység:</strong> Teljes estrich vastagság</li>
+                    <li><strong>Kitöltés:</strong> Rugalmas tömítőanyag</li>
+                    <li><strong>Fedés:</strong> Padlóburkolat alatt elrejtés</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-6 bg-orange-50 border border-orange-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-orange-800 mb-2">Fontos tudnivaló:</h4>
+                <p class="text-orange-700">
+                  A dilatációs hézagokat a csőhálózat is követni kell! Ahol hézag van az estrichben, 
+                  ott a fűtőcsövek sem szabad hogy áthaladjanak. Ez külön hurkot vagy kerülőutat igényelhet.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Heating and Commissioning -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Szárítás és Üzembehelyezés</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Estrich Szárítási Protokoll</h3>
+              
+              <div class="space-y-6">
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">1. Várakozási Idő (Kémiai Szárítás)</h4>
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h5 class="font-semibold text-gray-700 mb-2">Cement estrich:</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Minimum várakozás: 21 nap</li>
+                        <li>• Optimális: 28 nap</li>
+                        <li>• Nedvességtartalom: < 2%</li>
+                        <li>• Hőmérséklet: 15-25°C</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-gray-700 mb-2">Anhidrit estrich:</h5>
+                      <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Minimum várakozás: 7 nap</li>
+                        <li>• Optimális: 14 nap</li>
+                        <li>• Nedvességtartalom: < 0,5%</li>
+                        <li>• Gyorsabb száradás</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">2. Felfűtési Program</h4>
+                  
+                  <div class="overflow-x-auto mb-4">
+                    <table class="w-full border-collapse border border-gray-300">
+                      <thead>
+                        <tr class="bg-gray-100">
+                          <th class="border border-gray-300 px-4 py-2 text-left">Nap</th>
+                          <th class="border border-gray-300 px-4 py-2 text-left">Előremenő hőmérséklet</th>
+                          <th class="border border-gray-300 px-4 py-2 text-left">Tevékenység</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="border border-gray-300 px-4 py-2">1-3. nap</td>
+                          <td class="border border-gray-300 px-4 py-2">25°C</td>
+                          <td class="border border-gray-300 px-4 py-2">Indítás, rendszer ellenőrzés</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                          <td class="border border-gray-300 px-4 py-2">4-6. nap</td>
+                          <td class="border border-gray-300 px-4 py-2">35°C</td>
+                          <td class="border border-gray-300 px-4 py-2">Fokozatos emelés</td>
+                        </tr>
+                        <tr>
+                          <td class="border border-gray-300 px-4 py-2">7-10. nap</td>
+                          <td class="border border-gray-300 px-4 py-2">45°C</td>
+                          <td class="border border-gray-300 px-4 py-2">Maximális hőmérséklet</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                          <td class="border border-gray-300 px-4 py-2">11-13. nap</td>
+                          <td class="border border-gray-300 px-4 py-2">35°C</td>
+                          <td class="border border-gray-300 px-4 py-2">Fokozatos csökkentés</td>
+                        </tr>
+                        <tr>
+                          <td class="border border-gray-300 px-4 py-2">14. nap</td>
+                          <td class="border border-gray-300 px-4 py-2">Üzemi hőmérséklet</td>
+                          <td class="border border-gray-300 px-4 py-2">Normál üzem</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <p class="text-red-800 text-sm">
+                      <strong>Figyelem:</strong> A felfűtési program alatt tilos padlóburkolatot rakni! 
+                      A gyors hőváltozás károsíthatja az estrichet és a csöveket is.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Nedvességmérés és Ellenőrzés</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Mérési Módszerek</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>CM-módszer:</strong> Karbid nedvességmérő</li>
+                    <li><strong>Darr-szekrényes:</strong> Laboratóriumi pontosság</li>
+                    <li><strong>Elektroniכus:</strong> Gyors tájékoztató mérés</li>
+                    <li><strong>Infralampa:</strong> Helyszíni gyorsmérés</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                    <p class="text-blue-800 text-sm">
+                      <strong>Mérési pontok:</strong> Min. 3 pont/helyiség, 
+                      reprezentatív helyeken
+                    </p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Határértékek</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Cement estrich:</strong> < 2,0 CM%</li>
+                    <li><strong>Anhidrit estrich:</strong> < 0,5 CM%</li>
+                    <li><strong>Vízzáró réteg felett:</strong> < 2,0 CM%</li>
+                    <li><strong>Fafórítás alatt:</strong> < 1,8 CM%</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-yellow-50 rounded-lg">
+                    <p class="text-yellow-800 text-sm">
+                      <strong>Túllépés esetén:</strong> Szárítási idő meghosszabbítása 
+                      vagy gépi szárítás szükséges
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Rendszer Átadás-Átvétel</h3>
+              
+              <div class="space-y-6">
+                <div class="p-6 bg-green-50 border border-green-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-green-800 mb-3">Műszaki Átadás Dokumentumai</h4>
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <ul class="text-green-700 space-y-2 text-sm">
+                      <li>☐ Kivitelezési tervrajzok</li>
+                      <li>☐ Nyomáspróba jegyzőkönyv</li>
+                      <li>☐ Felfűtési napló</li>
+                      <li>☐ Nedvességmérési eredmények</li>
+                    </ul>
+                    <ul class="text-green-700 space-y-2 text-sm">
+                      <li>☐ Hidraulikus beállítások</li>
+                      <li>☐ Elosztó beállítások</li>
+                      <li>☐ Használati utasítás</li>
+                      <li>☐ Karbantartási ütemterv</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="p-6 bg-blue-50 border border-blue-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-blue-800 mb-3">Üzemeltetési Tanácsok</h4>
+                  <ul class="text-blue-700 space-y-2">
+                    <li><strong>Első évben:</strong> Fokozatos hőmérséklet növelés</li>
+                    <li><strong>Szabályozás:</strong> Szobatermosztátok használata</li>
+                    <li><strong>Karbantartás:</strong> Évente egyszer rendszeröblítés</li>
+                    <li><strong>Burkolat:</strong> Padlófűtéshez alkalmas anyagok</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cost Analysis -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Költségelemzés és Tervezés</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Padlófűtéses Estrich Költségei</h3>
+              
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 px-4 py-2 text-left">Munkanem</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Egységár</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">100 m² lakás</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Megjegyzés</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Hőszigetelés EPS T4500 5cm</td>
+                      <td class="border border-gray-300 px-4 py-2">1.200 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2">120.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">Anyag + munka</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">PE fólia + peremszigeteló</td>
+                      <td class="border border-gray-300 px-4 py-2">350 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2">35.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">Anyag + munka</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Csőhálózat + rögzítés</td>
+                      <td class="border border-gray-300 px-4 py-2">3.500 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2">350.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">PE-RT cső + munka</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Cement estrich CT-C25-F4</td>
+                      <td class="border border-gray-300 px-4 py-2">2.800 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2">280.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">5-6 cm vastagság</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Folyékony estrich CAF</td>
+                      <td class="border border-gray-300 px-4 py-2">3.200 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2">320.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">4-5 cm vastagság</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Felfűtés és szárítás</td>
+                      <td class="border border-gray-300 px-4 py-2">200 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2">20.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">Energia + munka</td>
+                    </tr>
+                    <tr class="bg-green-100">
+                      <td class="border border-gray-300 px-4 py-2 font-bold">Összesen (cement estrich)</td>
+                      <td class="border border-gray-300 px-4 py-2 font-bold">8.050 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2 font-bold">805.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">-</td>
+                    </tr>
+                    <tr class="bg-blue-100">
+                      <td class="border border-gray-300 px-4 py-2 font-bold">Összesen (folyékony estrich)</td>
+                      <td class="border border-gray-300 px-4 py-2 font-bold">8.450 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2 font-bold">845.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="p-6 bg-green-50 border border-green-200 rounded-lg">
+                <h4 class="text-lg font-semibold text-green-800 mb-3">Megtakarítási Lehetőségek</h4>
+                <ul class="text-green-700 space-y-2">
+                  <li><strong>Saját munka:</strong> Szigetelés, takarítás (15% megtakarítás)</li>
+                  <li><strong>Anyagbeszerzés:</strong> Nagyker árak (8-12% megtakarítás)</li>
+                  <li><strong>Időzítés:</strong> Téli munkák kedvezményei</li>
+                  <li><strong>Tervezés optimalizálás:</strong> Felesleges túlméretezés elkerülése</li>
+                </ul>
+              </div>
+              
+              <div class="p-6 bg-orange-50 border border-orange-200 rounded-lg">
+                <h4 class="text-lg font-semibold text-orange-800 mb-3">Rejtett Költségek</h4>
+                <ul class="text-orange-700 space-y-2">
+                  <li><strong>Elektromos szerelés:</strong> Elosztó, termosztátok</li>
+                  <li><strong>Vízvezeték szerelés:</strong> Bekötések, szelepek</li>
+                  <li><strong>Burkolat:</strong> Padlófűtéshez alkalmas anyagok drágábbak</li>
+                  <li><strong>Várakozási idő:</strong> Kieső hasznos idő költsége</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
+              <h4 class="text-lg font-semibold text-blue-800 mb-2">Befektetés megtérülése:</h4>
+              <p class="text-blue-700 mb-3">
+                A padlófűtés többletköltségé általában 2.000-3.000 Ft/m² egy hagyományos radiátoros 
+                rendszerhez képest, de a hosszútávú energiamegtakarítás miatt 8-12 év alatt megtérül:
+              </p>
+              <ul class="text-blue-700 space-y-1">
+                <li>• 15-20% alacsonyabb fűtési költség</li>
+                <li>• Nagyobb komfort és jobb hőérze</li>
+                <li>• Ingatlan értékének növelése</li>
+                <li>• Nincs karbantartás igénye 20-25 évig</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Összefoglalás</h2>
+            <div class="prose prose-lg max-w-none">
+              <p class="text-gray-700 leading-relaxed mb-6">
+                A padlófűtéses rendszer bebetonozása komplex feladat, amely precíz tervezést, 
+                szakszerű kivitelezést és türelmes utómunkát igényel. A befektetett energia 
+                és gondosság azonban évtizedekre szóló komfortot és energiamegtakarítást eredményez.
+              </p>
+              
+              <div class="bg-orange-50 border-l-4 border-orange-500 p-6 mb-6">
+                <h3 class="text-lg font-semibold text-orange-800 mb-3">A sikeres projekt kulcsai:</h3>
+                <ul class="text-orange-700 space-y-2">
+                  <li>• <strong>Alapos tervezés:</strong> Hőszükséglet és csőelrendezés optimalizálása</li>
+                  <li>• <strong>Minőségi kivitelezés:</strong> Minden réteg szakszerű elkészítése</li>
+                  <li>• <strong>Megfelelő anyagok:</strong> Padlófűtésre optimalizált estrich keverék</li>
+                  <li>• <strong>Precíz szárítás:</strong> Felfűtési protokoll pontos betartása</li>
+                  <li>• <strong>Szakértői felügyelet:</strong> Minden kritikus fázisnál ellenőrzés</li>
+                </ul>
+              </div>
+              
+              <p class="text-gray-700 leading-relaxed">
+                Ne feledje: a padlófűtés betonozása egyszer történik meg, de az eredménye 
+                évtizedekig befolyásolja otthona komfortját és energiahatékonyságát. 
+                Érdemes szakértő kivitelezőt választani és minőségi anyagokba fektetni.
+              </p>
+            </div>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="bg-gradient-to-r from-orange-600 to-red-800 text-white rounded-lg p-8 text-center">
+            <h3 class="text-2xl font-bold mb-4">Padlófűtéses Betonozásra van Szüksége?</h3>
+            <p class="text-xl mb-8">
+              15+ év padlófűtéses tapasztalattal segítünk a tökéletes rendszer kialakításában 
+              és professzionális bebetonozásában!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="/kapcsolat" 
+                class="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Ingyenes Felmérés
+              </a>
+              <a 
+                href="tel:+36123456789" 
+                class="bg-orange-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-800 transition-colors"
+              >
+                📞 Azonnali Konzultáció
+              </a>
+            </div>
+          </div>
+
+          <!-- Related Articles -->
+          <div class="mt-16">
+            <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Kapcsolódó Cikkek</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-green-200 flex items-center justify-center">
+                  <span class="text-green-800 font-medium">Aljzatbetonozás</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Aljzatbetonozás Szakmai Útmutatója
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Teljes útmutató az aljzatbetonozáshoz, estrich típusok és alkalmazási területek.
+                  </p>
+                  <a href="/aljzatbetonozas-budapest" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-blue-200 flex items-center justify-center">
+                  <span class="text-blue-800 font-medium">Betonkeverés</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Betonkeverés Titkai és Adalékok
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Speciális keverékek padlófűtéshez, adalékok és minőségbiztosítás.
+                  </p>
+                  <a href="/betonkeveres-titkai" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-purple-200 flex items-center justify-center">
+                  <span class="text-purple-800 font-medium">Terasz Tervezés</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Terasz Tervezés és Betonozás
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Kültéri betonozási projektek tervezése és kivitelezése szakszerűen.
+                  </p>
+                  <a href="/terasz-tervezes" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</Layout>

@@ -1,0 +1,634 @@
+---
+export const prerender = true;
+
+const title = "Referenciák - Betonozás Budapest | Elkészült Projektek";
+const description = "Tekintse meg betonozási referenciáinkat! ✓ 500+ sikeres projekt ✓ Elégedett ügyfelek ✓ Fotós dokumentáció ✓ Valódi vélemények Budapesten.";
+const canonical = "https://betonozasbudapest.hu/referenciak";
+
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <Header />
+  <div class="min-h-screen bg-gray-50">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-5xl font-bold mb-6">Referenciáink</h1>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">
+          Több mint 500 sikeres betonozási projekt Budapesten és környékén. 
+          Tekintse meg munkáinkat és ügyfeleink véleményeit!
+        </p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">500+</div>
+            <div class="text-blue-200">Elkészült projekt</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">15+</div>
+            <div class="text-blue-200">Év tapasztalat</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">98%</div>
+            <div class="text-blue-200">Elégedett ügyfél</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-gray-800 text-center mb-16">Kiemelt Projektek</h2>
+        
+        <div class="grid lg:grid-cols-2 gap-12 mb-16">
+          <!-- Project 1 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="h-64 bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-500 text-lg">Családi ház alapozás - XII. kerület</span>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">Családi Ház Teljes Alapozása</h3>
+              <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <span class="font-semibold text-gray-700">Helyszín:</span>
+                  <span class="text-gray-600 ml-2">XII. kerület, Hegyvidék</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-gray-700">Terület:</span>
+                  <span class="text-gray-600 ml-2">180 m²</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-gray-700">Típus:</span>
+                  <span class="text-gray-600 ml-2">Lemezalap + pincefal</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-gray-700">Időtartam:</span>
+                  <span class="text-gray-600 ml-2">8 nap</span>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">
+                Komplex családi ház alapozási projekt, amely magába foglalta a lemezalap készítést, 
+                vízszigetetelést és a pincefal betonozást. Speciális kihívást jelentett a lejtős terep.
+              </p>
+              <div class="bg-green-50 p-4 rounded-lg">
+                <p class="text-green-800 font-medium">"Kiváló szakmai munka, pontos határidő betartás!"</p>
+                <p class="text-green-600 text-sm mt-1">- Kovács József, megrendelő</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="h-64 bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-500 text-lg">Ipari csarnok padló - XV. kerület</span>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">Ipari Csarnok Padlóbetonozás</h3>
+              <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <span class="font-semibold text-gray-700">Helyszín:</span>
+                  <span class="text-gray-600 ml-2">XV. kerület, ipari park</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-gray-700">Terület:</span>
+                  <span class="text-gray-600 ml-2">1200 m²</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-gray-700">Típus:</span>
+                  <span class="text-gray-600 ml-2">Ipari aljzatbeton C25/30</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-gray-700">Időtartam:</span>
+                  <span class="text-gray-600 ml-2">5 nap</span>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">
+                Nagy területű ipari padlóbetonozás, fokozott teherbírási követelményekkel. 
+                Betonpumpás szállítással és lézeres síkságmérésssel készült.
+              </p>
+              <div class="bg-green-50 p-4 rounded-lg">
+                <p class="text-green-800 font-medium">"Precíz munka, minden elvárásnak megfelelt."</p>
+                <p class="text-green-600 text-sm mt-1">- LogiPark Kft., beruházó</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Project 3 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="h-64 bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-500 text-lg">Terasz és kerti utak - II. kerület</span>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">Villa Terasz és Kerti Járdák</h3>
+              <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <span class="font-semibold text-gray-700">Helyszín:</span>
+                  <span class="text-gray-600 ml-2">II. kerület, Rózsadomb</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-gray-700">Terület:</span>
+                  <span class="text-gray-600 ml-2">320 m²</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-gray-700">Típus:</span>
+                  <span class="text-gray-600 ml-2">Színes betonburkolat</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-gray-700">Időtartam:</span>
+                  <span class="text-gray-600 ml-2">12 nap</span>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">
+                Exkluzív villa környezetében készült színes betonburkolat, speciális mintázattal 
+                és vízelvezetési rendszerrel. Design betonozás.
+              </p>
+              <div class="bg-green-50 p-4 rounded-lg">
+                <p class="text-green-800 font-medium">"Művészi szintű kivitelezés, csodálatos eredmény!"</p>
+                <p class="text-green-600 text-sm mt-1">- Dr. Nagy Péter, villa tulajdonos</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="h-64 bg-gray-300 flex items-center justify-center">
+              <span class="text-gray-500 text-lg">Lakópark parkoló - XIII. kerület</span>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">Lakópark Parkolóhely Készítés</h3>
+              <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <span class="font-semibold text-gray-700">Helyszín:</span>
+                  <span class="text-gray-600 ml-2">XIII. kerület, Újlipótváros</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-gray-700">Terület:</span>
+                  <span class="text-gray-600 ml-2">450 m²</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-gray-700">Típus:</span>
+                  <span class="text-gray-600 ml-2">24 db parkolóhely</span>
+                </div>
+                <div>
+                  <span class="font-semibold text-gray-700">Időtartam:</span>
+                  <span class="text-gray-600 ml-2">6 nap</span>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">
+                Lakóparki parkolóhelyek kialakítása, csapadékvíz-elvezetéssel és 
+                zöldfelület-kímélő megoldásokkal.
+              </p>
+              <div class="bg-green-50 p-4 rounded-lg">
+                <p class="text-green-800 font-medium">"Gyors, tiszta munka. Minden lakó elégedett."</p>
+                <p class="text-green-600 text-sm mt-1">- Lakópark Közössége</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Categories -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-gray-800 text-center mb-16">Projekt Típusaink</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Alapozási projektek -->
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 bg-blue-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Alapozási Munkák</h3>
+            <div class="text-3xl font-bold text-blue-600 mb-2">150+</div>
+            <div class="text-gray-600 mb-4">projekt</div>
+            <ul class="text-left space-y-2 text-sm text-gray-600">
+              <li>• Családi házak alapozása</li>
+              <li>• Társasházi alapok</li>
+              <li>• Pontalapok és sávalapok</li>
+              <li>• Lemezalap készítés</li>
+              <li>• Pincefal betonozás</li>
+            </ul>
+          </div>
+
+          <!-- Aljzatbetonozás -->
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 bg-green-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Aljzatbetonozás</h3>
+            <div class="text-3xl font-bold text-green-600 mb-2">180+</div>
+            <div class="text-gray-600 mb-4">projekt</div>
+            <ul class="text-left space-y-2 text-sm text-gray-600">
+              <li>• Lakóépületi aljzatok</li>
+              <li>• Ipari padlóbetonozás</li>
+              <li>• Estrich készítés</li>
+              <li>• Padlófűtés betonozás</li>
+              <li>• Öntöttasphalt aljzat</li>
+            </ul>
+          </div>
+
+          <!-- Járda és térburkolás -->
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Járda és Térburkolás</h3>
+            <div class="text-3xl font-bold text-orange-600 mb-2">120+</div>
+            <div class="text-gray-600 mb-4">projekt</div>
+            <ul class="text-left space-y-2 text-sm text-gray-600">
+              <li>• Teraszbeton készítés</li>
+              <li>• Kocsibeálló betonozás</li>
+              <li>• Kerti utak kialakítása</li>
+              <li>• Udvarburkolás</li>
+              <li>• Díszített betonfelületek</li>
+            </ul>
+          </div>
+
+          <!-- Speciális betonozás -->
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 bg-purple-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Speciális Betonozás</h3>
+            <div class="text-3xl font-bold text-purple-600 mb-2">60+</div>
+            <div class="text-gray-600 mb-4">projekt</div>
+            <ul class="text-left space-y-2 text-sm text-gray-600">
+              <li>• Vízálló beton alkalmazás</li>
+              <li>• Gyorskötő betonozás</li>
+              <li>• Könnyűbeton készítés</li>
+              <li>• Színezett betonfelületek</li>
+              <li>• Textúrált betonozás</li>
+            </ul>
+          </div>
+
+          <!-- Technológiai szolgáltatások -->
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 bg-red-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Technológiai Szolgáltatások</h3>
+            <div class="text-3xl font-bold text-red-600 mb-2">200+</div>
+            <div class="text-gray-600 mb-4">alkalmazás</div>
+            <ul class="text-left space-y-2 text-sm text-gray-600">
+              <li>• Betonpumpa szolgáltatás</li>
+              <li>• Zsaluzási munkák</li>
+              <li>• Betoncsiszolás</li>
+              <li>• Felületkezelés</li>
+              <li>• Vízszigetelés</li>
+            </ul>
+          </div>
+
+          <!-- Karbantartás -->
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 bg-indigo-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Karbantartás és Javítás</h3>
+            <div class="text-3xl font-bold text-indigo-600 mb-2">300+</div>
+            <div class="text-gray-600 mb-4">beavatkozás</div>
+            <ul class="text-left space-y-2 text-sm text-gray-600">
+              <li>• Repedések javítása</li>
+              <li>• Felújítási munkák</li>
+              <li>• Vízszivárgás elhárítás</li>
+              <li>• Utólagos szigetelés</li>
+              <li>• Beton tisztítás</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-gray-800 text-center mb-16">Ügyfeleink Véleménye</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <div class="flex text-yellow-500">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "Kiváló szakmai tudás és pontos munkavégzés jellemezte az egész projektet. 
+              A családi ház alapozása hibátlanul sikerült, minden határidőt betartottak."
+            </p>
+            <div class="border-t pt-4">
+              <p class="font-semibold text-gray-800">Kovács Mária</p>
+              <p class="text-sm text-gray-500">XI. kerület • Családi ház alapozás</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <div class="flex text-yellow-500">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "A terasz betonozás gyönyörűen sikerült. Precíz munka, tiszta kivitelezés. 
+              Már két éve hibátlanul működik, nincs repedés vagy egyéb probléma."
+            </p>
+            <div class="border-t pt-4">
+              <p class="font-semibold text-gray-800">Nagy Péter</p>
+              <p class="text-sm text-gray-500">II. kerület • Terasz betonozás</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <div class="flex text-yellow-500">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "Nagyszerű csapat! Az ipari padló betonozás folyamán végig szakértő 
+              tanácsadást kaptunk. Az eredmény minden várakozást felülmúlt."
+            </p>
+            <div class="border-t pt-4">
+              <p class="font-semibold text-gray-800">TechPro Kft.</p>
+              <p class="text-sm text-gray-500">XV. kerület • Ipari padlóbetonozás</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <div class="flex text-yellow-500">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "Kifogástalan munka! A kocsibeálló betonozás tökéletesen sikerült. 
+              Ajánlom mindenkinek, aki minőségi betonozást szeretne."
+            </p>
+            <div class="border-t pt-4">
+              <p class="font-semibold text-gray-800">Szabó András</p>
+              <p class="text-sm text-gray-500">XIV. kerület • Kocsibeálló betonozás</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <div class="flex text-yellow-500">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "Professzionális hozzáállás, pontos munkavégzés. Az aljzatbeton 
+              tökéletesen sík lett, nem kellett utómunkálatok. Csak ajánlani tudom!"
+            </p>
+            <div class="border-t pt-4">
+              <p class="font-semibold text-gray-800">Kiss Éva</p>
+              <p class="text-sm text-gray-500">VIII. kerület • Aljzatbetonozás</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <div class="flex text-yellow-500">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "Fantasztikus munka! A speciális vízálló betonozás után végre 
+              megszűnt a pincében a nedvesség. Köszönjük a szakértő tanácsokat!"
+            </p>
+            <div class="border-t pt-4">
+              <p class="font-semibold text-gray-800">Horváth Zoltán</p>
+              <p class="text-sm text-gray-500">III. kerület • Vízálló betonozás</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality Guarantees -->
+    <section class="py-20 bg-blue-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-gray-800 text-center mb-16">Minőségi Garanciáink</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="w-20 h-20 bg-blue-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">2 Év Garancia</h3>
+            <p class="text-gray-600">
+              Minden munkánkra 2 év teljes körű garanciát vállalunk
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-20 h-20 bg-green-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Gyors Reagálás</h3>
+            <p class="text-gray-600">
+              24 órán belül válaszolunk minden megkeresésre
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-20 h-20 bg-orange-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <svg class="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Ingyenes Felmérés</h3>
+            <p class="text-gray-600">
+              Helyszíni felmérés és árajánlat készítése mindig ingyenes
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-20 h-20 bg-purple-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <svg class="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Minőségi Anyagok</h3>
+            <p class="text-gray-600">
+              Csak az első osztályú, bevizsgált anyagokat használjuk
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold mb-6">Kezdjük el az Ön projektjét!</h2>
+        <p class="text-xl mb-12 max-w-3xl mx-auto">
+          Csatlakozzon több mint 500 elégedett ügyfelünkhöz! Kérjen ingyenes árajánlatot 
+          még ma, és tapasztalja meg szakértő csapatunk professzionális munkáját.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <a 
+            href="/kapcsolat" 
+            class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+          >
+            Ingyenes Árajánlat
+          </a>
+          <a 
+            href="tel:+36123456789" 
+            class="bg-blue-700 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-800 transition-colors"
+          >
+            📞 Hívás Most
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Kapcsolódó Oldalak</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Alapozási Munkák</h3>
+            <p class="text-gray-600 mb-4">
+              Professzionális alapozás minden típusú építkezéshez Budapesten.
+            </p>
+            <a href="/alapozas-budapest" class="text-blue-600 font-medium hover:text-blue-800">
+              Tudjon meg többet →
+            </a>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Aljzatbetonozás</h3>
+            <p class="text-gray-600 mb-4">
+              Minden típusú aljzat készítése: estrich, ipari padló, padlófűtés.
+            </p>
+            <a href="/aljzatbetonozas-budapest" class="text-blue-600 font-medium hover:text-blue-800">
+              Tudjon meg többet →
+            </a>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Kapcsolatfelvétel</h3>
+            <p class="text-gray-600 mb-4">
+              Kérjen ingyenes árajánlatot! 24/7 elérhetőség, gyors válaszidő.
+            </p>
+            <a href="/kapcsolat" class="text-blue-600 font-medium hover:text-blue-800">
+              Kapcsolat →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>

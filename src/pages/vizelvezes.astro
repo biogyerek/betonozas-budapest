@@ -1,0 +1,524 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+
+const title = "Vízelvezetés betonfelületek körül Budapesten | Szakszerű megoldások 2024";
+const description = "Teljes útmutató a vízelvezetés tervezéséhez és kivitelezéséhez betonfelületek körül. Csapadékvíz, drénrendszerek és költségek Budapesten.";
+---
+
+<Layout title={title} description={description}>
+  <Header />
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="text-sm breadcrumbs mb-6">
+      <ol class="flex space-x-2 text-gray-600">
+        <li><a href="/" class="hover:text-blue-600">Főoldal</a></li>
+        <li class="before:content-['>'] before:mx-2">Blog</li>
+        <li class="before:content-['>'] before:mx-2 text-gray-800">Vízelvezetés</li>
+      </ol>
+    </nav>
+
+    <article class="prose prose-lg max-w-none">
+      <header class="mb-8">
+        <h1 class="text-4xl font-bold mb-4 text-gray-900">Vízelvezetés betonfelületek körül: Szakszerű megoldások Budapesten</h1>
+        <div class="flex items-center space-x-4 text-sm text-gray-600">
+          <span>2024. január 25.</span>
+          <span>•</span>
+          <span>Olvasási idő: 15 perc</span>
+        </div>
+      </header>
+
+      <div class="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 class="text-xl font-semibold mb-3 text-blue-900">Gyors áttekintés</h2>
+        <ul class="text-blue-800 space-y-1">
+          <li>✓ Felszíni és felszín alatti vízelvezetési rendszerek</li>
+          <li>✓ Betonfelületek lejtésének optimális kialakítása</li>
+          <li>✓ Dréncsövek és vízgyűjtő rendszerek</li>
+          <li>✓ Költségkalkuláció és anyagszükséglet</li>
+          <li>✓ Karbantartás és hosszú távú működés</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">A vízelvezetés fontossága betonfelületek körül</h2>
+      
+      <p>Budapest agyagos talajviszonyai és változékony időjárása különös kihívást jelent a vízelvezetés tervezésében. A szakszerűen megoldott vízelvezetés megakadályozza a betonszerkezetek károsodását, a talajvíz felduzzadását és a telekhatáron túlnyúló vizek okozta konfliktusokat.</p>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Vízkárok típusai és következményeik</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-red-800 mb-3">⚠️ Felszíni károk:</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Beton alámosása és süllyedése</li>
+            <li>• Repedések kialakulása</li>
+            <li>• Fagykárok téli időszakban</li>
+            <li>• Penészedés és nedvesedés</li>
+          </ul>
+        </div>
+        
+        <div class="bg-orange-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-orange-800 mb-3">⚠️ Szerkezeti károk:</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Alapozás meglazulása</li>
+            <li>• Falszigetelés károsodása</li>
+            <li>• Talajvíz szint emelkedése</li>
+            <li>• Szomszéd ingatlanok károsítása</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Vízelvezetési rendszerek típusai</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Felszíni vízelvezetés</h3>
+
+      <p>A felszíni vízelvezetés a csapadékvíz gyors és hatékony elvezetésére szolgál a betonfelületekről:</p>
+
+      <div class="space-y-4 mb-6">
+        <div class="border-l-4 border-blue-500 pl-4">
+          <h4 class="font-semibold text-blue-800">Lejtéskialakítás</h4>
+          <p class="text-sm">Minimum 1-2% lejtés a víz elfolyásának biztosítására. Optimális 2-3% lejtés nagy csapadékmennyiség esetén.</p>
+          <p class="text-xs text-gray-600">Költség: Beépített a betonozási árba</p>
+        </div>
+        
+        <div class="border-l-4 border-green-500 pl-4">
+          <h4 class="font-semibold text-green-800">Felületi csatornák</h4>
+          <p class="text-sm">Lineáris lefolyók és rácsos csatornák nagy felületekről való vízelvezetéshez.</p>
+          <p class="text-xs text-gray-600">Költség: 8,000-15,000 Ft/fm műanyag, 20,000-35,000 Ft/fm beton</p>
+        </div>
+        
+        <div class="border-l-4 border-yellow-500 pl-4">
+          <h4 class="font-semibold text-yellow-800">Pontszerű lefolyók</h4>
+          <p class="text-sm">Padlóösszefolyók és aknás rendszerek kisebb területekhez.</p>
+          <p class="text-xs text-gray-600">Költség: 5,000-12,000 Ft/db telepítéssel</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Felszín alatti drénrendszerek</h3>
+
+      <p>A drénrendszerek a talajban felhalmozódó víz elvezetésére szolgálnak:</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Drén típus</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Mélység</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Alkalmazási terület</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Ár (Ft/fm)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Perforált PVC cső DN100</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">60-80 cm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Általános drénezés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2,500-3,200</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Dréncsövek szűrővel DN150</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">80-120 cm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Nagyobb terhelés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3,800-4,500</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Geotextiliás drén</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">40-60 cm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Sekély alkalmazások</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">4,200-5,500</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Kőágyas drénezés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">100-150 cm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Hagyományos módszer</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">6,000-8,500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Betonfelületek lejtésének kialakítása</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Optimális lejtésszögek</h3>
+
+      <p>A betonfelületek lejtésének helyes kialakítása kritikus fontosságú a vízelvezetés szempontjából:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2 text-green-800">🏠 Lakóterületek</h4>
+          <ul class="text-sm space-y-1">
+            <li>• <strong>Járdák:</strong> 1-2%</li>
+            <li>• <strong>Teraszok:</strong> 1.5-2.5%</li>
+            <li>• <strong>Kocsibeállók:</strong> 2-3%</li>
+            <li>• <strong>Kerti ösvények:</strong> 1-2%</li>
+          </ul>
+        </div>
+        
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2 text-blue-800">🏢 Kereskedelmi</h4>
+          <ul class="text-sm space-y-1">
+            <li>• <strong>Parkolók:</strong> 2-4%</li>
+            <li>• <strong>Raktárak:</strong> 1-2%</li>
+            <li>• <strong>Udvarok:</strong> 2-3%</li>
+            <li>• <strong>Rakodók:</strong> 2-5%</li>
+          </ul>
+        </div>
+        
+        <div class="bg-yellow-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2 text-yellow-800">🚧 Speciális</h4>
+          <ul class="text-sm space-y-1">
+            <li>• <strong>Rámpák:</strong> max 8%</li>
+            <li>• <strong>Sportpályák:</strong> 0.5-1%</li>
+            <li>• <strong>Ipari padlók:</strong> 1-1.5%</li>
+            <li>• <strong>Tetőteraszon:</strong> 2-3%</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Lejtéskialakítási módszerek</h3>
+
+      <p>A lejtés különböző módszerekkel alakítható ki a betonozás során:</p>
+
+      <ol class="list-decimal pl-6 mb-6 space-y-3">
+        <li><strong>Zsaluzásos módszer:</strong> A zsaluzat már a kívánt lejtésben kerül kialakításra</li>
+        <li><strong>Lézeres szintezés:</strong> Precíz lejtéskialakítás lézeres berendezéssel</li>
+        <li><strong>Utólagos csiszolás:</strong> A megszilárdult beton mechanikai megmunkálása</li>
+        <li><strong>Öntött esztrich:</strong> Vékony simítóréteg alkalmazása</li>
+      </ol>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Csapadékvíz kezelés és tárolás</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Esővíz-gazdálkodás Budapesten</h3>
+
+      <p>A főváros esővíz-gazdálkodási terve szerint a nagyobb beruházásoknál helyben kell kezelni a csapadékvizet:</p>
+
+      <div class="bg-blue-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">📋 Budapesti előírások:</h4>
+        <ul class="text-sm space-y-2">
+          <li>• 500 m² feletti tetőfelületnél visszatartás kötelező</li>
+          <li>• 10 l/m²/perc csúcsintenzitás alapján</li>
+          <li>• Lassított bevezetés a közműbe</li>
+          <li>• Önkormányzati egyeztetés szükséges</li>
+        </ul>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Esővíz-tározók típusai</h3>
+
+      <div class="space-y-4 mb-6">
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🪣 Felszíni tározók</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Anyagok:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Beton tározó tartályok</li>
+                <li>Műanyag ciszternák</li>
+                <li>Fém gyűjtőtartályok</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Kapacitások:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>500-2000L: háztartási használat</li>
+                <li>2000-10000L: nagyobb ingatlanok</li>
+                <li>10000L+: kereskedelmi objektumok</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🕳️ Földbe süllyesztett rendszerek</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Előnyök:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Nem foglal felszíni helyet</li>
+                <li>Fagyvédett</li>
+                <li>Esztétikai előnyök</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Telepítési költség:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>5000L: 800,000-1,200,000 Ft</li>
+                <li>10000L: 1,400,000-1,800,000 Ft</li>
+                <li>25000L+: 2,500,000+ Ft</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Szakszerű kivitelezési lépések</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Drénrendszer telepítése</h3>
+
+      <p>A drénezés telepítése precíz tervezést és kivitelezést igényel:</p>
+
+      <ol class="list-decimal pl-6 mb-6 space-y-3">
+        <li><strong>Tervezés és geodéziai felmérés:</strong> Lejtésviszonyok és vízfolyás irányának meghatározása</li>
+        <li><strong>Árokásás:</strong> 60-120 cm mély árok a tervezett vonalvezetés szerint</li>
+        <li><strong>Tömörítés:</strong> Ároktalaj megfelelő tömörítése vibráló lappal</li>
+        <li><strong>Kavicságy:</strong> 10-15 cm 16/32 mm frakciójú kavics</li>
+        <li><strong>Dréncsöves:</strong> Perforált cső fektetése 0.5-1% lejtéssel</li>
+        <li><strong>Szűrőanyag:</strong> Cső körüli 10 cm kavicstakaró</li>
+        <li><strong>Geotextil:</strong> Szűrőréteg az eliszapolódás ellen</li>
+        <li><strong>Visszatöltés:</strong> Rétegenkénti tömörítés 30 cm-enként</li>
+      </ol>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Minőségbiztosítási szempontok</h3>
+
+      <div class="bg-yellow-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">🔍 Ellenőrzési pontok:</h4>
+        <ul class="text-sm space-y-2">
+          <li>• <strong>Lejtésszögek:</strong> Legalább 0.5% minden szakaszon</li>
+          <li>• <strong>Csőátmérő:</strong> Vízmennyiségnek megfelelő dimenzionálás</li>
+          <li>• <strong>Kötések:</strong> Vízzáró csatlakozások</li>
+          <li>• <strong>Végpontok:</strong> Gyűjtőakna vagy bekötés szakszerű kialakítása</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Különleges vízelvezetési megoldások</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Szikkasztásos rendszerek</h3>
+
+      <p>A szikkasztó rendszerek a csapadékvíz helyben tartására és fokozatos talajba vezetésére szolgálnak:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-3 text-green-800">🌱 Szikkasztó gödrök</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Kavics- vagy homokágy</li>
+            <li>• Geotextil borítás</li>
+            <li>• Túlfolyó rendszer</li>
+            <li>• 2-5 m³ kapacitás</li>
+          </ul>
+          <p class="text-xs mt-2 text-gray-600"><strong>Költség:</strong> 150,000-300,000 Ft</p>
+        </div>
+        
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-3 text-blue-800">🏗️ Műanyag kaszetták</h4>
+          <ul class="text-sm space-y-2">
+            <li>• 95% víztároló kapacitás</li>
+            <li>• Moduláris felépítés</li>
+            <li>• Gépjármű teherbírású</li>
+            <li>• 50-200 l/m³ tárolás</li>
+          </ul>
+          <p class="text-xs mt-2 text-gray-600"><strong>Költség:</strong> 80,000-120,000 Ft/m³</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Permeable beton alkalmazása</h3>
+
+      <p>A víznyelő beton lehetővé teszi a csapadék átszűrődését a felületen keresztül:</p>
+
+      <ul class="list-disc pl-6 mb-6">
+        <li><strong>Víznyelő képesség:</strong> 200-600 liter/m²/perc</li>
+        <li><strong>Alkalmazási területek:</strong> Parkolók, járdák, sportpályák</li>
+        <li><strong>Előnyök:</strong> Nincs felszíni vízfolyás, természetes utánpótlás</li>
+        <li><strong>Karbantartás:</strong> Rendszeres tisztítás a pórusok nyitva tartásához</li>
+        <li><strong>Többletköltség:</strong> +2,000-4,000 Ft/m² normál betonhoz képest</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Költségkalkuláció és tervezési szempontok</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Komplex vízelvezetés költségbecslése</h3>
+
+      <p>120 m² családi ház környéki vízelvezetés teljes költségkalkulációja:</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Munkanem</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Mennyiség</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Egységár (Ft)</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Összesen (Ft)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Geodéziai felmérés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">1 db</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">85,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">85,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Drénárok ásása</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">40 fm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2,800</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">112,000</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Dréncsövek DN100</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">40 fm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3,200</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">128,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Szűrőkavics 16/32</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">8 m³</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">12,500</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">100,000</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Geotextil 300g/m²</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">50 m²</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">800</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">40,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Gyűjtőakna 1000L</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2 db</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">65,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">130,000</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Felszíni csatorna 15 cm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">12 fm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">12,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">144,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Munkadíj és visszatöltés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">1 ls</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">180,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">180,000</td>
+            </tr>
+            <tr class="bg-blue-100">
+              <td class="border border-gray-300 px-4 py-2 font-semibold">Összesen</td>
+              <td class="border border-gray-300 px-4 py-2"></td>
+              <td class="border border-gray-300 px-4 py-2"></td>
+              <td class="border border-gray-300 px-4 py-2 text-center font-semibold">919,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-blue-50 p-4 rounded-lg mb-6">
+        <p><strong>Teljes költség:</strong> 919,000 Ft + ÁFA (120 m² körül)</p>
+        <p><strong>Négyzetméterár:</strong> Kb. 7,650 Ft/m² + ÁFA</p>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Költségcsökkentési lehetőségek</h3>
+
+      <ul class="list-disc pl-6 mb-6">
+        <li><strong>Szakaszos kivitelezés:</strong> 25-30% időbeli elosztás</li>
+        <li><strong>Saját földmunka:</strong> 40-50% megtakarítás a munkadíjon</li>
+        <li><strong>Standard anyagok:</strong> Márkás anyagok helyett generikus termékek</li>
+        <li><strong>Nagyobb projekt:</strong> Betonozással egyidejű kivitelezés</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Karbantartás és üzemeltetés</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Rendszeres karbantartási feladatok</h3>
+
+      <p>A vízelvezetési rendszer hosszú távú működőképessége rendszeres karbantartást igényel:</p>
+
+      <div class="space-y-4 mb-6">
+        <div class="border-l-4 border-green-500 pl-4">
+          <h4 class="font-semibold">Havonta:</h4>
+          <p class="text-sm">Felszíni lefolyók tisztítása, rácsos csatornák szemrevételezése, dugulások ellenőrzése</p>
+        </div>
+        
+        <div class="border-l-4 border-yellow-500 pl-4">
+          <h4 class="font-semibold">Évente:</h4>
+          <p class="text-sm">Dréncsövek átmosása, gyűjtőaknák tisztítása, rendszer átfogó vizsgálata</p>
+        </div>
+        
+        <div class="border-l-4 border-red-500 pl-4">
+          <h4 class="font-semibold">5 évente:</h4>
+          <p class="text-sm">Teljes rendszer felülvizsgálata, szűrőanyagok cseréje, károsodott elemek javítása</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Gyakori problémák és megoldásaik</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-red-800 mb-2">❌ Gyakori hibák:</h4>
+          <ul class="text-sm space-y-1">
+            <li>• Nem megfelelő lejtés</li>
+            <li>• Alul-dimenzionált csövek</li>
+            <li>• Geotextil hiánya</li>
+            <li>• Rossz csatlakozások</li>
+          </ul>
+        </div>
+        
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-green-800 mb-2">✅ Megelőzés:</h4>
+          <ul class="text-sm space-y-1">
+            <li>• Gondos tervezés</li>
+            <li>• Szakértői kivitelezés</li>
+            <li>• Minőségi anyagok</li>
+            <li>• Rendszeres karbantartás</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Jogi és hatósági kérdések</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Hatósági engedélyek</h3>
+
+      <p>Budapest területén a vízelvezetési rendszerek telepítése különböző engedélyeket igényelhet:</p>
+
+      <div class="bg-yellow-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">📋 Engedélyköteles tevékenységek:</h4>
+        <ul class="text-sm space-y-2">
+          <li>• <strong>Közműhálózatra való rákötés:</strong> Vízügyi engedély</li>
+          <li>• <strong>500 m² feletti tetőfelület:</strong> Esővíz-gazdálkodási terv</li>
+          <li>• <strong>Nagyobb szikkasztók:</strong> Környezetvédelmi engedély</li>
+          <li>• <strong>Telekhatár érintése:</strong> Szomszédjogi egyeztetés</li>
+        </ul>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Szomszédság jogok</h3>
+
+      <ul class="list-disc pl-6 mb-6">
+        <li><strong>Természetes vízfolyás:</strong> Nem akadályozható meg</li>
+        <li><strong>Mesterséges víz:</strong> Nem vezethető a szomszéd telkére</li>
+        <li><strong>Károkozás:</strong> Teljes kártérítési kötelezettség</li>
+        <li><strong>Közös rendszerek:</strong> Írásos megállapodás szükséges</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Gyakran ismételt kérdések</h2>
+
+      <div class="space-y-6 mb-8">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Milyen mélyen kell a dréncsöveket fektetni?</h4>
+          <p class="text-sm">Általában 60-80 cm mélyen, de a talajviszonyoktól és a céltól függően 40-120 cm között változhat. Fontos a fagyzóna alatti fektetés.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Mennyi idő alatt térül meg a befektetés?</h4>
+          <p class="text-sm">A megfelelő vízelvezetés 15-25 év alatt térül meg a károk megelőzésével és az ingatlanérték megőrzésével. Komoly vízkárok milliós károkat okozhatnak.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Lehet-e utólag drénrendszert építeni?</h4>
+          <p class="text-sm">Igen, de költségesebb a meglévő burkolatok megbontása miatt. Tervezéskor érdemes előre gondolkodni a vízelvezetésről.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Mit tegyek, ha a szomszéd vize befolyik a telkemre?</h4>
+          <p class="text-sm">Dokumentálja a kárt, egyeztessen a szomszéddal, szükség esetén forduljon közvetítőhöz vagy jogászhoz. A károkozó köteles a víz elvezetéséről gondoskodni.</p>
+        </div>
+      </div>
+
+      <div class="bg-blue-600 text-white p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-4">Professzionális vízelvezetési rendszerek Budapesten</h3>
+        <p class="mb-4">Komplex vízelvezetési megoldások tervezése és kivitelezése 20 éves tapasztalattal. Garanciális utógondozás és karbantartási szolgáltatás!</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div>
+            <strong>📞 Telefon:</strong> +36 1 234 5678<br>
+            <strong>📧 Email:</strong> info@betonozas-budapest.hu
+          </div>
+          <div>
+            <strong>🛠️ Szolgáltatás:</strong> Ingyenes helyszíni felmérés<br>
+            <strong>⏰ Garanciaidő:</strong> 8 év vízelvezetési rendszerekre
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>

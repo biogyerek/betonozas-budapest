@@ -1,0 +1,653 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+
+const title = "Betonrepedések okai és megelőzése Budapesten | Szakértői útmutató 2024";
+const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, hőhatások, terhelés, talajmozgás. Megelőzés és korai beavatkozás Budapesten.";
+---
+
+<Layout title={title} description={description}>
+  <Header />
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="text-sm breadcrumbs mb-6">
+      <ol class="flex space-x-2 text-gray-600">
+        <li><a href="/" class="hover:text-blue-600">Főoldal</a></li>
+        <li class="before:content-['>'] before:mx-2">Blog</li>
+        <li class="before:content-['>'] before:mx-2 text-gray-800">Repedések okai</li>
+      </ol>
+    </nav>
+
+    <article class="prose prose-lg max-w-none">
+      <header class="mb-8">
+        <h1 class="text-4xl font-bold mb-4 text-gray-900">Betonrepedések okai és megelőzésük Budapesten</h1>
+        <div class="flex items-center space-x-4 text-sm text-gray-600">
+          <span>2024. február 20.</span>
+          <span>•</span>
+          <span>Olvasási idő: 17 perc</span>
+        </div>
+      </header>
+
+      <div class="bg-yellow-50 p-6 rounded-lg mb-8">
+        <h2 class="text-xl font-semibold mb-3 text-yellow-900">Gyors áttekintés</h2>
+        <ul class="text-yellow-800 space-y-1">
+          <li>✓ Repedéstípusok és kialakulásuk mechanizmusa</li>
+          <li>✓ Budapest specifikus környezeti hatások</li>
+          <li>✓ Megelőzési stratégiák a tervezéstől a kivitelezésig</li>
+          <li>✓ Korai felismerés és monitoring módszerek</li>
+          <li>✓ Gazdasági szempontok és kockázatértékelés</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Betonrepedések típusai és osztályozásuk</h2>
+      
+      <p>A betonrepedések Budapest területén különösen gyakori problémát jelentenek az agyagos talajviszonyok és a kontinentális éghajlat miatt. A repedések pontos osztályozása és okainak megértése kulcsfontosságú a megfelelő megelőzési és javítási stratégia kidolgozásához.</p>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Repedések időbeli megjelenése szerint</h3>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Időpont</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Repedés típusa</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Fő okok</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Veszélyesség</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Friss állapotban (0-24h)</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Műveleti repedések</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Gyors vízvesztés, vibráció</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Alacsony</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Korai kor (1-28 nap)</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Zsugorodási repedések</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Hídratációs hő, száradás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Közepes</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Hosszú távú (évek)</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Terheléses repedések</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Túlterhelés, fáradás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Magas</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Életciklus végén</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Degradációs repedések</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Korrózió, alkáli-szilika</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Kritikus</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Zsugorodási repedések</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Műveleti zsugorodás</h3>
+
+      <p>A műveleti zsugorodás a betonozás közbeni és közvetlenül utáni vízvesztés következménye:</p>
+
+      <div class="space-y-4 mb-6">
+        <div class="border-l-4 border-red-500 pl-4">
+          <h4 class="font-semibold text-red-800">Vérvíz gyors elpárolgása</h4>
+          <p class="text-sm">Magas hőmérséklet és szél hatására a felület gyorsan szárad, miközben a beton belseje még műveleti állapotban van.</p>
+          <div class="grid grid-cols-2 gap-4 text-xs mt-2">
+            <div><strong>Kritikus feltételek:</strong> >25°C, <50% RH, >25 km/h szél</div>
+            <div><strong>Megelőzés:</strong> Párásítás, szélvédelem, késleltetett simítás</div>
+          </div>
+        </div>
+        
+        <div class="border-l-4 border-orange-500 pl-4">
+          <h4 class="font-semibold text-orange-800">Helytelen keverési arányok</h4>
+          <p class="text-sm">Túl magas víz/cement arány vagy elégtelen adalékanyag tartalom.</p>
+          <div class="grid grid-cols-2 gap-4 text-xs mt-2">
+            <div><strong>Kritikus paraméterek:</strong> v/c > 0.6, cement > 400 kg/m³</div>
+            <div><strong>Optimalizálás:</strong> Szuperfolyósítók, keverékoptimalizálás</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Autogén zsugorodás</h3>
+
+      <div class="bg-blue-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">🔬 Autogén zsugorodás mechanizmusa:</h4>
+        <ul class="text-sm space-y-2">
+          <li>• <strong>Kémiai zsugorodás:</strong> Hidratáció során térfogat-csökkenés</li>
+          <li>• <strong>Önszáradás:</strong> Belső relatív páratartalom csökkenése</li>
+          <li>• <strong>Kapilláris feszültség:</strong> Pórusokban kialakuló szívóhatás</li>
+          <li>• <strong>Időbeli lefutás:</strong> Elsősorban az első 28 napban</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Hőmérsékletváltozások okozta repedések</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Budapest klimatikus viszonyainak hatása</h3>
+
+      <p>Budapest kontinentális éghajlatában a hőmérséklet-ingadozások különösen nagy kihívást jelentenek:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-red-800 mb-3">🌡️ Téli hőhatások</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Fagyrepedések:</strong> -15°C alatti hőmérséklet</li>
+            <li>• <strong>Fagy-olvadás ciklusok:</strong> 80-120 ciklus/év</li>
+            <li>• <strong>Hónyomás:</strong> Dodatív terhelés</li>
+            <li>• <strong>Jegesedés:</strong> Vízelvezetési problémák</li>
+          </ul>
+        </div>
+        
+        <div class="bg-orange-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-orange-800 mb-3">☀️ Nyári hőhatások</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Hőtágulás:</strong> +35°C feletti csúcshőmérséklet</li>
+            <li>• <strong>Hőgradiens:</strong> Felület vs. mag hőmérséklet</li>
+            <li>• <strong>UV degradáció:</strong> Felületi réteg károsodása</li>
+            <li>• <strong>Gyors hűlés:</strong> Hirtelen zivatarok</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Hőmozgások számítása</h3>
+
+      <div class="bg-gray-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">📐 Hőtágulási számítás:</h4>
+        <p class="text-sm font-mono bg-white p-2 rounded mb-2">Δl = α × l × ΔT</p>
+        <ul class="text-sm space-y-1">
+          <li>• <strong>α:</strong> Beton hőtágulási együttható (10-14 × 10⁻⁶/°C)</li>
+          <li>• <strong>l:</strong> Szerkezet hossza (m)</li>
+          <li>• <strong>ΔT:</strong> Hőmérséklet-változás (°C)</li>
+          <li>• <strong>Példa:</strong> 50m hosszú fal, 60°C ΔT → 3.6-4.2 cm mozgás</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Terheléses repedések</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Statikus túlterhelések</h3>
+
+      <div class="space-y-4 mb-6">
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🏗️ Tervezési hibák</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Gyakori problémák:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Alulméretezett vasalás</li>
+                <li>Helytelen nyomaték-felvétel</li>
+                <li>Nem figyelembe vett terhelések</li>
+                <li>Anyagjellemzők felülbecslése</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Következmények:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Hajlítási repedések</li>
+                <li>Nyírási károsodások</li>
+                <li>Lehorgonyzási problémák</li>
+                <li>Szerkezeti összeomlás veszélye</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">⚖️ Használati túlterhelések</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Okozó tényezők:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Funkció megváltozása</li>
+                <li>Nagyobb gépek telepítése</li>
+                <li>Tárolási módok változása</li>
+                <li>Környezeti terhelések növekedése</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Monitoring szempontok:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Repedésnyitás mérése</li>
+                <li>Deformáció követése</li>
+                <li>Rezgésmérések</li>
+                <li>Szakértői vizsgálatok</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Dinamikus terhelések hatása</h3>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Terhelés típusa</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Frekvencia (Hz)</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Jellemző amplitúdó</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Károsodási mechanizmus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Forgalmi terhelés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2-20</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Kicsi-közepes</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Fáradási repedések</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Gépi rezgések</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">10-100</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Közepes</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Rezonancia károk</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Szeizmikus hatás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">1-10</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Nagy</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Nyírási törések</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Szél hatások</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">0.1-2</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Változó</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Ciklikus fáradás</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Talaj- és alapozási problémák</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Budapest agyagos talajainak jellemzői</h3>
+
+      <p>A főváros területének nagy részét agyagos és lössz talajok jellemzik, amelyek különleges kihívásokat jelentenek:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-brown-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-brown-800 mb-3">🏔️ Budai oldal jellemzők</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Dolomit és mészkő:</strong> Stabil alapkőzet</li>
+            <li>• <strong>Löszös fedőréteg:</strong> 2-8 m vastagság</li>
+            <li>• <strong>Vízmozgások:</strong> Karsztvíz ingadozások</li>
+            <li>• <strong>Domborzat:</strong> Lejtős területek, csúszásveszély</li>
+          </ul>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-gray-800 mb-3">🏙️ Pesti oldal jellemzők</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Alluviális rétegsor:</strong> Váltakozó összetétel</li>
+            <li>• <strong>Agyagos szintek:</strong> Duzzadó tulajdonságok</li>
+            <li>• <strong>Talajvíz:</strong> 2-6 m közötti szint</li>
+            <li>• <strong>Süllyedések:</strong> Konszolidációs problémák</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Süllyedési repedések típusai</h3>
+
+      <div class="space-y-4 mb-6">
+        <div class="border-l-4 border-red-500 pl-4">
+          <h4 class="font-semibold text-red-800">Egyenletes süllyedés</h4>
+          <p class="text-sm">A teljes szerkezet egyenletes mértékben süllyed, általában nem okoz szerkezeti kárt.</p>
+          <p class="text-xs text-gray-600">Elfogadható mérték: 2-5 cm lakóépületeknél</p>
+        </div>
+        
+        <div class="border-l-4 border-orange-500 pl-4">
+          <h4 class="font-semibold text-orange-800">Differenciált süllyedés</h4>
+          <p class="text-sm">Eltérő mértékű süllyedések különböző szerkezeti pontokon, repedések kialakulása.</p>
+          <p class="text-xs text-gray-600">Kritikus érték: >2 cm/10 m távolságra</p>
+        </div>
+        
+        <div class="border-l-4 border-purple-500 pl-4">
+          <h4 class="font-semibold text-purple-800">Billenti süllyedés</h4>
+          <p class="text-sm">Szerkezet egyik oldala nagyobb mértékben süllyed, jelentős feszültségek alakulnak ki.</p>
+          <p class="text-xs text-gray-600">Veszélyes dőlés: >1:500 arány</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Kémiai és biológiai károsodások</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Alkáli-szilika reakció (ASR)</h3>
+
+      <p>Az alkáli-szilika reakció Budapest területén különösen veszélyes lehet az itt található reaktív adalékanyagok miatt:</p>
+
+      <div class="bg-red-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2 text-red-800">⚠️ ASR kialakulásának feltételei:</h4>
+        <ul class="text-sm space-y-2">
+          <li>• <strong>Reaktív szilika:</strong> Opalos, kalcedónos adalékanyagok</li>
+          <li>• <strong>Magas alkáli tartalom:</strong> >3 kg Na₂O egyenérték/m³ beton</li>
+          <li>• <strong>Nedvesség:</strong> >80% relatív páratartalom</li>
+          <li>• <strong>Időtartam:</strong> Évekig vagy évtizedekig tartó folyamat</li>
+        </ul>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Korrózió okozta repedések</h3>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Korrózió típusa</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Kiváltó ok</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Repedésmintázat</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Időtartam</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Karbonátosodás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">CO₂ behatolás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Vasalás irányú</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">15-50 év</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Klorid korrózió</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Só, tengervíz</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Lokális lyukacsos</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">5-20 év</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Szulfát korrózió</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Talaj, szennyvíz</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Duzzadásos</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">10-30 év</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Megelőzési stratégiák</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Tervezési szintű megelőzés</h3>
+
+      <div class="space-y-4 mb-6">
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">📐 Szerkezeti tervezés</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Dilatációs hézagok:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>30-60 m távolságokban</li>
+                <li>Geometriai változásoknál</li>
+                <li>Különböző funkciók határán</li>
+                <li>Hőmozgás biztosítása</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Vasalási megoldások:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Zsugorodási vasalás</li>
+                <li>Hőmérsékletvasalás</li>
+                <li>Felületi vasháló</li>
+                <li>Szálak alkalmazása</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🧪 Anyagválasztás</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Betonösszetétel:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Optimális v/c arány (≤0.5)</li>
+                <li>Zsugorodáscsökkentő adalékok</li>
+                <li>Puccolán anyagok</li>
+                <li>Kémiai adalékszerek</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Adalékanyagok:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>ASR-teszt eredmények</li>
+                <li>Duzzadási vizsgálatok</li>
+                <li>Fagyállósági tesztek</li>
+                <li>Mechanikai tulajdonságok</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Kivitelezési megelőzés</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-green-800 mb-3">✅ Helyes betonozási gyakorlat</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Megfelelő keverési idő és egyenletesség</li>
+            <li>• Optimális konzisztencia beállítása</li>
+            <li>• Rétegenkénti öntés és tömörítés</li>
+            <li>• Munkahézagok szakszerű kialakítása</li>
+            <li>• Vibrátor helyes alkalmazása</li>
+          </ul>
+        </div>
+        
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-blue-800 mb-3">🌡️ Utókezelés fontossága</h4>
+          <ul class="text-sm space-y-2">
+            <li>• 7-28 napos nedvesen tartás</li>
+            <li>• Hőmérséklet-védelem biztosítása</li>
+            <li>• Párásítás vagy takarás</li>
+            <li>• Szél- és napvédelem</li>
+            <li>• Korai terheléstől védelem</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Korai felismerés és monitoring</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Vizuális ellenőrzési rendszer</h3>
+
+      <div class="bg-yellow-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">👁️ Rendszeres szemrevételezés:</h4>
+        <ul class="text-sm space-y-2">
+          <li>• <strong>Gyakoriság:</strong> Új betonoknál hetente, régieknél évente</li>
+          <li>• <strong>Dokumentálás:</strong> Fényképes dokumentáció, méretek rögzítése</li>
+          <li>• <strong>Kritikus pontok:</strong> Sarkok, átmenetek, terhelési pontok</li>
+          <li>• <strong>Változások követése:</strong> Szélesedés, hosszabbodás mérése</li>
+        </ul>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Műszeres monitoring rendszerek</h3>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Mérési módszer</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Pontosság</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Alkalmazási terület</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Költség (Ft/pont)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Repedésmérő csík</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">±0.1 mm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Egyszeri ellenőrzés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2,000-5,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Digitális tolómérő</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">±0.01 mm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Pontos mérések</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">15,000-35,000</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Elektronikus szenzor</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">±0.001 mm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Folyamatos monitoring</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">50,000-150,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Fotogrammetria</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">±0.1 mm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Területi felmérés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">100,000-300,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Gazdasági szempontok</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Megelőzés vs. javítás költségei</h3>
+
+      <p>A betonrepedések megelőzésének és javításának költségelemzése 1000 m² beton padló esetén:</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Megközelítés</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Kezdeti költség (Ft)</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Javítási költség (Ft)</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Összesen (Ft)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Alapvető kivitelezés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">8,000,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3,500,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">11,500,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Megelőzéssel (+20%)</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">9,600,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">800,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">10,400,000</td>
+            </tr>
+            <tr class="bg-green-100">
+              <td class="border border-gray-300 px-4 py-2 font-semibold">Megtakarítás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">-1,600,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">+2,700,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center font-semibold">+1,100,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Kockázatértékelési mátrix</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-red-800 mb-3">⚠️ Magas kockázatú tényezők</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Agyagos talaj:</strong> Duzzadás, süllyedés</li>
+            <li>• <strong>Magas víz/cement arány:</strong> >0.6</li>
+            <li>• <strong>Reaktív adalékanyagok:</strong> ASR veszély</li>
+            <li>• <strong>Hiányos utókezelés:</strong> <7 nap</li>
+            <li>• <strong>Szélsőséges klíma:</strong> Gyors hőváltozások</li>
+          </ul>
+        </div>
+        
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-green-800 mb-3">✅ Alacsony kockázatú feltételek</h4>
+          <ul class="text-sm space-y-2">
+            <li>• <strong>Stabil geológia:</strong> Sziklás alapkőzet</li>
+            <li>• <strong>Optimális keverék:</strong> v/c ≤0.5</li>
+            <li>• <strong>Minőségi anyagok:</strong> Tanúsított adalékok</li>
+            <li>• <strong>Professzionális kivitelezés:</strong> Tapasztalt csapat</li>
+            <li>• <strong>Megfelelő utókezelés:</strong> 28 napos ápolás</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Esetpéldák Budapestről</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Tipikus káresetek elemzése</h3>
+
+      <div class="space-y-6 mb-6">
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">📍 Eset #1: Családi ház alapfal repedései (Buda)</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Probléma:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Függőleges repedések a sarkoknál</li>
+                <li>1-3 mm szélesség, növekvő tendencia</li>
+                <li>Vízszivárgás a pincében</li>
+                <li>3 éves épület</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Ok és megoldás:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Lösz altalaj zsugorodása</li>
+                <li>Vízelvezetés hiányosságai</li>
+                <li>Utólag drénezés kiépítése</li>
+                <li>Injektálás és szigetelés</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-xs text-gray-600 mt-2"><strong>Költség:</strong> 2,8 millió Ft javítás + 1,5 millió Ft megelőzés</p>
+        </div>
+        
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🏢 Eset #2: Irodaépület padló repedései (Pest)</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Probléma:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Hálós repedések az egész területen</li>
+                <li>0.2-0.5 mm szélesség</li>
+                <li>Porosodás, tisztítási problémák</li>
+                <li>2000 m² alapterület</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Ok és megoldás:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Túl gyors száradás betonozáskor</li>
+                <li>Elégtelen utókezelés</li>
+                <li>Felületi keményítés</li>
+                <li>Resin impregnálás</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-xs text-gray-600 mt-2"><strong>Költség:</strong> 8,5 millió Ft felújítás</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Gyakran ismételt kérdések</h2>
+
+      <div class="space-y-6 mb-8">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Mikor kell aggódni a betonrepedések miatt?</h4>
+          <p class="text-sm">0.3 mm-nél szélesebb, vagy növekvő tendenciájú repedések esetén. Vízszivárgás, szerkezeti jellegű repedések azonnali szakértői vizsgálatot igényelnek.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Lehet-e megelőzni az összes betonrepedést?</h4>
+          <p class="text-sm">100%-os megelőzés nem lehetséges, de megfelelő tervezéssel és kivitelezéssel 80-90%-kal csökkenthető a károsodások valószínűsége és mértéke.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Mennyibe kerül egy átfogó repedés-felmérés?</h4>
+          <p class="text-sm">Lakóház esetén 150-300.000 Ft, nagyobb épületeknél 500.000-1.5 millió Ft. Műszeres monitoring rendszer 2-8 millió Ft beruházási költséggel.</p>
+        </div>
+      </div>
+
+      <div class="bg-yellow-600 text-white p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-4">Betonrepedés-diagnosztika és megelőzés Budapesten</h3>
+        <p class="mb-4">Szakértői vizsgálatok és megelőzési tervek készítése 20 éves tapasztalattal. Korai felismerés és gazdaságos megoldások!</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div>
+            <strong>📞 Telefon:</strong> +36 1 234 5678<br>
+            <strong>📧 Email:</strong> info@betonozas-budapest.hu
+          </div>
+          <div>
+            <strong>🔍 Szolgáltatás:</strong> Ingyenes előzetes konzultáció<br>
+            <strong>⏰ Reagálási idő:</strong> 24 órán belül helyszíni vizsgálat
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>

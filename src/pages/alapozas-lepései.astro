@@ -1,0 +1,1009 @@
+---
+export const prerender = true;
+
+const title = "Alapozás Lépései - Családi Ház Építés Útmutatója | Betonozás Budapest";
+const description = "Családi ház alapozásának teljes folyamata lépésről-lépésre ✓ Tervezés ✓ Földmunka ✓ Zsaluzás ✓ Vasalás ✓ Betonozás ✓ Profi tanácsok.";
+const canonical = "https://betonozasbudapest.hu/alapozas-lepései";
+
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <Header />
+  <div class="min-h-screen bg-gray-50">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-green-900 to-green-800 text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Családi Ház Alapozásának Lépései</h1>
+          <p class="text-xl mb-8">
+            Teljes útmutató a családi ház alapozásához - a tervezéstől a kivitelezésig. 
+            15+ év tapasztalat alapján összeállított részletes lépéssor.
+          </p>
+          <div class="flex items-center justify-center space-x-6 text-sm">
+            <span class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              15 perc olvasás
+            </span>
+            <span class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              2024. március 18.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <div class="prose prose-lg max-w-none">
+              <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                A családi ház építésének legkritikusabb szakasza az alapozás. Ez határozza meg 
+                az egész épület stabilitását és élettartamát. Egy rosszul kivitelezett alap 
+                évtizedekig okozhat problémákat, míg a szakszerű alapozás évszázados tartósságot biztosít.
+              </p>
+              
+              <div class="bg-green-50 border-l-4 border-green-500 p-6 my-8">
+                <h3 class="text-lg font-semibold text-green-800 mb-2">Ebben a részletes útmutatóban megismeri:</h3>
+                <ul class="text-green-700 space-y-2">
+                  <li>• Az alapozás teljes folyamatát lépésről-lépésre</li>
+                  <li>• Az egyes alapozási típusok jellemzőit</li>
+                  <li>• A szükséges engedélyeket és vizsgálatokat</li>
+                  <li>• A leggyakoribb hibákat és azok elkerülését</li>
+                  <li>• Költségbecslési módszereket</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Overview -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Alapozás Időrendje</h2>
+            
+            <div class="relative">
+              <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-green-500"></div>
+              
+              <div class="space-y-8">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+                  <div class="ml-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Tervezés és Engedélyezés</h3>
+                    <p class="text-gray-600 mt-1">Talajmechanikai vizsgálat, építési engedély, statikai tervek</p>
+                    <span class="text-sm text-green-600 font-medium">2-4 hét</span>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
+                  <div class="ml-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Előkészítés</h3>
+                    <p class="text-gray-600 mt-1">Telek felmérés, kitűzés, közműelhelyezés tervezés</p>
+                    <span class="text-sm text-green-600 font-medium">1-2 hét</span>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+                  <div class="ml-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Földmunkák</h3>
+                    <p class="text-gray-600 mt-1">Tereprendezés, alapárok kiásás, támfalazás készítés</p>
+                    <span class="text-sm text-green-600 font-medium">1-2 hét</span>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg">4</div>
+                  <div class="ml-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Alapozási Munkák</h3>
+                    <p class="text-gray-600 mt-1">Zsaluzás, vasalás, betonozás, vízszigetelés</p>
+                    <span class="text-sm text-green-600 font-medium">2-3 hét</span>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg">5</div>
+                  <div class="ml-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Befejező Munkák</h3>
+                    <p class="text-gray-600 mt-1">Visszatöltés, vízelvezetés, felszín rendezés</p>
+                    <span class="text-sm text-green-600 font-medium">1 hét</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 1: Tervezés -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">1. Tervezés és Előkészítés</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Talajmechanikai Vizsgálat</h3>
+              <p class="text-gray-600 mb-6">
+                Minden alapozás első lépése a talaj vizsgálata. Ez határozza meg az alapozás típusát és mélységét.
+              </p>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Vizsgálat Menete:</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li>• <strong>Fúrások:</strong> 2-4 db fúrás a telek különböző pontjain</li>
+                    <li>• <strong>Mélység:</strong> Alapozási szint alatt 2-3 méter</li>
+                    <li>• <strong>Mintavétel:</strong> Talajminták laboratóriumi vizsgálata</li>
+                    <li>• <strong>Teherbírás:</strong> CPT vagy SPT vizsgálat</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Megállapított Paraméterek:</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li>• Talajrétegek vastagsága és jellege</li>
+                    <li>• Teherbíró képesség (kN/m²)</li>
+                    <li>• Talajvízszint</li>
+                    <li>• Fagyveszély mélység</li>
+                    <li>• Süllyedési jellemzők</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-6 p-6 bg-yellow-50 border border-yellow-200 rounded-lg">
+                <h4 class="text-lg font-semibold text-yellow-800 mb-2">Fontos tudnivaló:</h4>
+                <p class="text-yellow-700">
+                  A talajmechanikai szakvélemény nélkül nem adható ki építési engedély! 
+                  Költsége: 80.000-150.000 Ft, de megtérül a biztonság és a megfelelő alapozás miatt.
+                </p>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Alapozási Típusok Választása</h3>
+              
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Sávalapok</h4>
+                  <div class="text-sm text-gray-600 space-y-2">
+                    <p><strong>Alkalmazás:</strong> Falak alatt, kis-közepes terhelés</p>
+                    <p><strong>Méretek:</strong> Szélesség: 40-80 cm, Mélység: 80-150 cm</p>
+                    <p><strong>Költség:</strong> Leggazdaságosabb</p>
+                    <p><strong>Talaj:</strong> Jó teherbírású, stabil</p>
+                  </div>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Pontalapok</h4>
+                  <div class="text-sm text-gray-600 space-y-2">
+                    <p><strong>Alkalmazás:</strong> Oszlopok, pillérek alatt</p>
+                    <p><strong>Méretek:</strong> 1x1m - 2x2m, Mélység: 1-3 m</p>
+                    <p><strong>Költség:</strong> Közepes</p>
+                    <p><strong>Talaj:</strong> Változó teherbírás esetén</p>
+                  </div>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Lemezalapok</h4>
+                  <div class="text-sm text-gray-600 space-y-2">
+                    <p><strong>Alkalmazás:</strong> Teljes épület alatt</p>
+                    <p><strong>Méretek:</strong> Vastagság: 25-40 cm</p>
+                    <p><strong>Költség:</strong> Legdrágább</p>
+                    <p><strong>Talaj:</strong> Gyenge, egyenetlen teherbírás</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Engedélyek és Dokumentációk</h3>
+              
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 px-4 py-2 text-left">Dokumentum</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Kiállító</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Költség</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Időigény</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Talajmechanikai szakvélemény</td>
+                      <td class="border border-gray-300 px-4 py-2">Geotechnikai szakértő</td>
+                      <td class="border border-gray-300 px-4 py-2">100-150.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">1-2 hét</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Építési engedély</td>
+                      <td class="border border-gray-300 px-4 py-2">Építési hatóság</td>
+                      <td class="border border-gray-300 px-4 py-2">50-100.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">2-3 hónap</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Statikai tervezés</td>
+                      <td class="border border-gray-300 px-4 py-2">Statikai szakértő</td>
+                      <td class="border border-gray-300 px-4 py-2">200-400.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">2-4 hét</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Közműegyeztetés</td>
+                      <td class="border border-gray-300 px-4 py-2">Közműszolgáltatók</td>
+                      <td class="border border-gray-300 px-4 py-2">30-80.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">2-6 hét</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Földmunkák -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">2. Földmunkák és Előkészítés</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Tereprendezés és Kitűzés</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Munkaterület Előkészítése</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li>• <strong>Növényzet eltávolítása:</strong> Fák, bokrok kivágása</li>
+                    <li>• <strong>Termőföld leszedése:</strong> 20-40 cm vastagságban</li>
+                    <li>• <strong>Közművek jelölése:</strong> FŐGÁZ, ELMŰ, vízművek</li>
+                    <li>• <strong>Munkagépek bejárása:</strong> Út kialakítása</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Geodéziai Kitűzés</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li>• <strong>Épület sarkok megjelölése:</strong> Geodéziai pontossággal</li>
+                    <li>• <strong>Szintmagasságok:</strong> Építési szint meghatározása</li>
+                    <li>• <strong>Alappont rögzítése:</strong> Végleges vonatkoztatás</li>
+                    <li>• <strong>Ellenőrző mérés:</strong> Átlók és szögek kontroll</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Alapárok Kiásása</h3>
+              
+              <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
+                <h4 class="text-lg font-semibold text-blue-800 mb-2">Kiásás Módjai:</h4>
+                <div class="grid md:grid-cols-2 gap-6 text-blue-700">
+                  <div>
+                    <h5 class="font-semibold mb-2">Gépi kiásás (ajánlott)</h5>
+                    <ul class="space-y-1 text-sm">
+                      <li>• Gyors és gazdaságos</li>
+                      <li>• Nagy mennyiségű földhöz</li>
+                      <li>• Precíz mélységkontroll</li>
+                      <li>• Költség: 1.500-3.000 Ft/m³</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold mb-2">Kézi kiásás</h5>
+                    <ul class="space-y-1 text-sm">
+                      <li>• Kis területekhez</li>
+                      <li>• Közműveknél óvatosság</li>
+                      <li>• Pontos munkavégzés</li>
+                      <li>• Költség: 3.000-5.000 Ft/m³</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Kiásási Mélységek</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Fagymentes mélység:</strong> Min. 80 cm</li>
+                    <li><strong>Sávalapoknál:</strong> 100-150 cm</li>
+                    <li><strong>Pontalaporknál:</strong> 120-250 cm</li>
+                    <li><strong>Lemezalapoknál:</strong> 60-120 cm</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Biztonsági Előírások</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Rézsű hajlásszög:</strong> 1:1,5 vagy támfalazás</li>
+                    <li><strong>Munkavédelem:</strong> Sisak, biztonsági cipő kötelező</li>
+                    <li><strong>Talajvíz kezelése:</strong> Víztelenítés szükség esetén</li>
+                    <li><strong>Időjárás figyelése:</strong> Esőzés esetén leállás</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Aljzat Előkészítése</h3>
+              
+              <div class="space-y-4">
+                <div class="p-6 bg-gray-50 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">1. Tömörítés</h4>
+                  <p class="text-gray-600">
+                    Az alapárok alján lévő természetes talaj tömörítése vibrációs lappal 
+                    vagy döngölővel. Cél: egyenletes teherbírás biztosítása.
+                  </p>
+                </div>
+                
+                <div class="p-6 bg-gray-50 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">2. Védőbeton Készítése</h4>
+                  <p class="text-gray-600">
+                    5-10 cm vastag C12/15 minőségű sovány beton réteg. Célja: tiszta, 
+                    vízszintes felület biztosítása a vasaláshoz.
+                  </p>
+                </div>
+                
+                <div class="p-6 bg-gray-50 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">3. Vízszigetelés Előkészítése</h4>
+                  <p class="text-gray-600">
+                    A védőbeton felületének simítása és tisztítása. Éles élek letörése, 
+                    por és idegen anyagok eltávolítása.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Zsaluzás -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">3. Zsaluzás és Vasalás</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Zsaluzási Rendszerek</h3>
+              
+              <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Fa Zsaluzás</h4>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• <strong>Anyag:</strong> 22-25 mm deszka</li>
+                    <li>• <strong>Előny:</strong> Olcsó, könnyen alakítható</li>
+                    <li>• <strong>Hátrány:</strong> Nedvesség, vetemedés</li>
+                    <li>• <strong>Költség:</strong> 1.500-2.500 Ft/m²</li>
+                  </ul>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Acél Zsaluzás</h4>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• <strong>Anyag:</strong> Acéllemez panelek</li>
+                    <li>• <strong>Előny:</strong> Sima felület, újrahasználható</li>
+                    <li>• <strong>Hátrány:</strong> Magas kezdőköltség</li>
+                    <li>• <strong>Költség:</strong> 3.000-5.000 Ft/m²</li>
+                  </ul>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Műanyag Zsaluzás</h4>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• <strong>Anyag:</strong> Polipropilén panelek</li>
+                    <li>• <strong>Előny:</strong> Könnyű, tapadásmentes</li>
+                    <li>• <strong>Hátrány:</strong> Merevség hiánya</li>
+                    <li>• <strong>Költség:</strong> 2.000-3.500 Ft/m²</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-yellow-800 mb-2">Zsaluzási Alapelvek:</h4>
+                <ul class="text-yellow-700 space-y-1">
+                  <li>• Megfelelő szilárdság: beton nyomásának ellenállás</li>
+                  <li>• Formastabilitás: deformációk minimalizálása</li>
+                  <li>• Könnyű bonthatóság: károsodás nélküli eltávolítás</li>
+                  <li>• Tömörség: betoncsurogás megakadályozása</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Vasalás Kivitelezése</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Vasalási Alapanyagok</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>BSt 500S:</strong> Bordás betonacél (standard)</li>
+                    <li><strong>Átmérők:</strong> Ø8, Ø10, Ø12, Ø14, Ø16, Ø20 mm</li>
+                    <li><strong>Horganyzott:</strong> Korróziós védelem</li>
+                    <li><strong>Rostfrei:</strong> Speciális alkalmazásokhoz</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-green-50 rounded-lg">
+                    <p class="text-green-800 text-sm">
+                      <strong>Költség:</strong> 280-350 Ft/kg bordás betonacél
+                    </p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Vasalási Szabályok</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Betonfedés:</strong> Min. 35-50 mm</li>
+                    <li><strong>Vasaktávolság:</strong> Min. Ø, max. 300 mm</li>
+                    <li><strong>Átlapolás:</strong> 40-60 x Ø hossz</li>
+                    <li><strong>Hajlítási sugár:</strong> Min. 4 x Ø</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-red-50 rounded-lg">
+                    <p class="text-red-800 text-sm">
+                      <strong>Figyelem:</strong> Vasalás tervrajz szerint kötelező!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-8">
+                <h4 class="text-lg font-semibold text-gray-800 mb-3">Vasalás Menete</h4>
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                    <div>
+                      <h5 class="font-semibold text-gray-800">Alsó vasalás</h5>
+                      <p class="text-gray-600">Távolságtartók felhelyezése, alsó vasháló fektetése</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                    <div>
+                      <h5 class="font-semibold text-gray-800">Kengyelezés</h5>
+                      <p class="text-gray-600">Függőleges vasak felállítása és rögzítése</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                    <div>
+                      <h5 class="font-semibold text-gray-800">Felső vasalás</h5>
+                      <p class="text-gray-600">Felső vasháló elhelyezése és rögzítése</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                    <div>
+                      <h5 class="font-semibold text-gray-800">Ellenőrzés</h5>
+                      <p class="text-gray-600">Vasalás geometria és rögzítés kontrollálása</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Közművezetések Elhelyezése</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Beton Alatt</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li>• <strong>Víz- és szennyvízvezetékek:</strong> védőcsőben</li>
+                    <li>• <strong>Gázvezeték:</strong> szigetelt védőcsőben</li>
+                    <li>• <strong>Elektromos vezetékek:</strong> PVC védőcsőben</li>
+                    <li>• <strong>Szigetelés előtt:</strong> nyomáspróba kötelező</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Átvezetek</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li>• <strong>Falátvezetések:</strong> megfelelő méretű nyílások</li>
+                    <li>• <strong>Tömítés:</strong> rugalmas tömítőanyag</li>
+                    <li>• <strong>Hajlítószilárdság:</strong> fémhüvelyek használata</li>
+                    <li>• <strong>Dokumentálás:</strong> helyszínrajz készítése</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-6 bg-orange-50 border border-orange-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-orange-800 mb-2">Fontos figyelmeztetés:</h4>
+                <p class="text-orange-700">
+                  A közművezetékek elhelyezése előtt minden esetben egyeztessen a szolgáltatókkal! 
+                  A hibás elhelyezés utólagos javítása rendkívül költséges lehet.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: Betonozás -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">4. Betonozás és Utókezelés</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Betonrendelés és Minőség</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Betonminőségek</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>C20/25:</strong> Alapozásokhoz standard</li>
+                    <li><strong>C25/30:</strong> Terhelhetőbb szerkezetekhez</li>
+                    <li><strong>C30/37:</strong> Nagy teherbírás esetén</li>
+                    <li><strong>Expozíciós osztály:</strong> XC1-XC4</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                    <p class="text-blue-800 text-sm">
+                      <strong>Konzisztencia:</strong> S3 (lágy) vagy S4 (folyós) ajánlott
+                    </p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Rendelési Mennyiség</h4>
+                  <div class="space-y-3">
+                    <div class="p-3 bg-gray-50 rounded">
+                      <p class="font-semibold">Sávalapoknál:</p>
+                      <p class="text-sm text-gray-600">Szélesség × Magasság × Hossz + 10%</p>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded">
+                      <p class="font-semibold">Pontalaporknál:</p>
+                      <p class="text-sm text-gray-600">Darab × Méret³ + 10%</p>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded">
+                      <p class="font-semibold">Lemezalapoknál:</p>
+                      <p class="text-sm text-gray-600">Terület × Vastagság + 15%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Betonozási Folyamat</h3>
+              
+              <div class="space-y-6">
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">1. Előkészítés</h4>
+                  <ul class="text-gray-600 space-y-1">
+                    <li>• Zsaluzás és vasalás végső ellenőrzése</li>
+                    <li>• Zsaluzat letakarítása, nedvesítése</li>
+                    <li>• Betonpumpa vagy szállítóeszköz előkészítése</li>
+                    <li>• Munkaerő koordinálása</li>
+                  </ul>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">2. Betonbeöntés</h4>
+                  <ul class="text-gray-600 space-y-1">
+                    <li>• Egyenletes öntés: max. 50 cm rétegvastagság</li>
+                    <li>• Vibráló tömörítés: 30-40 cm távolságonként</li>
+                    <li>• Légbuborékok eltávolítása</li>
+                    <li>• Felszín egyengetése</li>
+                  </ul>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">3. Utókezelés</h4>
+                  <ul class="text-gray-600 space-y-1">
+                    <li>• Felszín simítása és letakarása</li>
+                    <li>• Nedvességmegtartás biztosítása</li>
+                    <li>• Fagyás elleni védelem (télen)</li>
+                    <li>• Túlhevülés elleni védelem (nyáron)</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-6 bg-red-50 border-l-4 border-red-500 p-6">
+                <h4 class="text-lg font-semibold text-red-800 mb-2">Kritikus időpontok:</h4>
+                <ul class="text-red-700 space-y-1">
+                  <li>• <strong>Bedolgozási idő:</strong> Max. 90 perc a gyártástól</li>
+                  <li>• <strong>Zsalubontás:</strong> Min. 3-7 nap (hőmérséklettől függően)</li>
+                  <li>• <strong>Terhelhetőség:</strong> 28 nap után 100%</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Minőségbiztosítás</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Friss Beton Vizsgálatok</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Slump teszt:</strong> Konzisztencia mérése</li>
+                    <li><strong>Hőmérséklet:</strong> 5-32°C között</li>
+                    <li><strong>Levegőtartalom:</strong> 4-8% (fagyvédett)</li>
+                    <li><strong>Kórók készítése:</strong> Minden 50 m³-ből</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Megszilárdulás Ellenőrzése</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>7 napos szilárdság:</strong> ~70% végső értéknek</li>
+                    <li><strong>28 napos szilárdság:</strong> Névleges érték</li>
+                    <li><strong>Schmidt kalapács:</strong> Roncsolásmentes</li>
+                    <li><strong>Ultrahangos mérés:</strong> Homogenitás</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-6 p-6 bg-green-50 border border-green-200 rounded-lg">
+                <h4 class="text-lg font-semibold text-green-800 mb-2">Sikerkritériumok:</h4>
+                <ul class="text-green-700 space-y-1">
+                  <li>• Egyenletes beton színe, nincs foltosodás</li>
+                  <li>• Repedések hiánya</li>
+                  <li>• Tervezett geometria betartása</li>
+                  <li>• Felületi egyenetlenségek < 10 mm</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 5: Vízszigetelés -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">5. Vízszigetelés és Hőszigetelés</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Vízszigetelési Rendszerek</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Bitumenes Vízszigetelés</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Alapozó:</strong> Bitumenes primer</li>
+                    <li><strong>Rétegrend:</strong> 2 réteg lemez</li>
+                    <li><strong>Vastagság:</strong> 3-5 mm összesen</li>
+                    <li><strong>Élettartam:</strong> 20-25 év</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                    <p class="text-blue-800 text-sm">
+                      <strong>Költség:</strong> 2.500-4.000 Ft/m²
+                    </p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Folyékony Vízszigetelés</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Anyag:</strong> Poliuretán vagy akril bázis</li>
+                    <li><strong>Felhordás:</strong> Ecsetes vagy szórás</li>
+                    <li><strong>Vastagság:</strong> 1-3 mm</li>
+                    <li><strong>Élettartam:</strong> 15-20 év</li>
+                  </ul>
+                  
+                  <div class="mt-4 p-4 bg-green-50 rounded-lg">
+                    <p class="text-green-800 text-sm">
+                      <strong>Költség:</strong> 3.000-5.500 Ft/m²
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-8">
+                <h4 class="text-lg font-semibold text-gray-800 mb-3">Vízszigetelési Lépések</h4>
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                    <div>
+                      <h5 class="font-semibold text-gray-800">Felület előkészítése</h5>
+                      <p class="text-gray-600">Beton felületének tisztítása, simítása, élek letörése</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                    <div>
+                      <h5 class="font-semibold text-gray-800">Alapozás</h5>
+                      <p class="text-gray-600">Primer felhordása, 2-4 óra száradási idő</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                    <div>
+                      <h5 class="font-semibold text-gray-800">Szigetelés felhordása</h5>
+                      <p class="text-gray-600">Első réteg, száradás után második réteg</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                    <div>
+                      <h5 class="font-semibold text-gray-800">Védőréteg</h5>
+                      <p class="text-gray-600">Geotextília vagy védőlemez elhelyezése</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Hőszigetelés</h3>
+              
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">XPS Lemez</h4>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li><strong>Vastagság:</strong> 8-20 cm</li>
+                    <li><strong>Lambda:</strong> 0,033-0,037 W/mK</li>
+                    <li><strong>Előny:</strong> Vízálló, tartós</li>
+                    <li><strong>Költség:</strong> 1.800-3.200 Ft/m²</li>
+                  </ul>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">EPS Lemez</h4>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li><strong>Vastagság:</strong> 10-25 cm</li>
+                    <li><strong>Lambda:</strong> 0,036-0,042 W/mK</li>
+                    <li><strong>Előny:</strong> Olcsó, könnyű</li>
+                    <li><strong>Költség:</strong> 800-1.500 Ft/m²</li>
+                  </ul>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Üveggyapot</h4>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li><strong>Vastagság:</strong> 15-30 cm</li>
+                    <li><strong>Lambda:</strong> 0,032-0,040 W/mK</li>
+                    <li><strong>Előny:</strong> Légáteresztő, tűzálló</li>
+                    <li><strong>Költség:</strong> 1.200-2.000 Ft/m²</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-yellow-800 mb-2">Hőhidak elkerülése:</h4>
+                <p class="text-yellow-700">
+                  Az alapozás és a falak találkozásánál különös figyelmet kell fordítani 
+                  a hőhidak megszakítására. Ezt általában a falazat és az alap között elhelyezett 
+                  hőszigetelő réteggel oldják meg.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 6: Költségek -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">6. Költségbecslés és Tervezés</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Alapozási Költségek (150 m² családi ház)</h3>
+              
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 px-4 py-2 text-left">Munkanem</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Mennyiség</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Egységár</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Összeg</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Talajmechanikai vizsgálat</td>
+                      <td class="border border-gray-300 px-4 py-2">1 db</td>
+                      <td class="border border-gray-300 px-4 py-2">120.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2 font-semibold">120.000 Ft</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Földkiemelés</td>
+                      <td class="border border-gray-300 px-4 py-2">80 m³</td>
+                      <td class="border border-gray-300 px-4 py-2">2.500 Ft/m³</td>
+                      <td class="border border-gray-300 px-4 py-2 font-semibold">200.000 Ft</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Védőbeton</td>
+                      <td class="border border-gray-300 px-4 py-2">5 m³</td>
+                      <td class="border border-gray-300 px-4 py-2">25.000 Ft/m³</td>
+                      <td class="border border-gray-300 px-4 py-2 font-semibold">125.000 Ft</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Vasalás</td>
+                      <td class="border border-gray-300 px-4 py-2">2.500 kg</td>
+                      <td class="border border-gray-300 px-4 py-2">450 Ft/kg</td>
+                      <td class="border border-gray-300 px-4 py-2 font-semibold">1.125.000 Ft</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Zsaluzás</td>
+                      <td class="border border-gray-300 px-4 py-2">120 m²</td>
+                      <td class="border border-gray-300 px-4 py-2">3.500 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2 font-semibold">420.000 Ft</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Betonozás C25/30</td>
+                      <td class="border border-gray-300 px-4 py-2">35 m³</td>
+                      <td class="border border-gray-300 px-4 py-2">32.000 Ft/m³</td>
+                      <td class="border border-gray-300 px-4 py-2 font-semibold">1.120.000 Ft</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Vízszigetelés</td>
+                      <td class="border border-gray-300 px-4 py-2">180 m²</td>
+                      <td class="border border-gray-300 px-4 py-2">3.500 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2 font-semibold">630.000 Ft</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Hőszigetelés</td>
+                      <td class="border border-gray-300 px-4 py-2">150 m²</td>
+                      <td class="border border-gray-300 px-4 py-2">2.800 Ft/m²</td>
+                      <td class="border border-gray-300 px-4 py-2 font-semibold">420.000 Ft</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Visszatöltés</td>
+                      <td class="border border-gray-300 px-4 py-2">60 m³</td>
+                      <td class="border border-gray-300 px-4 py-2">1.800 Ft/m³</td>
+                      <td class="border border-gray-300 px-4 py-2 font-semibold">108.000 Ft</td>
+                    </tr>
+                    <tr class="bg-green-100">
+                      <td class="border border-gray-300 px-4 py-2 font-bold" colspan="3">ÖSSZESEN</td>
+                      <td class="border border-gray-300 px-4 py-2 font-bold text-lg">4.268.000 Ft</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="mt-6 grid md:grid-cols-2 gap-6">
+                <div class="p-6 bg-blue-50 rounded-lg">
+                  <h4 class="text-lg font-semibold text-blue-800 mb-2">Fajlagos költség:</h4>
+                  <p class="text-blue-700 text-xl font-bold">28.450 Ft/m²</p>
+                  <p class="text-blue-600 text-sm mt-1">150 m² alapozási területre</p>
+                </div>
+                
+                <div class="p-6 bg-yellow-50 rounded-lg">
+                  <h4 class="text-lg font-semibold text-yellow-800 mb-2">Tartalék kalkuláció:</h4>
+                  <p class="text-yellow-700">Alapköltség + 15-20% váratlan kiadásokra</p>
+                  <p class="text-yellow-600 text-sm mt-1">Végösszeg: ~5.000.000 Ft</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Költségoptimalizálási Lehetőségek</h3>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Megtakarítási Lehetőségek</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Saját munka:</strong> Földmunka, visszatöltés (15-20% megtakarítás)</li>
+                    <li><strong>Anyagbeszerzés:</strong> Közvetlen gyártótól (5-10% megtakarítás)</li>
+                    <li><strong>Időzítés:</strong> Téli munkák alacsonyabb áron</li>
+                    <li><strong>Egyszerűsítés:</strong> Kevésbé bonyolult geometria</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Ne Spóroljon Itt!</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li><strong>Talajvizsgálat:</strong> Alapvető biztonság</li>
+                    <li><strong>Vasalás minősége:</strong> Szerkezeti szilárdság</li>
+                    <li><strong>Beton minősége:</strong> Tartósság alapja</li>
+                    <li><strong>Vízszigetelés:</strong> Utólagos javítás drága</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-6 bg-red-50 border-l-4 border-red-500 p-6">
+                <h4 class="text-lg font-semibold text-red-800 mb-2">Figyelmeztetés:</h4>
+                <p class="text-red-700">
+                  Az alapozás hibáinak javítása a teljes építési költség 20-50%-át is kiteheti. 
+                  Mindig képzett szakemberekkel dolgozzon és ne kockáztasson az alapozás minőségével!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Összefoglalás</h2>
+            <div class="prose prose-lg max-w-none">
+              <p class="text-gray-700 leading-relaxed mb-6">
+                A családi ház alapozása komplex folyamat, amely precíz tervezést és szakszerű kivitelezést igényel. 
+                A bemutatott lépéssorozat betartásával és a megfelelő szakemberek bevonásával biztosítható 
+                a tartós és biztonságos alapozás.
+              </p>
+              
+              <div class="bg-green-50 border-l-4 border-green-500 p-6 mb-6">
+                <h3 class="text-lg font-semibold text-green-800 mb-3">Legfontosabb tanácsaink:</h3>
+                <ul class="text-green-700 space-y-2">
+                  <li>• <strong>Alapos tervezés:</strong> Ne siesess, a jó terv fél siker</li>
+                  <li>• <strong>Minőségi anyagok:</strong> Az alapozásnál nem érdemes spórolni</li>
+                  <li>• <strong>Szakértői segítség:</strong> Komplex feladatokhoz mindig használj szakembert</li>
+                  <li>• <strong>Megfelelő időzítés:</strong> Vedd figyelembe az időjárási viszonyokat</li>
+                  <li>• <strong>Dokumentálás:</strong> Minden lépést dokumentálj a későbbi referenciához</li>
+                </ul>
+              </div>
+              
+              <p class="text-gray-700 leading-relaxed">
+                Az alapozás nem csak egy építési munkafolyamat – ez a ház életének megalapozása. 
+                A itt befektetett idő, energia és költség megtérül az évtizedekig tartó biztonságban 
+                és problémamentes működésben.
+              </p>
+            </div>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="bg-gradient-to-r from-green-600 to-green-800 text-white rounded-lg p-8 text-center">
+            <h3 class="text-2xl font-bold mb-4">Segítségre van Szüksége az Alapozásban?</h3>
+            <p class="text-xl mb-8">
+              15+ év tapasztalattal segítünk a tökéletes alapozás megtervezésében és kivitelezésében!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="/kapcsolat" 
+                class="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Ingyenes Felmérés
+              </a>
+              <a 
+                href="tel:+36123456789" 
+                class="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 transition-colors"
+              >
+                📞 Azonnali Kapcsolat
+              </a>
+            </div>
+          </div>
+
+          <!-- Related Articles -->
+          <div class="mt-16">
+            <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Kapcsolódó Cikkek</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-blue-200 flex items-center justify-center">
+                  <span class="text-blue-800 font-medium">Betonkeverés</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Betonkeverés Titkai és Technikái
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    A tökéletes betonkeverék összeállításának professional útmutatója alapozáshoz.
+                  </p>
+                  <a href="/betonkeveres-titkai" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-orange-200 flex items-center justify-center">
+                  <span class="text-orange-800 font-medium">Téli Munkák</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Téli Alapozás: Tippek és Trükkök
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Hogyan végezzünk alapozási munkákat hideg időszakban, fagyvédelem módszerei.
+                  </p>
+                  <a href="/teli-betonozas" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-purple-200 flex items-center justify-center">
+                  <span class="text-purple-800 font-medium">Költségkalkuláció</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Építkezési Költségek Tervezése
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Részletes útmutató az alapozási költségek reális tervezéséhez és optimalizáláshoz.
+                  </p>
+                  <a href="/koltsegkalkulacio" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</Layout>

@@ -1,0 +1,435 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+
+const title = "Dilatációs hézagok kialakítása betonszerkezeteknél | Szakszerű tervezés Budapest";
+const description = "Teljes útmutató a dilatációs hézagok tervezéséhez és kivitelezéséhez. Típusok, anyagok, hibák megelőzése és költségek Budapesten.";
+---
+
+<Layout title={title} description={description}>
+  <Header />
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="text-sm breadcrumbs mb-6">
+      <ol class="flex space-x-2 text-gray-600">
+        <li><a href="/" class="hover:text-blue-600">Főoldal</a></li>
+        <li class="before:content-['>'] before:mx-2">Blog</li>
+        <li class="before:content-['>'] before:mx-2 text-gray-800">Dilatációs hézagok</li>
+      </ol>
+    </nav>
+
+    <article class="prose prose-lg max-w-none">
+      <header class="mb-8">
+        <h1 class="text-4xl font-bold mb-4 text-gray-900">Dilatációs hézagok: Kritikus elem a betonszerkezetekben</h1>
+        <div class="flex items-center space-x-4 text-sm text-gray-600">
+          <span>2024. február 10.</span>
+          <span>•</span>
+          <span>Olvasási idő: 14 perc</span>
+        </div>
+      </header>
+
+      <div class="bg-orange-50 p-6 rounded-lg mb-8">
+        <h2 class="text-xl font-semibold mb-3 text-orange-900">Gyors áttekintés</h2>
+        <ul class="text-orange-800 space-y-1">
+          <li>✓ Dilatációs hézagok típusai és funkciói</li>
+          <li>✓ Méretezési szempontok és előírások</li>
+          <li>✓ Tömítési megoldások és anyagok</li>
+          <li>✓ Hibák megelőzése és javítása</li>
+          <li>✓ Költségkalkuláció és karbantartás</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Mi a dilatációs hézag és miért fontos?</h2>
+      
+      <p>A dilatációs hézagok tervezett szakadási helyek a betonszerkezetben, amelyek lehetővé teszik a hőmozgások, zsugorodás és egyéb deformációk kontrollált felvételét. Budapest kontinentális éghajlatában, ahol a hőmérséklet-ingadozás akár 60°C is lehet év közben, ezek kritikus jelentőségűek.</p>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Dilatációs hézagok funkciói</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-blue-800 mb-3">🌡️ Hőmozgások felvétele</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Hőtágulás kompenzálása nyáron</li>
+            <li>• Zsugorodás kezelése télen</li>
+            <li>• 0.01 mm/m/°C mozgás felvétele</li>
+            <li>• Repedések megelőzése</li>
+          </ul>
+        </div>
+        
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-green-800 mb-3">⚖️ Terhelések elosztása</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Egyenlőtlen süllyedések kezelése</li>
+            <li>• Dinamikus terhelések felvétele</li>
+            <li>• Szerkezeti feszültségek csökkentése</li>
+            <li>• Károsodások lokalizálása</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Dilatációs hézagok típusai</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Funkció szerinti csoportosítás</h3>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Hézag típusa</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Szélesség (mm)</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Alkalmazási terület</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Távolság (m)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Összehúzódási hézag</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3-5</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Padlók, járdák</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">4-6</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Szerkezeti hézag</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">20-50</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Épületrészek között</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">30-60</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Szigetelő hézag</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">10-20</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Fal-padló találkozás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">-</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Munkahézag</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">0-2</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Betonozási ütemek</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Méretezési szempontok</h3>
+
+      <p>A dilatációs hézagok megfelelő méretezése kulcsfontosságú a funkciójuk betöltéséhez:</p>
+
+      <div class="bg-yellow-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2">📏 Méretezési képlet:</h4>
+        <p class="text-sm font-mono bg-white p-2 rounded">Δ = α × L × ΔT</p>
+        <ul class="text-sm space-y-1 mt-2">
+          <li>• <strong>Δ:</strong> Várható mozgás (mm)</li>
+          <li>• <strong>α:</strong> Hőtágulási együttható (12×10⁻⁶/°C beton esetén)</li>
+          <li>• <strong>L:</strong> Szerkezeti hossz (mm)</li>
+          <li>• <strong>ΔT:</strong> Hőmérséklet-különbség (°C)</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Tömítési megoldások és anyagok</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Modern tömítőanyagok</h3>
+
+      <div class="space-y-4 mb-6">
+        <div class="border-l-4 border-blue-500 pl-4">
+          <h4 class="font-semibold text-blue-800">Poliuretán tömítők</h4>
+          <p class="text-sm">Rugalmas, időjárásálló megoldás külső felületekhez.</p>
+          <div class="grid grid-cols-2 gap-4 text-xs mt-2">
+            <div><strong>Mozgási képesség:</strong> ±25-50%</div>
+            <div><strong>Élettartam:</strong> 15-20 év</div>
+            <div><strong>Shore keménység:</strong> 15-40</div>
+            <div><strong>Költség:</strong> 1,800-3,200 Ft/fm</div>
+          </div>
+        </div>
+        
+        <div class="border-l-4 border-green-500 pl-4">
+          <h4 class="font-semibold text-green-800">Szilikon alapú tömítők</h4>
+          <p class="text-sm">UV-álló, vegyi ellenálló megoldás speciális alkalmazásokhoz.</p>
+          <div class="grid grid-cols-2 gap-4 text-xs mt-2">
+            <div><strong>Mozgási képesség:</strong> ±50%</div>
+            <div><strong>Élettartam:</strong> 20-25 év</div>
+            <div><strong>Hőállóság:</strong> -40°C - +180°C</div>
+            <div><strong>Költség:</strong> 2,500-4,500 Ft/fm</div>
+          </div>
+        </div>
+        
+        <div class="border-l-4 border-purple-500 pl-4">
+          <h4 class="font-semibold text-purple-800">Duzzadó szalagok</h4>
+          <p class="text-sm">Vízzáró megoldás munkahézagokhoz és csatlakozásokhoz.</p>
+          <div class="grid grid-cols-2 gap-4 text-xs mt-2">
+            <div><strong>Duzzadási arány:</strong> 200-600%</div>
+            <div><strong>Víznyomás:</strong> 5-8 bar</div>
+            <div><strong>Aktiválódási idő:</strong> 24-48 óra</div>
+            <div><strong>Költség:</strong> 3,500-6,000 Ft/fm</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Profilok és mechanikai megoldások</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-orange-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-orange-800 mb-3">🔧 Fém dilatációs profilok</h4>
+          <ul class="text-sm space-y-2">
+            <li>• Alumínium vagy rozsdamentes acél</li>
+            <li>• 10-100 mm mozgási tartomány</li>
+            <li>• Mechanikai védelem biztosítása</li>
+            <li>• Nagy forgalmú területekre</li>
+          </ul>
+          <p class="text-xs mt-2 text-gray-600"><strong>Költség:</strong> 8,000-25,000 Ft/fm</p>
+        </div>
+        
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-blue-800 mb-3">🏗️ Gumi profilok</h4>
+          <ul class="text-sm space-y-2">
+            <li>• EPDM vagy neoprén anyag</li>
+            <li>• 20-80 mm mozgási képesség</li>
+            <li>• Zajcsillapító hatás</li>
+            <li>• Közúti hidaknál alkalmazott</li>
+          </ul>
+          <p class="text-xs mt-2 text-gray-600"><strong>Költség:</strong> 12,000-35,000 Ft/fm</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Kivitelezési technológia</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Dilatációs hézag kialakításának lépései</h3>
+
+      <ol class="list-decimal pl-6 mb-6 space-y-3">
+        <li><strong>Tervezési fázis:</strong> Hézagok elhelyezésének meghatározása statikai tervek alapján</li>
+        <li><strong>Zsaluzás:</strong> Hézagképző elemek beépítése a zsaluzatba</li>
+        <li><strong>Vasalás megszakítása:</strong> Acélbetétek szakszerű lezárása</li>
+        <li><strong>Betonozás:</strong> Két ütemben vagy hézagképző elemmel</li>
+        <li><strong>Utókezelés:</strong> Hézagok tisztítása, élvédelem</li>
+        <li><strong>Tömítés:</strong> Primer, háttérkitöltő, tömítőanyag alkalmazása</li>
+        <li><strong>Védelem:</strong> Profilok vagy takarások elhelyezése</li>
+      </ol>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Kritikus kivitelezési pontok</h3>
+
+      <div class="bg-red-50 p-4 rounded-lg mb-6">
+        <h4 class="font-semibold mb-2 text-red-800">⚠️ Gyakori kivitelezési hibák:</h4>
+        <ul class="text-sm space-y-2">
+          <li>• <strong>Helytelen pozícionálás:</strong> Nem a tervezett helyen alakítják ki</li>
+          <li>• <strong>Alulmértezés:</strong> Túl keskeny hézag nem tudja felvenni a mozgásokat</li>
+          <li>• <strong>Rossz tömítés:</strong> Három oldalon tapadó tömítés repedezik</li>
+          <li>• <strong>Szennyeződés:</strong> Tisztítatlan felületre történő tömítés</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Speciális alkalmazások</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Ipari padlók dilatációi</h3>
+
+      <p>Nagy terhelésű ipari padlók különleges követelményeket támasztanak:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🏭 Raktárak</h4>
+          <ul class="text-sm space-y-1">
+            <li>• 6×6 m mezők</li>
+            <li>• Acél élvédelem</li>
+            <li>• 15-20 mm hézag</li>
+            <li>• Targoncaálló kivitel</li>
+          </ul>
+        </div>
+        
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🚗 Parkolóházak</h4>
+          <ul class="text-sm space-y-1">
+            <li>• 30-40 m távolság</li>
+            <li>• Vízzáró tömítés</li>
+            <li>• 30-50 mm mozgás</li>
+            <li>• Zajcsillapítás</li>
+          </ul>
+        </div>
+        
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">🏪 Áruházak</h4>
+          <ul class="text-sm space-y-1">
+            <li>• 8×8 m raszter</li>
+            <li>• Esztétikus profil</li>
+            <li>• 10-15 mm hézag</li>
+            <li>• Csúszásmentes</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Víztározók és medencék</h3>
+
+      <p>Vízzáró dilatációk kialakítása különleges technológiát igényel:</p>
+
+      <div class="space-y-4 mb-6">
+        <div class="border border-gray-200 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">💧 Vízzáró megoldások</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <strong>Belső tömítések:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>PVC vízstop szalag</li>
+                <li>Duzzadó bentonit profil</li>
+                <li>Injektálható gyanta</li>
+                <li>Kétkomponensű PU</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Külső védelem:</strong>
+              <ul class="list-disc list-inside mt-1">
+                <li>Bitumenes lemez átvezetés</li>
+                <li>EPDM mandzsetta</li>
+                <li>Folyékony membrán</li>
+                <li>Kristályosító adalék</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Karbantartás és javítás</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Rendszeres karbantartási feladatok</h3>
+
+      <div class="space-y-4 mb-6">
+        <div class="border-l-4 border-green-500 pl-4">
+          <h4 class="font-semibold">Évente:</h4>
+          <p class="text-sm">Szemrevételezés, szennyeződések eltávolítása, tömítés állapotának ellenőrzése</p>
+        </div>
+        
+        <div class="border-l-4 border-yellow-500 pl-4">
+          <h4 class="font-semibold">3-5 évente:</h4>
+          <p class="text-sm">Tömítőanyag rugalmasságának vizsgálata, kisebb javítások, profilok rögzítése</p>
+        </div>
+        
+        <div class="border-l-4 border-red-500 pl-4">
+          <h4 class="font-semibold">10-15 évente:</h4>
+          <p class="text-sm">Tömítés teljes cseréje, szerkezeti felülvizsgálat, profilok felújítása</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Javítási módszerek</h3>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Károsodás típusa</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Javítási módszer</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Költség (Ft/fm)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Tömítés elöregedése</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Teljes csere</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">3,500-6,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Él letörése</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Javítóhabarcs + élvédő</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">8,000-12,000</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Vízbetörés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Injektálás + új tömítés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">15,000-25,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Profil sérülése</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">Profil csere</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">12,000-30,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Költségkalkuláció</h2>
+
+      <h3 class="text-xl font-semibold mt-6 mb-3">Komplex dilatációs rendszer költségbecslése</h3>
+
+      <p>1000 m² ipari padló dilatációs rendszerének teljes költsége:</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="border border-gray-300 px-4 py-2 text-left">Tétel</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Mennyiség</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Egységár (Ft)</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Összesen (Ft)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Hézagvágás</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">400 fm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">800</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">320,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">PU tömítés</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">400 fm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">2,500</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">1,000,000</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Acél profil</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">50 fm</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">15,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">750,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">Munkadíj</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">1 klt</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">580,000</td>
+              <td class="border border-gray-300 px-4 py-2 text-center">580,000</td>
+            </tr>
+            <tr class="bg-blue-100">
+              <td class="border border-gray-300 px-4 py-2 font-semibold">Összesen</td>
+              <td class="border border-gray-300 px-4 py-2"></td>
+              <td class="border border-gray-300 px-4 py-2"></td>
+              <td class="border border-gray-300 px-4 py-2 text-center font-semibold">2,650,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-blue-50 p-4 rounded-lg mb-6">
+        <p><strong>Teljes költség:</strong> 2,650,000 Ft + ÁFA</p>
+        <p><strong>Fajlagos költség:</strong> 2,650 Ft/m² + ÁFA</p>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">Gyakran ismételt kérdések</h2>
+
+      <div class="space-y-6 mb-8">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Milyen gyakran kell dilatációs hézagot kialakítani?</h4>
+          <p class="text-sm">Betonpadlóknál 4-6 méterenként, épületszerkezeteknél 30-60 méterenként. A pontos távolság függ a szerkezettől, terheléstől és klimatikus viszonyoktól.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Mi történik, ha nincs dilatáció?</h4>
+          <p class="text-sm">Kontrollálatlan repedések, szerkezeti károk, felületi deformációk alakulhatnak ki. A javítás sokkal költségesebb, mint a megelőzés.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold mb-2">Mennyi ideig tart egy tömítés?</h4>
+          <p class="text-sm">Minőségi poliuretán tömítés 15-20 évig, szilikon 20-25 évig szolgál megfelelő karbantartás mellett.</p>
+        </div>
+      </div>
+
+      <div class="bg-orange-600 text-white p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-4">Professzionális dilatációs megoldások Budapesten</h3>
+        <p class="mb-4">Komplex dilatációs rendszerek tervezése és kivitelezése 15 éves tapasztalattal. Garanciális munkavégzés!</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div>
+            <strong>📞 Telefon:</strong> +36 1 234 5678<br>
+            <strong>📧 Email:</strong> info@betonozas-budapest.hu
+          </div>
+          <div>
+            <strong>🔧 Szolgáltatás:</strong> Teljes körű dilatációs munkák<br>
+            <strong>⏰ Garanciaidő:</strong> 5 év teljes garancia
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>

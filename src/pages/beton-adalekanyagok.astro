@@ -1,0 +1,929 @@
+---
+export const prerender = true;
+
+const title = "Beton Adalékanyagok - Komplett Útmutató 2024 | Betonozás Budapest";
+const description = "Minden tudnivaló a beton adalékanyagokról ✓ Folyósítók ✓ Gyorsítók ✓ Lassítók ✓ Vízálló adalékok ✓ Szakértői tanácsadás 15+ év tapasztalat alapján.";
+const canonical = "https://betonozasbudapest.hu/beton-adalekanyagok";
+
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <Header />
+  <div class="min-h-screen bg-gray-50">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-green-900 to-green-800 text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Beton Adalékanyagok</h1>
+          <p class="text-xl mb-8">
+            Komplett útmutató a beton adalékanyagokról - típusok, alkalmazás, adagolás és hatások. 
+            15+ év szakmai tapasztalat alapján összeállított részletes ismertető.
+          </p>
+          <div class="flex items-center justify-center space-x-6 text-sm">
+            <span class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              15 perc olvasás
+            </span>
+            <span class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 002 2z"></path>
+              </svg>
+              2024. március 22.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <div class="prose prose-lg max-w-none">
+              <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                A modern betonozásban az adalékanyagok kulcsszerepet játszanak. Ezek az anyagok jelentősen javíthatják 
+                a beton tulajdonságait, de helytelen alkalmazásukkal kárt is okozhatnak. Ebben a részletes útmutatóban 
+                bemutatjuk a legfontosabb adalékanyag-típusokat, alkalmazásukat és szakszerű adagolásukat.
+              </p>
+              
+              <div class="bg-green-50 border-l-4 border-green-500 p-6 my-8">
+                <h3 class="text-lg font-semibold text-green-800 mb-2">Mit tanul meg ebből a cikkből?</h3>
+                <ul class="text-green-700 space-y-2">
+                  <li>• A különböző adalékanyag-típusok hatásait és alkalmazási területeit</li>
+                  <li>• A helyes adagolási módszereket és arányokat</li>
+                  <li>• A kompatibilitási problémák elkerülését</li>
+                  <li>• A költséghatékony adalékanyag-választás szempontjait</li>
+                  <li>• A minőségbiztosítás és tárolás szabályait</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 1: Alapfogalmak -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">1. Mi az a Beton Adalékanyag?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Definíció és Szerepkör</h3>
+                <p class="text-gray-600 mb-4">
+                  A beton adalékanyagok olyan kémiai vegyületek, amelyeket kis mennyiségben adunk a betonhoz 
+                  annak érdekében, hogy megváltoztassuk bizonyos tulajdonságait:
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                  <li><strong>Keverhetőség javítása:</strong> Folyósítók, konzisztencia-módosítók</li>
+                  <li><strong>Kötési idő szabályozása:</strong> Gyorsítók, lassítók</li>
+                  <li><strong>Tartósság növelése:</strong> Vízálló adalékok, korróziógátlók</li>
+                  <li><strong>Speciális tulajdonságok:</strong> Légbuborékok, színezőanyagok</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Osztályozás</h3>
+                <p class="text-gray-600 mb-4">
+                  Az adalékanyagokat hatásuk szerint csoportosítjuk:
+                </p>
+                <div class="space-y-3">
+                  <div class="p-3 bg-blue-50 rounded-lg">
+                    <h4 class="font-semibold text-blue-800">Típus I (Vizcsökkentő/Folyósító)</h4>
+                    <p class="text-blue-700 text-sm">Víztartalom csökkentése konstans konzisztencia mellett</p>
+                  </div>
+                  <div class="p-3 bg-orange-50 rounded-lg">
+                    <h4 class="font-semibold text-orange-800">Típus II (Lassító)</h4>
+                    <p class="text-orange-700 text-sm">Kötési idő meghosszabbítása</p>
+                  </div>
+                  <div class="p-3 bg-red-50 rounded-lg">
+                    <h4 class="font-semibold text-red-800">Típus III (Gyorsító)</h4>
+                    <p class="text-red-700 text-sm">Kötési idő rövidítése</p>
+                  </div>
+                  <div class="p-3 bg-purple-50 rounded-lg">
+                    <h4 class="font-semibold text-purple-800">Típus IV (Légbuborékok)</h4>
+                    <p class="text-purple-700 text-sm">Fagyvédelem és dolgozhatóság javítása</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+              <h4 class="text-lg font-semibold text-yellow-800 mb-2">Fontos tudnivaló:</h4>
+              <p class="text-yellow-700">
+                Az adalékanyagok általában a cement tömegének 0,1-5%-át teszik ki, de hatásuk sokszor 
+                nagyobb, mint a mennyiségük alapján várható lenne. A pontos adagolás kulcsfontosságú!
+              </p>
+            </div>
+          </div>
+
+          <!-- Section 2: Folyósítók -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">2. Folyósítók és Vízcsökkentők</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Működési Elv</h3>
+              <p class="text-gray-600 mb-6">
+                A folyósítók csökkentik a cement részecskék közötti felületi feszültséget, ezáltal 
+                javítják a keverhetőséget vagy lehetővé teszik a víztartalom csökkentését.
+              </p>
+              
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 px-4 py-2 text-left">Típus</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Hatás</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Adagolás</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Alkalmazás</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Ligninszulfonát</td>
+                      <td class="border border-gray-300 px-4 py-2">5-12% vízcsökkentés</td>
+                      <td class="border border-gray-300 px-4 py-2">0,1-0,4%</td>
+                      <td class="border border-gray-300 px-4 py-2">Általános építkezések</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Naphtalin-szulfonát</td>
+                      <td class="border border-gray-300 px-4 py-2">12-20% vízcsökkentés</td>
+                      <td class="border border-gray-300 px-4 py-2">0,5-2%</td>
+                      <td class="border border-gray-300 px-4 py-2">Nagyobb szilárdság</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Melaminformaldhid</td>
+                      <td class="border border-gray-300 px-4 py-2">15-25% vízcsökkentés</td>
+                      <td class="border border-gray-300 px-4 py-2">0,5-2%</td>
+                      <td class="border border-gray-300 px-4 py-2">Nagy szilárdságú beton</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Polikarbokszilátos (PCE)</td>
+                      <td class="border border-gray-300 px-4 py-2">25-40% vízcsökkentés</td>
+                      <td class="border border-gray-300 px-4 py-2">0,1-0,8%</td>
+                      <td class="border border-gray-300 px-4 py-2">Önterülő beton</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Előnyök</h3>
+                <ul class="space-y-3 text-gray-600">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span><strong>Magasabb szilárdság:</strong> Alacsonyabb v/c tényezővel</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span><strong>Jobb dolgozhatóság:</strong> Könnyebb bedolgozás</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span><strong>Csökkent zsugorodás:</strong> Kevesebb víz miatt</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span><strong>Jobb tartósság:</strong> Tömörebb struktúra</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Alkalmazási Tippek</h3>
+                <div class="space-y-3">
+                  <div class="p-4 bg-blue-50 rounded-lg">
+                    <h4 class="font-semibold text-blue-800 mb-2">Adagolás módja</h4>
+                    <p class="text-blue-700 text-sm">
+                      A folyósítót mindig a keverővízzel együtt adagold, soha ne a száraz keverékhez!
+                    </p>
+                  </div>
+                  
+                  <div class="p-4 bg-green-50 rounded-lg">
+                    <h4 class="font-semibold text-green-800 mb-2">Kompatibilitás</h4>
+                    <p class="text-green-700 text-sm">
+                      PCE alapú folyósítók nem mindig kompatibilisek más adalékanyagokkal.
+                    </p>
+                  </div>
+                  
+                  <div class="p-4 bg-orange-50 rounded-lg">
+                    <h4 class="font-semibold text-orange-800 mb-2">Tárolás</h4>
+                    <p class="text-orange-700 text-sm">
+                      5-25°C között tárolandó, fagytól és közvetlen napsütéstől védve.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-red-50 border-l-4 border-red-500 p-6">
+              <h4 class="text-lg font-semibold text-red-800 mb-2">Figyelem - Túladagolás veszélyei:</h4>
+              <ul class="text-red-700 space-y-1">
+                <li>• Szegregáció (adalékanyag kiválása)</li>
+                <li>• Bleeding (víz felszínre kerülése)</li>
+                <li>• Lassult kötési idő</li>
+                <li>• Léghólyag képződés</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Section 3: Gyorsítók -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">3. Gyorsító Adalékanyagok</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Típusok és Hatásaik</h3>
+              <p class="text-gray-600 mb-6">
+                A gyorsítók meggyorsítják a cement hidratációját, rövidítve ezzel a kötési időt és 
+                fokozva a korai szilárdságfejlődést.
+              </p>
+              
+              <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-3">Kalcium-klorid (CaCl₂)</h4>
+                  <div class="space-y-2 text-sm">
+                    <p><strong>Adagolás:</strong> 1-2% cement tömeg</p>
+                    <p><strong>Hatás:</strong> 30-50% gyorsabb kötés</p>
+                    <p><strong>Figyelem:</strong> Korrózió veszély!</p>
+                  </div>
+                  
+                  <div class="mt-4 p-3 bg-red-50 rounded">
+                    <p class="text-red-700 text-xs">
+                      <strong>NE használd</strong> vasalt betonban a korrózió veszélye miatt!
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-3">Nátrium-aluminát</h4>
+                  <div class="space-y-2 text-sm">
+                    <p><strong>Adagolás:</strong> 2-4% cement tömeg</p>
+                    <p><strong>Hatás:</strong> Nagyon gyors kötés</p>
+                    <p><strong>Alkalmazás:</strong> Torkretbeton, javítás</p>
+                  </div>
+                  
+                  <div class="mt-4 p-3 bg-green-50 rounded">
+                    <p class="text-green-700 text-xs">
+                      <strong>Előny:</strong> Nem korrosív, vasalt betonban is használható.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-3">Kalcium-formát</h4>
+                  <div class="space-y-2 text-sm">
+                    <p><strong>Adagolás:</strong> 0,5-2% cement tömeg</p>
+                    <p><strong>Hatás:</strong> Mérsékelt gyorsítás</p>
+                    <p><strong>Előny:</strong> Nem toxikus</p>
+                  </div>
+                  
+                  <div class="mt-4 p-3 bg-blue-50 rounded">
+                    <p class="text-blue-700 text-xs">
+                      <strong>Ideális:</strong> Környezetbarát alkalmazásokhoz.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Alkalmazási Területek</h3>
+                <ul class="space-y-3 text-gray-600">
+                  <li><strong>Téli betonozás:</strong> 5°C alatti hőmérsékleten</li>
+                  <li><strong>Gyors építkezés:</strong> Korai zsaluzás-bontás</li>
+                  <li><strong>Javítóbetonok:</strong> Rövid leállási idő</li>
+                  <li><strong>Prefabrikáció:</strong> Gyorsabb gyártási ciklus</li>
+                  <li><strong>Vészhelyzeti javítások:</strong> Sürgős munkák</li>
+                </ul>
+                
+                <div class="mt-6 p-4 bg-yellow-50 rounded-lg">
+                  <h4 class="font-semibold text-yellow-800 mb-2">Költséghatékonyság</h4>
+                  <p class="text-yellow-700 text-sm">
+                    A gyorsítók drágábbak, de a munkaidő megtakarítás többnyire kompenzálja a költséget.
+                  </p>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Adagolási Útmutató</h3>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-blue-500 pl-4">
+                    <h4 class="font-semibold text-gray-800">Alacsony hőmérséklet (0-10°C)</h4>
+                    <p class="text-gray-600 text-sm">2-3% kalcium-formát vagy 1,5% nátrium-aluminát</p>
+                  </div>
+                  
+                  <div class="border-l-4 border-green-500 pl-4">
+                    <h4 class="font-semibold text-gray-800">Normál hőmérséklet (10-20°C)</h4>
+                    <p class="text-gray-600 text-sm">1-2% kalcium-formát vagy 0,5-1% nátrium-aluminát</p>
+                  </div>
+                  
+                  <div class="border-l-4 border-orange-500 pl-4">
+                    <h4 class="font-semibold text-gray-800">Meleg hőmérséklet (20+°C)</h4>
+                    <p class="text-gray-600 text-sm">0,5-1% kalcium-formát vagy ne használj gyorsítót</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-orange-50 border border-orange-200 rounded-lg p-6">
+              <h4 class="text-lg font-semibold text-orange-800 mb-2">Figyelmeztetés:</h4>
+              <p class="text-orange-700">
+                A gyorsítók használata csökkentheti a végső szilárdságot! Mindig végezz próbakeveréseket 
+                és szilárdságvizsgálatokat a nagyüzemi alkalmazás előtt.
+              </p>
+            </div>
+          </div>
+
+          <!-- Section 4: Lassítók -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">4. Lassító Adalékanyagok</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Működés és Típusok</h3>
+              <p class="text-gray-600 mb-6">
+                A lassítók késleltetik a cement hidratációját, ezáltal hosszabb dolgozhatósági időt 
+                biztosítanak, különösen meleg időjárási körülmények között.
+              </p>
+              
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Főbb típusok:</h4>
+                  <ul class="space-y-3 text-gray-600">
+                    <li>
+                      <strong>Glukonsav-származékok:</strong><br>
+                      <span class="text-sm">Enyhe lassító hatás, 1-3 óra</span>
+                    </li>
+                    <li>
+                      <strong>Borsav és sói:</strong><br>
+                      <span class="text-sm">Erős lassító, 6-12 óra is lehet</span>
+                    </li>
+                    <li>
+                      <strong>Szacharóz (cukor):</strong><br>
+                      <span class="text-sm">Természetes lassító, 2-6 óra</span>
+                    </li>
+                    <li>
+                      <strong>Ligninszulfonát:</strong><br>
+                      <span class="text-sm">Enyhe lassító + folyósító hatás</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Hatás időtartama:</h4>
+                  <div class="space-y-3">
+                    <div class="p-3 bg-blue-50 rounded-lg">
+                      <h5 class="font-medium text-blue-800">Rövid távú (1-4 óra)</h5>
+                      <p class="text-blue-700 text-sm">Glukonsav, enyhe ligninszulfonát</p>
+                    </div>
+                    
+                    <div class="p-3 bg-green-50 rounded-lg">
+                      <h5 class="font-medium text-green-800">Közepes távú (4-8 óra)</h5>
+                      <p class="text-green-700 text-sm">Szacharóz, erősebb glukonsav</p>
+                    </div>
+                    
+                    <div class="p-3 bg-orange-50 rounded-lg">
+                      <h5 class="font-medium text-orange-800">Hosszú távú (8+ óra)</h5>
+                      <p class="text-orange-700 text-sm">Borsav, speciális készítmények</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Alkalmazási Útmutató</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 px-4 py-2 text-left">Hőmérséklet</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Adalékanyag</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Adagolás</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Várható lassítás</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">25-30°C</td>
+                      <td class="border border-gray-300 px-4 py-2">Glukonsav-nátrium</td>
+                      <td class="border border-gray-300 px-4 py-2">0,05-0,1%</td>
+                      <td class="border border-gray-300 px-4 py-2">1-3 óra</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">30-35°C</td>
+                      <td class="border border-gray-300 px-4 py-2">Szacharóz</td>
+                      <td class="border border-gray-300 px-4 py-2">0,02-0,05%</td>
+                      <td class="border border-gray-300 px-4 py-2">2-4 óra</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">35+°C</td>
+                      <td class="border border-gray-300 px-4 py-2">Borsav</td>
+                      <td class="border border-gray-300 px-4 py-2">0,01-0,03%</td>
+                      <td class="border border-gray-300 px-4 py-2">4-8 óra</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Előnyök</h3>
+                <ul class="space-y-2 text-green-700">
+                  <li>• Hosszabb bedolgozási idő</li>
+                  <li>• Jobb hidratáció (végső szilárdság nő)</li>
+                  <li>• Kevesebb hideghegesztés veszély</li>
+                  <li>• Egyenletesebb minőség nagyobb tömegben</li>
+                  <li>• Csökkent hőfejlődés</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Alkalmazási Területek</h3>
+                <ul class="space-y-2 text-gray-600">
+                  <li>• Nagy tömegű betonozások</li>
+                  <li>• Meleg időjárási betonozás</li>
+                  <li>• Hosszú szállítási idő</li>
+                  <li>• Komplex zsaluzások</li>
+                  <li>• Folyamatos betonozás</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 5: Speciális adalékok -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">5. Speciális Adalékanyagok</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Légbuborék-képzők</h3>
+                <p class="text-gray-600 mb-4">
+                  Apró, stabil légbuborékokat képeznek a betonban, javítva a fagyállóságot:
+                </p>
+                
+                <div class="space-y-3 mb-4">
+                  <div class="p-3 bg-blue-50 rounded-lg">
+                    <h4 class="font-semibold text-blue-800">Működési elv</h4>
+                    <p class="text-blue-700 text-sm">
+                      A fagyvíz tágulását a légbuborékok felfogják, megakadályozva a repedésképződést.
+                    </p>
+                  </div>
+                  
+                  <div class="p-3 bg-green-50 rounded-lg">
+                    <h4 class="font-semibold text-green-800">Optimális légbuborék-tartalom</h4>
+                    <p class="text-green-700 text-sm">
+                      4-6% a teljes térfogatban, 0,1-0,3 mm átmérőjű buborékok.
+                    </p>
+                  </div>
+                </div>
+
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Főbb típusok:</h4>
+                <ul class="text-gray-600 space-y-1 text-sm">
+                  <li>• <strong>Vinsol gyanta:</strong> Természetes eredetű</li>
+                  <li>• <strong>Szintetikus detergensek:</strong> Állandó hatás</li>
+                  <li>• <strong>Protein-alapú:</strong> Környezetbarát</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Vízálló Adalékok</h3>
+                <p class="text-gray-600 mb-4">
+                  A beton vízáteresztését csökkentő adalékanyagok:
+                </p>
+                
+                <div class="space-y-3 mb-4">
+                  <div class="p-3 bg-purple-50 rounded-lg">
+                    <h4 class="font-semibold text-purple-800">Kristályosító adalékok</h4>
+                    <p class="text-purple-700 text-sm">
+                      Vízzel érintkezve kristályokat képeznek a kapillárokban.
+                    </p>
+                  </div>
+                  
+                  <div class="p-3 bg-orange-50 rounded-lg">
+                    <h4 class="font-semibold text-orange-800">Hidrofobizáló szerek</h4>
+                    <p class="text-orange-700 text-sm">
+                      Vízlepergető réteget képeznek a beton felületén.
+                    </p>
+                  </div>
+                </div>
+
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Alkalmazási területek:</h4>
+                <ul class="text-gray-600 space-y-1 text-sm">
+                  <li>• <strong>Pincefal:</strong> Talajvíz elleni védelem</li>
+                  <li>• <strong>Víztartó:</strong> Ivóvíz tárolók</li>
+                  <li>• <strong>Alagút:</strong> Külső víznyomás</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Színező Adalékok</h3>
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">Vas-oxid pigmentek</h4>
+                  <div class="space-y-2 text-sm text-gray-600">
+                    <p><strong>Színek:</strong> Sárga, piros, barna, fekete</p>
+                    <p><strong>Adagolás:</strong> 2-8% cement tömeg</p>
+                    <p><strong>Előny:</strong> UV-álló, mész-álló</p>
+                  </div>
+                </div>
+                
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">Króm-oxid zöld</h4>
+                  <div class="space-y-2 text-sm text-gray-600">
+                    <p><strong>Szín:</strong> Különböző zöld árnyalatok</p>
+                    <p><strong>Adagolás:</strong> 3-5% cement tömeg</p>
+                    <p><strong>Előny:</strong> Nagyon stabil szín</p>
+                  </div>
+                </div>
+                
+                <div class="p-4 border border-gray-200 rounded-lg">
+                  <h4 class="font-semibold text-gray-800 mb-2">Kobaltkék</h4>
+                  <div class="space-y-2 text-sm text-gray-600">
+                    <p><strong>Szín:</strong> Intenzív kék</p>
+                    <p><strong>Adagolás:</strong> 1-3% cement tömeg</p>
+                    <p><strong>Figyelem:</strong> Drága, kis mennyiségben</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-6">
+              <h4 class="text-lg font-semibold text-blue-800 mb-2">Költséghaszon elemzés:</h4>
+              <div class="text-blue-700 space-y-2">
+                <p>• <strong>Légbuborékok:</strong> +5-10% alapanyag költség, de 20-30% hosszabb élettartam</p>
+                <p>• <strong>Vízálló adalékok:</strong> +15-25% költség, de nincs utólagos szigetelés</p>
+                <p>• <strong>Színezőanyagok:</strong> +10-50% költség, esztétikai érték növekedése</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 6: Kompatibilitás -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">6. Adalékanyag Kompatibilitás</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Kompatibilitási Mátrix</h3>
+              <p class="text-gray-600 mb-6">
+                Nem minden adalékanyag keverhető szabadon egymással. Az alábbi táblázat 
+                segít a helyes kombinációk kiválasztásában:
+              </p>
+              
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300 text-sm">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 px-3 py-2">Adalék 1 / Adalék 2</th>
+                      <th class="border border-gray-300 px-3 py-2">Folyósító</th>
+                      <th class="border border-gray-300 px-3 py-2">Gyorsító</th>
+                      <th class="border border-gray-300 px-3 py-2">Lassító</th>
+                      <th class="border border-gray-300 px-3 py-2">Légbuborék</th>
+                      <th class="border border-gray-300 px-3 py-2">Vízálló</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-gray-300 px-3 py-2 font-semibold">Folyósító</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-gray-200">-</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-green-100">✓ Jó</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-red-100">✗ Rossz</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-yellow-100">⚠ Óvatos</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-green-100">✓ Jó</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-3 py-2 font-semibold">Gyorsító</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-green-100">✓ Jó</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-gray-200">-</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-red-100">✗ Tilos</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-green-100">✓ Jó</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-green-100">✓ Jó</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-3 py-2 font-semibold">Lassító</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-red-100">✗ Rossz</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-red-100">✗ Tilos</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-gray-200">-</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-yellow-100">⚠ Óvatos</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-green-100">✓ Jó</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-3 py-2 font-semibold">Légbuborék</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-yellow-100">⚠ Óvatos</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-green-100">✓ Jó</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-yellow-100">⚠ Óvatos</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-gray-200">-</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-green-100">✓ Jó</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-3 py-2 font-semibold">Vízálló</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-green-100">✓ Jó</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-green-100">✓ Jó</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-green-100">✓ Jó</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-green-100">✓ Jó</td>
+                      <td class="border border-gray-300 px-3 py-2 bg-gray-200">-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Tesztelési Protokoll</h3>
+                <div class="space-y-4">
+                  <div class="p-4 bg-blue-50 rounded-lg">
+                    <h4 class="font-semibold text-blue-800 mb-2">1. Laboratóriumi teszt</h4>
+                    <p class="text-blue-700 text-sm">
+                      Kis mennyiségű próbakeverékek készítése különböző adalékanyag-kombinációkkal.
+                    </p>
+                  </div>
+                  
+                  <div class="p-4 bg-green-50 rounded-lg">
+                    <h4 class="font-semibold text-green-800 mb-2">2. Konzisztencia vizsgálat</h4>
+                    <p class="text-green-700 text-sm">
+                      Slump teszt, terülési vizsgálat az adalékok hatásának értékeléséhez.
+                    </p>
+                  </div>
+                  
+                  <div class="p-4 bg-orange-50 rounded-lg">
+                    <h4 class="font-semibold text-orange-800 mb-2">3. Kötési idő mérés</h4>
+                    <p class="text-orange-700 text-sm">
+                      Vicat-tű próba a kezdeti és végső kötési idő meghatározásához.
+                    </p>
+                  </div>
+                  
+                  <div class="p-4 bg-purple-50 rounded-lg">
+                    <h4 class="font-semibold text-purple-800 mb-2">4. Szilárdságvizsgálat</h4>
+                    <p class="text-purple-700 text-sm">
+                      7 és 28 napos nyomószilárdság mérése kockákon vagy hengereken.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Gyakori Problémák</h3>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-red-500 pl-4">
+                    <h4 class="font-semibold text-red-800">Adalékanyag kicsapódás</h4>
+                    <p class="text-red-700 text-sm">
+                      <strong>Ok:</strong> Inkompatibilis adalékok<br>
+                      <strong>Megoldás:</strong> Külön adagolás, kompatibilitás ellenőrzés
+                    </p>
+                  </div>
+                  
+                  <div class="border-l-4 border-orange-500 pl-4">
+                    <h4 class="font-semibold text-orange-800">Váratlan kötési idő</h4>
+                    <p class="text-orange-700 text-sm">
+                      <strong>Ok:</strong> Gyorsító-lassító ellentétes hatás<br>
+                      <strong>Megoldás:</strong> Csak egyik típus használata
+                    </p>
+                  </div>
+                  
+                  <div class="border-l-4 border-blue-500 pl-4">
+                    <h4 class="font-semibold text-blue-800">Csökkent szilárdság</h4>
+                    <p class="text-blue-700 text-sm">
+                      <strong>Ok:</strong> Túl sok adalékanyag<br>
+                      <strong>Megoldás:</strong> Adagolási mennyiség csökkentése
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 7: Költséganalízis -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">7. Adalékanyagok Költséganalízise</h2>
+            
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold text-gray-700 mb-4">Költség-haszon Elemzés</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 px-4 py-2 text-left">Adalékanyag típus</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Költség (Ft/m³)</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Haszon</th>
+                      <th class="border border-gray-300 px-4 py-2 text-left">Megtérülési idő</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Alapvető folyósító</td>
+                      <td class="border border-gray-300 px-4 py-2">800-1.500 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">15-20% cement megtakarítás</td>
+                      <td class="border border-gray-300 px-4 py-2">Azonnali</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Nagy hatású folyósító (PCE)</td>
+                      <td class="border border-gray-300 px-4 py-2">2.000-4.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">25-30% cement megtakarítás</td>
+                      <td class="border border-gray-300 px-4 py-2">1-2 hét</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Gyorsító adalék</td>
+                      <td class="border border-gray-300 px-4 py-2">1.200-2.500 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">1-2 nap munkaidő megtakarítás</td>
+                      <td class="border border-gray-300 px-4 py-2">1-3 nap</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                      <td class="border border-gray-300 px-4 py-2">Légbuborékképző</td>
+                      <td class="border border-gray-300 px-4 py-2">600-1.200 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">20-30 év hosszabb élettartam</td>
+                      <td class="border border-gray-300 px-4 py-2">5-10 év</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Vízálló adalék</td>
+                      <td class="border border-gray-300 px-4 py-2">2.500-5.000 Ft</td>
+                      <td class="border border-gray-300 px-4 py-2">Szigetelés elhagyása</td>
+                      <td class="border border-gray-300 px-4 py-2">Azonnali</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Gazdasági Előnyök</h3>
+                <ul class="space-y-3 text-gray-600">
+                  <li>
+                    <strong>Cementmegtakarítás:</strong><br>
+                    <span class="text-sm">Folyósítókkal 15-30% cement spórolható meg</span>
+                  </li>
+                  <li>
+                    <strong>Munkaidő csökkentés:</strong><br>
+                    <span class="text-sm">Gyorsítókkal 1-2 nappal rövidebb építési idő</span>
+                  </li>
+                  <li>
+                    <strong>Minőség javulás:</strong><br>
+                    <span class="text-sm">Kevesebb utólagos javítás szükséges</span>
+                  </li>
+                  <li>
+                    <strong>Élettartam növekedés:</strong><br>
+                    <span class="text-sm">Légbuborékos beton 2-3x tovább tart</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Beszerzési Tanácsok</h3>
+                <div class="space-y-3">
+                  <div class="p-3 bg-green-50 rounded-lg">
+                    <h4 class="font-semibold text-green-800">Nagykereskedőktől vásárolj</h4>
+                    <p class="text-green-700 text-sm">20-40% olcsóbb lehet a kiskereskedelemnél</p>
+                  </div>
+                  
+                  <div class="p-3 bg-blue-50 rounded-lg">
+                    <h4 class="font-semibold text-blue-800">Mennyiségi kedvezmény</h4>
+                    <p class="text-blue-700 text-sm">1 tonna fölött 10-15% kedvezmény elérhető</p>
+                  </div>
+                  
+                  <div class="p-3 bg-orange-50 rounded-lg">
+                    <h4 class="font-semibold text-orange-800">Évszakos beszerzés</h4>
+                    <p class="text-orange-700 text-sm">Téli hónapokban gyakran akciós árak</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+              <h4 class="text-lg font-semibold text-green-800 mb-2">ROI Kalkulátor:</h4>
+              <p class="text-green-700 mb-3">
+                Egy átlagos 100 m³ betonozásnál a megfelelő adalékanyag használatával:
+              </p>
+              <ul class="text-green-700 space-y-1">
+                <li>• <strong>Adalékanyag költség:</strong> 80.000-150.000 Ft</li>
+                <li>• <strong>Cement megtakarítás:</strong> 120.000-200.000 Ft</li>
+                <li>• <strong>Munkaidő megtakarítás:</strong> 150.000-300.000 Ft</li>
+                <li>• <strong>Nettó megtakarítás:</strong> 190.000-350.000 Ft</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Összefoglalás</h2>
+            <div class="prose prose-lg max-w-none">
+              <p class="text-gray-700 leading-relaxed mb-6">
+                A beton adalékanyagok helyes alkalmazása jelentősen javíthatja a beton tulajdonságait és 
+                gazdaságosságát. A 15+ év tapasztalat alapján kijelenthető, hogy a kezdeti többletköltség 
+                többnyire már rövid távon megtérül.
+              </p>
+              
+              <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
+                <h3 class="text-lg font-semibold text-blue-800 mb-3">Legfontosabb ajánlások:</h3>
+                <ul class="text-blue-700 space-y-2">
+                  <li>• <strong>Mindig teszteld:</strong> Új adalékanyagokat próbakeverékben</li>
+                  <li>• <strong>Pontos adagolás:</strong> Mérleggel vagy adagolóval dolgozz</li>
+                  <li>• <strong>Kompatibilitás:</strong> Ellenőrizd az adalékok együttműködését</li>
+                  <li>• <strong>Gazdaságosság:</strong> Számold ki a valós költség-haszon arányt</li>
+                  <li>• <strong>Tárolás:</strong> Megfelelő körülmények között tárold az adalékokat</li>
+                </ul>
+              </div>
+              
+              <p class="text-gray-700 leading-relaxed">
+                Az adalékanyagok világa folyamatosan fejlődik. Érdemes nyomon követni az újdonságokat és 
+                rendszeresen frissíteni a tudásodat a legoptimálisabb megoldások alkalmazása érdekében.
+              </p>
+            </div>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="bg-gradient-to-r from-green-600 to-green-800 text-white rounded-lg p-8 text-center">
+            <h3 class="text-2xl font-bold mb-4">Adalékanyag Tanácsadásra van Szüksége?</h3>
+            <p class="text-xl mb-8">
+              15+ év tapasztalat alapján segítünk a legmegfelelőbb adalékanyagok kiválasztásában!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="/kapcsolat" 
+                class="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Ingyenes Konzultáció
+              </a>
+              <a 
+                href="tel:+36123456789" 
+                class="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 transition-colors"
+              >
+                📞 Hívjon Minket
+              </a>
+            </div>
+          </div>
+
+          <!-- Related Articles -->
+          <div class="mt-16">
+            <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Kapcsolódó Cikkek</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-blue-200 flex items-center justify-center">
+                  <span class="text-blue-800 font-medium">Betonkeverés</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Betonkeverés Titkai és Módszerei
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Részletes útmutató a tökéletes betonkeverék összeállításához és elkészítéséhez.
+                  </p>
+                  <a href="/betonkeveres-titkai" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-purple-200 flex items-center justify-center">
+                  <span class="text-purple-800 font-medium">Minőségbiztosítás</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Betonozás Minőségbiztosítási Útmutató
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Vizsgálatok, tesztek és ellenőrzési pontok a hibátlan kivitelezésért.
+                  </p>
+                  <a href="/minosegbiztositas" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-48 bg-green-200 flex items-center justify-center">
+                  <span class="text-green-800 font-medium">Környezetbarát</span>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Környezetbarát Betonok és Adalékok
+                  </h4>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Fenntartható betonozási megoldások és zöld adalékanyagok alkalmazása.
+                  </p>
+                  <a href="/kornyezetbarat-betonok" class="text-blue-600 font-medium hover:text-blue-800 text-sm">
+                    Tovább olvasom →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</Layout>
