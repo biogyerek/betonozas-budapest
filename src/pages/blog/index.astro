@@ -8,14 +8,164 @@ import { blogPosts, getCategories, getLatestPosts } from '../../data/blogPosts.j
 // Get latest blog posts for display
 const latestBlogPosts = getLatestPosts(12);
 const categories = getCategories();
+
+// Function to get unique image for each blog post
+function getBlogPostImage(category, slug) {
+  // Unique image for each blog post based on slug
+  const imageMap = {
+    // Téli munkák kategória
+    'teli-betonozas': 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Szakmai tudás kategória
+    'betonkeveres-titkai': 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&h=300&fit=crop&crop=center&q=80',
+    'beton-adalekanyagok': 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=300&fit=crop&crop=center&q=80',
+    'utokezeles-fontossaga': 'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=400&h=300&fit=crop&crop=center&q=80',
+    'szerkezeti-problemak': 'https://images.unsplash.com/photo-1503387837-b154d5074bd2?w=400&h=300&fit=crop&crop=center&q=80',
+    'dilatacios-hezagok': 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Környezetvédelem
+    'kornyezetbarat-betonok': 'https://images.unsplash.com/photo-1569163139201-de6de5ba0a85?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Minőségbiztosítás
+    'minosegbiztositas': 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Költségoptimalizálás
+    'koltsegoptimalizalas': 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Felújítás
+    'rehabilitacio-megerosites': 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Hibaelhárítás
+    'repedesek-okai': 'https://images.unsplash.com/photo-1625726411847-8cbb60cc71e6?w=400&h=300&fit=crop&crop=center&q=80',
+    'betonozasi-hibak': 'https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Szigetelés
+    'szigeteles-modjai': 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Összehasonlítás
+    'terko-vs-beton': 'https://images.unsplash.com/photo-1629236714692-c39ba4c60332?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Tervezés
+    'terasz-tervezes': 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop&crop=center&q=80',
+    'kocsibeallo-meretek': 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Dekorációs
+    'beton-polirozas': 'https://images.unsplash.com/photo-1600607686527-6fb886090705?w=400&h=300&fit=crop&crop=center&q=80',
+    'szines-diszbetonok': 'https://images.unsplash.com/photo-1600585152915-d208bec867a1?w=400&h=300&fit=crop&crop=center&q=80',
+    'beton-szinezes': 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Vízgazdálkodás
+    'vizelvezes': 'https://images.unsplash.com/photo-1581092918484-8313a28de73c?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Javítás
+    'beton-javitas': 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Alapozás
+    'alapozas-budapest': 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&h=300&fit=crop&crop=center&q=80',
+    'alapozas-lepései': 'https://images.unsplash.com/photo-1572981335478-8b2ed8e2e4b8?w=400&h=300&fit=crop&crop=center&q=80',
+    'lemezalapok-budapest': 'https://images.unsplash.com/photo-1625726411847-8cbb60cc71e6?w=400&h=300&fit=crop&crop=center&q=80',
+    'pontalapok-budapest': 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop&crop=center&q=80',
+    'savalapok-budapest': 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Vízszigetelés
+    'vizszigeteles-betonozas': 'https://images.unsplash.com/photo-1581092918484-8313a28de73c?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Ipari megoldások
+    'ipari-padlobetonozas-budapest': 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=400&h=300&fit=crop&crop=center&q=80',
+    'ipari-padlobetonok': 'https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=400&h=300&fit=crop&crop=center&q=80',
+    'ipari-padloburkolatok': 'https://images.unsplash.com/photo-1600607686527-6fb886090705?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Általános
+    'kocsibeallo-betonozas-budapest': 'https://images.unsplash.com/photo-1629236714692-c39ba4c60332?w=400&h=300&fit=crop&crop=center&q=80',
+    'terasz-betonozas-budapest': 'https://images.unsplash.com/photo-1600585152915-d208bec867a1?w=400&h=300&fit=crop&crop=center&q=80',
+    'jarda-betonozas-budapest': 'https://images.unsplash.com/photo-1581092335478-8b2ed8e2e4b8?w=400&h=300&fit=crop&crop=center&q=80',
+    'udvar-betonozas-budapest': 'https://images.unsplash.com/photo-1569163139201-de6de5ba0a85?w=400&h=300&fit=crop&crop=center&q=80',
+    'betonpumpa-szolgaltatas-budapest': 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop&crop=center&q=80',
+    'aljzatbetonozas-budapest': 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop&crop=center&q=80',
+    'specialis-betonozas-budapest': 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Aljzatkészítés
+    'estrich-aljzat-budapest': 'https://images.unsplash.com/photo-1625726411847-8cbb60cc71e6?w=400&h=300&fit=crop&crop=center&q=80',
+    'padlofutes-aljzat-budapest': 'https://images.unsplash.com/photo-1572981335478-8b2ed8e2e4b8?w=400&h=300&fit=crop&crop=center&q=80',
+    'padlofutes-betonozas': 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Speciális betonok
+    'gyorskoto-beton-budapest': 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=300&fit=crop&crop=center&q=80',
+    'konnyubeton-budapest': 'https://images.unsplash.com/photo-1600585152915-d208bec867a1?w=400&h=300&fit=crop&crop=center&q=80',
+    'vizallo-beton-budapest': 'https://images.unsplash.com/photo-1581092918484-8313a28de73c?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Felületkezelés
+    'betoncsiszolas-budapest': 'https://images.unsplash.com/photo-1600607686527-6fb886090705?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Előregyártás
+    'betonelem-gyartas': 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=400&h=300&fit=crop&crop=center&q=80',
+    
+    // Technológiák
+    'betonozasi-technologiak': 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop&crop=center&q=80',
+    'zsaluzas-budapest': 'https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=400&h=300&fit=crop&crop=center&q=80'
+  };
+  
+  return imageMap[slug] || 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&h=300&fit=crop&crop=center&q=80';
+}
+
+// Function to get appropriate alt text for blog post images
+function getBlogPostImageAlt(category, title) {
+  const altTextMap = {
+    // Eredeti kategóriák
+    'Téli munkák': `Téli betonozási munkálatok - ${title}`,
+    'Szakmai tudás': `Szakmai betonozási tudás - ${title}`, 
+    'Környezetvédelem': `Környezetbarát betonozási megoldások - ${title}`,
+    'Minőségbiztosítás': `Betonozási minőségbiztosítás - ${title}`,
+    'Költségoptimalizálás': `Betonozási költségoptimalizálás - ${title}`,
+    'Utókezelés': `Betonfelületek utókezelése - ${title}`,
+    'Szerkezeti problémák': `Betonszerkezeti problémák megoldása - ${title}`,
+    'Rehabilitáció': `Beton rehabilitáció és megerősítés - ${title}`,
+    'Hibakeresés': `Betonozási hibák felderítése - ${title}`,
+    'Szigetelés': `Betonszigetelési megoldások - ${title}`,
+    'Összehasonlítás': `Betonozási technológiák összehasonlítása - ${title}`,
+    
+    // Új kategóriák
+    'Felújítás': `Beton rehabilitáció és felújítás - ${title}`,
+    'Hibaelhárítás': `Betonozási hibaelhárítás - ${title}`,
+    'Tervezés': `Betonszerkezet tervezés - ${title}`,
+    'Dekorációs': `Dekoratív betonozási megoldások - ${title}`,
+    'Vízgazdálkodás': `Betonozási vízgazdálkodás - ${title}`,
+    'Javítás': `Betonszerkezet javítás - ${title}`,
+    'Alapozás': `Betonozási alapozási munkálatok - ${title}`,
+    'Vízszigetelés': `Beton vízszigetelési megoldások - ${title}`,
+    'Ipari megoldások': `Ipari betonozási megoldások - ${title}`,
+    'Általános': `Általános betonozási szolgáltatások - ${title}`,
+    'Aljzatkészítés': `Betonaljzat készítés - ${title}`,
+    'Speciális betonok': `Speciális betonkeverékek - ${title}`,
+    'Felületkezelés': `Betonfelület kezelés - ${title}`,
+    'Előregyártás': `Betonelem előregyártás - ${title}`,
+    'Technológiák': `Modern betonozási technológiák - ${title}`
+  };
+  
+  return altTextMap[category] || `Betonozási szakértelem - ${title}`;
+}
 ---
 
 <Layout title="Blog - Betonozás Budapest" description="Hasznos cikkek, tippek és útmutatók betonozásról. Szakértői tanácsok és praktikus információk építési projektjeidhez.">
     <Header />
     
     <!-- Blog Header -->
-    <section class="bg-gradient-to-br from-concrete-50 to-concrete-100 py-16 lg:py-20">
-        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="relative bg-gradient-to-br from-concrete-50 to-concrete-100 py-16 lg:py-20 overflow-hidden">
+        <div class="absolute inset-0">
+            <picture>
+                <source srcset="/images/blog/blog-hero.webp" type="image/webp">
+                <img 
+                    src="/images/blog/blog-hero.jpg" 
+                    alt="Betonozási munkálatok - Szakértői blog" 
+                    class="w-full h-full object-cover opacity-20"
+                    loading="eager"
+                    width="1200"
+                    height="600"
+                >
+            </picture>
+            <div class="absolute inset-0 bg-gradient-to-br from-concrete-50/90 to-concrete-100/80"></div>
+        </div>
+        <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h1 class="text-4xl lg:text-5xl font-bold text-concrete-800 font-heading mb-6">
                     Betonozási Blog
@@ -33,8 +183,18 @@ const categories = getCategories();
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 {latestBlogPosts.map((post) => (
                     <article class="bg-white border border-concrete-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                        <div class="bg-concrete-200 h-48 flex items-center justify-center">
-                            <span class="text-concrete-500">Blog kép placeholder</span>
+                        <div class="relative h-48 overflow-hidden">
+                            <picture>
+                                <source srcset={getBlogPostImage(post.category, post.slug)} type="image/webp">
+                                <img 
+                                    src={getBlogPostImage(post.category, post.slug)} 
+                                    alt={getBlogPostImageAlt(post.category, post.title)}
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                    loading="lazy"
+                                    width="400"
+                                    height="300"
+                                >
+                            </picture>
                         </div>
                         <div class="p-6">
                             <div class="flex items-center justify-between mb-3">
