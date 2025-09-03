@@ -6,6 +6,9 @@ const description = "Téli betonozás szakmai útmutató ✓ Fagyvédő adaléko
 const canonical = "https://betonozasbudapest.hu/teli-betonozas";
 
 import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
+import EnhancedContent from '../components/EnhancedContent.astro';
 ---
 
 <Layout title={title} description={description} canonical={canonical}>
@@ -45,11 +48,11 @@ import Layout from '../components/Layout.astro';
           <!-- Introduction -->
           <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
             <div class="prose prose-lg max-w-none">
-              <p class="text-xl text-gray-700 leading-relaxed mb-6">
-                A téli betonozás különleges kihívásokat jelent, de megfelelő felkészüléssel és 
-                szakmai tudással akár -10°C alatt is lehet minőségi munkát végezni. A kulcs 
-                a fagypont alatti hőmérséklet hatásainak megértése és a megfelelő technológiák alkalmazása.
-              </p>
+              <EnhancedContent 
+                currentSlug="teli-betonozas" 
+                content="A téli betonozás különleges kihívásokat jelent, de megfelelő felkészüléssel és szakmai tudással akár -10°C alatt is lehet minőségi munkát végezni. A kulcs a fagypont alatti hőmérséklet hatásainak megértése és a megfelelő technológiák alkalmazása." 
+                className="text-xl text-gray-700 leading-relaxed mb-6"
+              />
               
               <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
                 <h3 class="text-lg font-semibold text-blue-800 mb-2">Miért fontos a téli betonozás ismerete?</h3>
@@ -74,10 +77,11 @@ import Layout from '../components/Layout.astro';
               <div class="grid md:grid-cols-2 gap-8">
                 <div>
                   <h4 class="text-lg font-semibold text-gray-800 mb-3">A Hidratációs Folyamat</h4>
-                  <p class="text-gray-600 mb-4">
-                    A beton szilárdságát a cement és víz között lejátszódó kémiai reakció, 
-                    a hidratáció biztosítja. Ez a folyamat erősen hőmérsékletfüggő:
-                  </p>
+                  <EnhancedContent 
+                    currentSlug="teli-betonozas" 
+                    content="A beton szilárdságát a cement és víz között lejátszódó kémiai reakció, a hidratáció biztosítja. Ez a folyamat erősen hőmérsékletfüggő:" 
+                    className="text-gray-600 mb-4"
+                  />
                   <ul class="space-y-2 text-gray-600">
                     <li><strong>+20°C:</strong> Optimális hidratációs sebesség</li>
                     <li><strong>+10°C:</strong> 50%-kal lassabb folyamat</li>
@@ -89,9 +93,11 @@ import Layout from '../components/Layout.astro';
                 
                 <div>
                   <h4 class="text-lg font-semibold text-gray-800 mb-3">Fagy Káros Hatásai</h4>
-                  <p class="text-gray-600 mb-4">
-                    Ha a friss beton megfagy, visszafordíthatatlan károk keletkeznek:
-                  </p>
+                  <EnhancedContent 
+                    currentSlug="teli-betonozas" 
+                    content="Ha a friss beton megfagy, visszafordíthatatlan károk keletkeznek:" 
+                    className="text-gray-600 mb-4"
+                  />
                   <ul class="space-y-2 text-gray-600">
                     <li><strong>Térfogat növekedés:</strong> Víz megfagyva 9%-kal több helyet foglal</li>
                     <li><strong>Kristályszerkezet tönkremenetele:</strong> Belső feszültségek</li>
@@ -103,11 +109,11 @@ import Layout from '../components/Layout.astro';
               
               <div class="mt-8 bg-red-50 border border-red-200 rounded-lg p-6">
                 <h4 class="text-lg font-semibold text-red-800 mb-2">Kritikus időszak:</h4>
-                <p class="text-red-700">
-                  Az első 24-48 óra a legkritikusabb! Ha ebben az időszakban megfagy a beton, 
-                  a károk már nem orvosolhatók. A beton minimum 5 MPa nyomószilárdságot kell 
-                  elérjen a fagykár elkerüléséhez.
-                </p>
+                <EnhancedContent 
+                  currentSlug="teli-betonozas" 
+                  content="Az első 24-48 óra a legkritikusabb! Ha ebben az időszakban megfagy a beton, a károk már nem orvosolhatók. A beton minimum 5 MPa nyomószilárdságot kell elérjen a fagykár elkerüléséhez." 
+                  className="text-red-700"
+                />
               </div>
             </div>
 
@@ -854,11 +860,11 @@ import Layout from '../components/Layout.astro';
           <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
             <h2 class="text-3xl font-bold text-gray-800 mb-6">Összefoglalás</h2>
             <div class="prose prose-lg max-w-none">
-              <p class="text-gray-700 leading-relaxed mb-6">
-                A téli betonozás sikeres végrehajtása alapos felkészülést, megfelelő technológiai 
-                ismereteket és folyamatos figyelmet igényel. A modern adalékok és fűtési 
-                technológiák lehetővé teszik, hogy akár -10°C alatt is minőségi munkát végezzünk.
-              </p>
+              <EnhancedContent 
+                currentSlug="teli-betonozas" 
+                content="A téli betonozás sikeres végrehajtása alapos felkészülést, megfelelő technológiai ismereteket és folyamatos figyelmet igényel. A modern adalékok és fűtési technológiák lehetővé teszik, hogy akár -10°C alatt is minőségi munkát végezzünk." 
+                className="text-gray-700 leading-relaxed mb-6"
+              />
               
               <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
                 <h3 class="text-lg font-semibold text-blue-800 mb-3">A sikeres téli betonozás kulcsai:</h3>
@@ -871,11 +877,11 @@ import Layout from '../components/Layout.astro';
                 </ul>
               </div>
               
-              <p class="text-gray-700 leading-relaxed">
-                A téli betonozás nem akadály, hanem kihívás, amely megfelelő felkészültséggel 
-                leküzdhető. A befektetett energia és költségek megtérülnek a folyamatos 
-                munkavégzés lehetőségében és a határidők betartásában.
-              </p>
+              <EnhancedContent 
+                currentSlug="teli-betonozás" 
+                content="A téli betonozás nem akadály, hanem kihívás, amely megfelelő felkészültséggel leküzdhető. A befektetett energia és költségek megtérülnek a folyamatos munkavégzés lehetőségében és a határidők betartásában." 
+                className="text-gray-700 leading-relaxed"
+              />
             </div>
           </div>
 
@@ -962,4 +968,5 @@ import Layout from '../components/Layout.astro';
       </div>
     </article>
   </div>
+  <RelatedPosts currentSlug="teli-betonozas" />
 </Layout>

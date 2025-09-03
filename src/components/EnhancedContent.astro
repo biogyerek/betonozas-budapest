@@ -1,0 +1,54 @@
+---
+import { processContentForLinks, getRelatedArticles } from '../utils/contentProcessor.js';
+
+export interface Props {
+  content: string;
+  currentSlug: string;
+  maxLinksPerParagraph?: number;
+  className?: string;
+}
+
+const { 
+  content, 
+  currentSlug, 
+  maxLinksPerParagraph = 2,
+  className = ''
+} = Astro.props;
+
+// Tartalom feldolgozása természetes linkekkel
+const processedContent = processContentForLinks(content, currentSlug, maxLinksPerParagraph);
+---
+
+<div class={`enhanced-content ${className}`} set:html={processedContent} />
+
+<style>
+  .enhanced-content :global(a) {
+    @apply text-primary-600 hover:text-primary-700 underline;
+    @apply transition-colors duration-200;
+  }
+  
+  .enhanced-content :global(a:hover) {
+    @apply decoration-2;
+  }
+  
+  /* Gondoskodunk róla, hogy a generált linkek jól nézzenek ki */
+  .enhanced-content :global(p) {
+    @apply mb-6 leading-relaxed;
+  }
+  
+  .enhanced-content :global(ul) {
+    @apply mb-6 space-y-2;
+  }
+  
+  .enhanced-content :global(ol) {
+    @apply mb-6 space-y-2;
+  }
+  
+  .enhanced-content :global(h3) {
+    @apply text-xl font-semibold text-concrete-800 mb-4 mt-8;
+  }
+  
+  .enhanced-content :global(h4) {
+    @apply text-lg font-semibold text-concrete-800 mb-3 mt-6;
+  }
+</style>

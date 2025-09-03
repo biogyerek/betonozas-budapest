@@ -1,6 +1,8 @@
 ---
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
+import EnhancedContent from '../components/EnhancedContent.astro';
 
 const title = "Betonozási hibák és megelőzésük Budapesten | Gyakori problémák 2024";
 const description = "Átfogó útmutató a betonozási hibákhoz: okok, megelőzés, javítás. Szakértői tippek a minőségi betonozáshoz Budapesten.";
@@ -41,7 +43,11 @@ const description = "Átfogó útmutató a betonozási hibákhoz: okok, megelőz
 
       <h2 class="text-2xl font-bold mt-8 mb-4">A betonozási hibák gazdasági hatása</h2>
       
-      <p>A betonozási hibák nemcsak műszaki problémákat okoznak, hanem jelentős gazdasági veszteségeket is. Budapest építési projektjeiben a hibás betonozás miatti károk évente milliárd forintokat emésztenek fel. A megelőzés mindig gazdaságosabb, mint a javítás.</p>
+      <EnhancedContent 
+        currentSlug="betonozasi-hibak" 
+        content="A betonozási hibák nemcsak műszaki problémákat okoznak, hanem jelentős gazdasági veszteségeket is. Budapest építési projektjeiben a hibás betonozás miatti károk évente milliárd forintokat emésztenek fel. A megelőzés mindig gazdaságosabb, mint a javítás."
+        className=""
+      />
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
         <div class="bg-red-100 p-4 rounded-lg text-center">
@@ -609,4 +615,5 @@ const description = "Átfogó útmutató a betonozási hibákhoz: okok, megelőz
       </div>
     </article>
   </main>
+  <RelatedPosts currentSlug="betonozasi-hibak" />
 </Layout>

@@ -1,6 +1,7 @@
 ---
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
+import EnhancedContent from '../components/EnhancedContent.astro';
 ---
 
 <Layout title="Speciális Betonozás Budapest - Gyorskötő, Könnyű és Vízálló Beton">
@@ -42,12 +43,11 @@ import Header from '../components/Header.astro';
       </h2>
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <p class="text-lg text-concrete-600 mb-6">
-            A speciális betonozási technológiák olyan helyzetekben válnak szükségessé, ahol a hagyományos betonkeverékek nem felelnek meg az elvárásoknak. Budapesten a városi környezet és az épületek sajátos igényei miatt gyakran alkalmazunk speciális betonokat.
-          </p>
-          <p class="text-lg text-concrete-600 mb-6">
-            Csapatunk több éves tapasztalattal rendelkezik különleges adalékanyagok és technológiák alkalmazásában, amelyek lehetővé teszik a gyors, könnyű vagy vízálló megoldások megvalósítását.
-          </p>
+          <EnhancedContent 
+            currentSlug="specialis-betonozas-budapest" 
+            content="A speciális betonozási technológiák olyan helyzetekben válnak szükségessé, ahol a hagyományos betonkeverékek nem felelnek meg az elvárásoknak. Budapesten a városi környezet és az épületek sajátos igényei miatt gyakran alkalmazunk speciális betonokat. Csapatunk több éves tapasztalattal rendelkezik beton adalékanyagok és betonozási technológiák alkalmazásában, amelyek lehetővé teszik a gyorskötő beton, könnyűbeton vagy vízálló beton megoldások megvalósítását."
+            className="space-y-6"
+          />
           <div class="grid grid-cols-2 gap-6">
             <div class="text-center">
               <div class="text-3xl font-bold text-primary-600 mb-2">150+</div>
@@ -244,9 +244,7 @@ import Header from '../components/Header.astro';
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- CTA szekció -->
+  </section><!-- CTA szekció -->
   <section class="py-16 lg:py-24 bg-primary-600 text-white">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl lg:text-4xl font-bold mb-6 font-heading">

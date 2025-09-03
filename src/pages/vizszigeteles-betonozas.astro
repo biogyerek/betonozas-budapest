@@ -1,6 +1,8 @@
 ---
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
+import EnhancedContent from '../components/EnhancedContent.astro';
 ---
 
 <Layout title="Vízszigetelés és betonozás Budapest | Vízhatlan beton megoldások" description="Vízszigetelés és betonozás Budapesten. Vízhatlan beton, kellérszigeteléss, alapfalak vízzárása. 18 év tapasztalat vízellenes betonszerkezetek készítésében.">
@@ -43,13 +45,17 @@ import Header from '../components/Header.astro';
           <div class="prose prose-lg max-w-none mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-6">Vízszigetelés és betonozás kapcsolata</h2>
             
-            <p class="text-gray-700 leading-relaxed mb-6">
-              A vízszigetelés és betonozás szorosan összefügg Budapesten, ahol a talajvíz szintje és a városi környezet különös kihívásokat jelent. A megfelelő vízzárás nem csak a beton védelmét szolgálja, hanem az egész épület hosszú távú stabilitását és lakhatóságát biztosítja.
-            </p>
+            <EnhancedContent 
+              currentSlug="vizszigeteles-betonozas" 
+              content="A vízszigetelés és betonozás szorosan összefügg Budapesten, ahol a talajvíz szintje és a városi környezet különös kihívásokat jelent. A megfelelő vízzárás nem csak a beton védelmét szolgálja, hanem az egész épület hosszú távú stabilitását és lakhatóságát biztosítja."
+              className="text-gray-700 leading-relaxed mb-6"
+            />
 
-            <p class="text-gray-700 leading-relaxed mb-8">
-              Szakértő csapatunk 18 éve foglalkozik vízszigetelési és betonozási munkákkal Budapesten. Tapasztalataink alapján a vízszigetelés tervezését már a betonozás előtt el kell kezdeni, hogy optimális megoldást érjünk el.
-            </p>
+            <EnhancedContent 
+              currentSlug="vizszigeteles-betonozas" 
+              content="Szakértő csapatunk 18 éve foglalkozik vízszigetelési és betonozási munkákkal Budapesten. Tapasztalataink alapján a vízszigetelés tervezését már a betonozás előtt el kell kezdeni, hogy optimális megoldást érjünk el."
+              className="text-gray-700 leading-relaxed mb-8"
+            />
           </div>
 
           <!-- CTA Section -->
@@ -75,4 +81,5 @@ import Header from '../components/Header.astro';
       </div>
     </section>
   </main>
+  <RelatedPosts currentSlug="vizszigeteles-betonozas" />
 </Layout>

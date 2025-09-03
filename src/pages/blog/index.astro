@@ -2,6 +2,7 @@
 import Layout from '../../components/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import CTA from '../../components/CTA.astro';
 import { blogPosts, getCategories, getLatestPosts } from '../../data/blogPosts.js';
 
 // Get latest blog posts for display
@@ -29,7 +30,7 @@ const categories = getCategories();
     <!-- Blog Posts Grid -->
     <section class="py-16 lg:py-24 bg-white">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 {latestBlogPosts.map((post) => (
                     <article class="bg-white border border-concrete-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
                         <div class="bg-concrete-200 h-48 flex items-center justify-center">
@@ -68,6 +69,12 @@ const categories = getCategories();
         </div>
     </section>
 
+    <!-- Call to Action -->
+    <CTA 
+        title="Kérd be betonozási árajánlatodat!"
+        description="Professzionális betonozási szolgáltatások Budapesten és környékén. Ingyenes helyszíni felmérés és részletes árajánlat."
+    />
+
     <!-- Newsletter CTA -->
     <section class="py-16 lg:py-20 bg-primary-600 text-white">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,7 +85,7 @@ const categories = getCategories();
                 <p class="text-xl mb-8 opacity-90">
                     Kapd meg elsőként az új cikkeinket és szakértői tippjeinket!
                 </p>
-                <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
                     <input 
                         type="email" 
                         placeholder="E-mail címed" 

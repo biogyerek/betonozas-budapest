@@ -1,17 +1,6 @@
 // Real blog posts data extracted from the existing blog post files
 export const blogPosts = [
   {
-    slug: "innovativ-technikak",
-    title: "Innovatív betonozási technikák Budapest",
-    description: "Innovatív betonozási technikák Budapesten. 3D nyomtatott beton, önterülő beton, fibereszközbeton, robotizált betonozás. A jövő építési technológiái már most!",
-    excerpt: "A jövő építési technológiái már itt vannak! 3D nyomtatott beton, robotizált betonozás és önterülő betonok forradalmasítják az építőipart.",
-    date: "2025-01-31",
-    category: "Innovációs technológiák",
-    readTime: "18 perc",
-    author: "Betonozás Budapest",
-    image: "/blog/innovativ-technikak.jpg"
-  },
-  {
     slug: "teli-betonozas",
     title: "Téli Betonozás Titkai",
     description: "Téli betonozás szakmai útmutató ✓ Fagyvédő adalékok ✓ Fűtött zsaluzás ✓ -10°C alatti munkavégzés ✓ Minőségi betonozás hidegben.",
@@ -21,17 +10,6 @@ export const blogPosts = [
     readTime: "14 perc",
     author: "Betonozás Budapest",
     image: "/blog/teli-betonozas.jpg"
-  },
-  {
-    slug: "fenntarthato-betonozas",
-    title: "Fenntartható betonozás Budapest",
-    description: "Fenntartható betonozás Budapesten. Környezetbarát beton, újrahasznosított adalékanyagok, alacsony CO₂ kibocsátás. Zöld építés szakértője 15 éve.",
-    excerpt: "Környezetbarát betonozási megoldások a fenntartható építésért. Újrahasznosított anyagok és alacsony CO₂ kibocsátású betonok.",
-    date: "2025-03-18",
-    category: "Környezetvédelem",
-    readTime: "16 perc",
-    author: "Betonozás Budapest",
-    image: "/blog/fenntarthato-betonozas.jpg"
   },
   {
     slug: "betonkeveres-titkai",

@@ -1,0 +1,124 @@
+---
+import { blogPosts } from '../data/blogPosts.js';
+
+export interface Props {
+  currentSlug: string;
+  limit?: number;
+}
+
+const { currentSlug, limit = 3 } = Astro.props;
+
+// Find current post
+const currentPost = blogPosts.find(post => post.slug === currentSlug);
+if (!currentPost) return null;
+
+// Get related posts by category and other criteria
+function getRelatedPosts(current, allPosts, maxPosts = 3) {
+  const related = [];
+  
+  // 1. Same category posts (excluding current)
+  const sameCategory = allPosts.filter(post => 
+    post.category === current.category && 
+    post.slug !== current.slug
+  );
+  
+  // 2. If not enough same category, add from similar categories
+  const similarCategories = {
+    "Alapozás": ["Szakmai tudás", "Technológiák"],
+    "Szakmai tudás": ["Alapozás", "Hibaelhárítás", "Minőségbiztosítás"],
+    "Technológiák": ["Alapozás", "Ipari megoldások", "Speciális betonok"],
+    "Speciális betonok": ["Technológiák", "Szakmai tudás"],
+    "Ipari megoldások": ["Technológiák", "Aljzatkészítés"],
+    "Aljzatkészítés": ["Ipari megoldások", "Általános"],
+    "Hibaelhárítás": ["Szakmai tudás", "Javítás"],
+    "Javítás": ["Hibaelhárítás", "Felújítás"],
+    "Felújítás": ["Javítás", "Szakmai tudás"]
+  };
+  
+  // Add same category posts first
+  related.push(...sameCategory.slice(0, Math.min(maxPosts, sameCategory.length)));
+  
+  // If we need more posts, add from similar categories
+  if (related.length < maxPosts) {
+    const similarCats = similarCategories[current.category] || [];
+    const similarPosts = allPosts.filter(post => 
+      similarCats.includes(post.category) && 
+      post.slug !== current.slug &&
+      !related.some(r => r.slug === post.slug)
+    );
+    
+    related.push(...similarPosts.slice(0, maxPosts - related.length));
+  }
+  
+  // If still need more, add latest posts (excluding current and already added)
+  if (related.length < maxPosts) {
+    const otherPosts = allPosts.filter(post => 
+      post.slug !== current.slug &&
+      !related.some(r => r.slug === post.slug)
+    );
+    
+    related.push(...otherPosts.slice(0, maxPosts - related.length));
+  }
+  
+  return related.slice(0, maxPosts);
+}
+
+const relatedPosts = getRelatedPosts(currentPost, blogPosts, limit);
+---
+
+{relatedPosts.length > 0 && (
+  <section class="py-8 sm:py-12 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">
+        Kapcsolódó cikkek
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {relatedPosts.map((post) => (
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="bg-gray-200 h-40 flex items-center justify-center">
+              <span class="text-gray-500 text-sm">Blog kép</span>
+            </div>
+            
+            <div class="p-4 sm:p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded-full">
+                  {post.category}
+                </span>
+                <span class="text-xs text-gray-500">
+                  {post.readTime}
+                </span>
+              </div>
+              
+              <h3 class="text-lg font-semibold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
+                <a href={`/${post.slug}`} class="line-clamp-2">
+                  {post.title}
+                </a>
+              </h3>
+              
+              <p class="text-sm text-gray-600 mb-4 line-clamp-3">
+                {post.excerpt}
+              </p>
+              
+              <div class="flex items-center justify-between">
+                <a 
+                  href={`/${post.slug}`} 
+                  class="text-blue-600 hover:text-blue-700 font-medium text-sm inline-flex items-center"
+                >
+                  Tovább olvasom
+                  <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                </a>
+                
+                <time class="text-xs text-gray-500">
+                  {new Date(post.date).toLocaleDateString('hu-HU')}
+                </time>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

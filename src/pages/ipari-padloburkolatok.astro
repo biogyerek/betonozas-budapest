@@ -7,6 +7,8 @@ const canonical = "https://betonozasbudapest.hu/ipari-padloburkolatok";
 
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
+import EnhancedContent from '../components/EnhancedContent.astro';
 ---
 
 <Layout title={title} description={description} canonical={canonical}>
@@ -1105,4 +1107,5 @@ import Header from '../components/Header.astro';
       </div>
     </article>
   </div>
+  <RelatedPosts currentSlug="ipari-padloburkolatok" />
 </Layout>

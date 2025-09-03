@@ -1,0 +1,54 @@
+---
+// Intelligens tartalom komponens, amely automatikusan feldolgozza a slotból érkező tartalmat
+import { processContentForLinks } from '../utils/contentProcessor.js';
+
+export interface Props {
+  currentSlug: string;
+  maxLinksPerParagraph?: number;
+  className?: string;
+}
+
+const { 
+  currentSlug, 
+  maxLinksPerParagraph = 2,
+  className = 'space-y-6 text-lg text-concrete-600'
+} = Astro.props;
+
+// A slot tartalmát nem tudjuk itt feldolgozni server-side,
+// ezért egy wrapper komponenst készítünk, amely client-side dolgozza fel
+---
+
+<div class={`smart-content ${className}`} data-current-slug={currentSlug} data-max-links={maxLinksPerParagraph}>
+  <slot />
+</div>
+
+<script>
+  import { processContentForLinks } from '../utils/contentProcessor.js';
+  
+  // Client-side content processing
+  document.addEventListener('DOMContentLoaded', () => {
+    const smartContentElements = document.querySelectorAll('.smart-content');
+    
+    smartContentElements.forEach(element => {
+      const currentSlug = element.getAttribute('data-current-slug');
+      const maxLinks = parseInt(element.getAttribute('data-max-links') || '2');
+      
+      if (currentSlug) {
+        const originalContent = element.innerHTML;
+        const processedContent = processContentForLinks(originalContent, currentSlug, maxLinks);
+        element.innerHTML = processedContent;
+      }
+    });
+  });
+</script>
+
+<style>
+  .smart-content :global(a) {
+    @apply text-primary-600 hover:text-primary-700 underline;
+    @apply transition-colors duration-200;
+  }
+  
+  .smart-content :global(a:hover) {
+    @apply decoration-2;
+  }
+</style>

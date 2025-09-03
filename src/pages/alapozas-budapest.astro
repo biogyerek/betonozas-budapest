@@ -1,6 +1,7 @@
 ---
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
+import EnhancedContent from '../components/EnhancedContent.astro';
 ---
 
 <Layout title="Alapozás Budapest - Pontalap, Sávalapos és Lemezalapos Kivitelezés">
@@ -42,12 +43,13 @@ import Header from '../components/Header.astro';
       </h2>
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <p class="text-lg text-concrete-600 mb-6">
-            Az alapozás minden építmény legfontosabb része, amely biztosítja a szerkezet stabilitását és tartósságát. Budapesten a változatos talajviszonyok miatt különösen fontos a megfelelő alapozási technológia kiválasztása.
-          </p>
-          <p class="text-lg text-concrete-600 mb-6">
-            Cégünk 15+ éves tapasztalattal rendelkezik az alapozási munkák terén, és minden projektnél előzetes talajvizsgálatot végzünk a legmegfelelőbb alapozási módszer kiválasztása érdekében.
-          </p>
+          <EnhancedContent 
+            currentSlug="alapozas-budapest" 
+            content={`Az alapozás minden építmény legfontosabb része, amely biztosítja a szerkezet stabilitását és tartósságát. Budapesten a változatos talajviszonyok miatt különösen fontos a megfelelő betonozási technológia kiválasztása.
+
+Cégünk 15+ éves tapasztalattal rendelkezik az alapozási munkák terén, és minden projektnél előzetes talajvizsgálatot végzünk a legmegfelelőbb alapozási módszer kiválasztása érdekében. Speciális betonozás esetén különös figyelmet fordítunk a minőségbiztosítás betartására.`}
+            className="space-y-6"
+          />
           <div class="grid grid-cols-2 gap-6">
             <div class="text-center">
               <div class="text-3xl font-bold text-primary-600 mb-2">500+</div>
@@ -241,9 +243,7 @@ import Header from '../components/Header.astro';
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- CTA szekció -->
+  </section><!-- CTA szekció -->
   <section class="py-16 lg:py-24 bg-primary-600 text-white">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl lg:text-4xl font-bold mb-6 font-heading">

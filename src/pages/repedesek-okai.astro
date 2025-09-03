@@ -1,6 +1,9 @@
 ---
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
+import EnhancedContent from '../components/EnhancedContent.astro';
+import CTA from '../components/CTA.astro';
 
 const title = "Betonrepedések okai és megelőzése Budapesten | Szakértői útmutató 2024";
 const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, hőhatások, terhelés, talajmozgás. Megelőzés és korai beavatkozás Budapesten.";
@@ -8,7 +11,7 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
 
 <Layout title={title} description={description}>
   <Header />
-  <main class="max-w-4xl mx-auto px-4 py-8">
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
     <!-- Breadcrumb -->
     <nav class="text-sm breadcrumbs mb-6">
       <ol class="flex space-x-2 text-gray-600">
@@ -20,10 +23,10 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
 
     <article class="prose prose-lg max-w-none">
       <header class="mb-8">
-        <h1 class="text-4xl font-bold mb-4 text-gray-900">Betonrepedések okai és megelőzésük Budapesten</h1>
-        <div class="flex items-center space-x-4 text-sm text-gray-600">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-gray-900">Betonrepedések okai és megelőzésük Budapesten</h1>
+        <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-1 sm:space-y-0 text-sm text-gray-600">
           <span>2024. február 20.</span>
-          <span>•</span>
+          <span class="hidden sm:inline">•</span>
           <span>Olvasási idő: 17 perc</span>
         </div>
       </header>
@@ -39,11 +42,11 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </ul>
       </div>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4">Betonrepedések típusai és osztályozásuk</h2>
+      <h2 class="text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4">Betonrepedések típusai és osztályozásuk</h2>
       
-      <p>A betonrepedések Budapest területén különösen gyakori problémát jelentenek az agyagos talajviszonyok és a kontinentális éghajlat miatt. A repedések pontos osztályozása és okainak megértése kulcsfontosságú a megfelelő megelőzési és javítási stratégia kidolgozásához.</p>
+      <p>A betonrepedések Budapest területén különösen gyakori problémát jelentenek az agyagos talajviszonyok és a kontinentális éghajlat miatt. A repedések pontos osztályozása és okainak megértése kulcsfontosságú a megfelelő <a href="/minosegbiztositas" class="text-blue-600 hover:text-blue-800 underline">megelőzési és javítási stratégia</a> kidolgozásához.</p>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Repedések időbeli megjelenése szerint</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Repedések időbeli megjelenése szerint</h3>
 
       <div class="overflow-x-auto mb-6">
         <table class="w-full border-collapse border border-gray-300">
@@ -84,9 +87,9 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </table>
       </div>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4">Zsugorodási repedések</h2>
+      <h2 class="text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4">Zsugorodási repedések</h2>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Műveleti zsugorodás</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Műveleti zsugorodás</h3>
 
       <p>A műveleti zsugorodás a betonozás közbeni és közvetlenül utáni vízvesztés következménye:</p>
 
@@ -95,7 +98,7 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
           <h4 class="font-semibold text-red-800">Vérvíz gyors elpárolgása</h4>
           <p class="text-sm">Magas hőmérséklet és szél hatására a felület gyorsan szárad, miközben a beton belseje még műveleti állapotban van.</p>
           <div class="grid grid-cols-2 gap-4 text-xs mt-2">
-            <div><strong>Kritikus feltételek:</strong> >25°C, <50% RH, >25 km/h szél</div>
+            <div><strong>Kritikus feltételek:</strong> &gt;25°C, &lt;50% RH, &gt;25 km/h szél</div>
             <div><strong>Megelőzés:</strong> Párásítás, szélvédelem, késleltetett simítás</div>
           </div>
         </div>
@@ -110,7 +113,7 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </div>
       </div>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Autogén zsugorodás</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Autogén zsugorodás</h3>
 
       <div class="bg-blue-50 p-4 rounded-lg mb-6">
         <h4 class="font-semibold mb-2">🔬 Autogén zsugorodás mechanizmusa:</h4>
@@ -122,9 +125,9 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </ul>
       </div>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4">Hőmérsékletváltozások okozta repedések</h2>
+      <h2 class="text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4">Hőmérsékletváltozások okozta repedések</h2>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Budapest klimatikus viszonyainak hatása</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Budapest klimatikus viszonyainak hatása</h3>
 
       <p>Budapest kontinentális éghajlatában a hőmérséklet-ingadozások különösen nagy kihívást jelentenek:</p>
 
@@ -150,7 +153,7 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </div>
       </div>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Hőmozgások számítása</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Hőmozgások számítása</h3>
 
       <div class="bg-gray-50 p-4 rounded-lg mb-6">
         <h4 class="font-semibold mb-2">📐 Hőtágulási számítás:</h4>
@@ -163,9 +166,9 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </ul>
       </div>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4">Terheléses repedések</h2>
+      <h2 class="text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4">Terheléses repedések</h2>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Statikus túlterhelések</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Statikus túlterhelések</h3>
 
       <div class="space-y-4 mb-6">
         <div class="border border-gray-200 p-4 rounded-lg">
@@ -217,7 +220,7 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </div>
       </div>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Dinamikus terhelések hatása</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Dinamikus terhelések hatása</h3>
 
       <div class="overflow-x-auto mb-6">
         <table class="w-full border-collapse border border-gray-300">
@@ -258,9 +261,9 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </table>
       </div>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4">Talaj- és alapozási problémák</h2>
+      <h2 class="text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4">Talaj- és alapozási problémák</h2>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Budapest agyagos talajainak jellemzői</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Budapest agyagos talajainak jellemzői</h3>
 
       <p>A főváros területének nagy részét agyagos és lössz talajok jellemzik, amelyek különleges kihívásokat jelentenek:</p>
 
@@ -286,7 +289,7 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </div>
       </div>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Süllyedési repedések típusai</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Süllyedési repedések típusai</h3>
 
       <div class="space-y-4 mb-6">
         <div class="border-l-4 border-red-500 pl-4">
@@ -308,9 +311,9 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </div>
       </div>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4">Kémiai és biológiai károsodások</h2>
+      <h2 class="text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4">Kémiai és biológiai károsodások</h2>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Alkáli-szilika reakció (ASR)</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Alkáli-szilika reakció (ASR)</h3>
 
       <p>Az alkáli-szilika reakció Budapest területén különösen veszélyes lehet az itt található reaktív adalékanyagok miatt:</p>
 
@@ -324,7 +327,7 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </ul>
       </div>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Korrózió okozta repedések</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Korrózió okozta repedések</h3>
 
       <div class="overflow-x-auto mb-6">
         <table class="w-full border-collapse border border-gray-300">
@@ -359,9 +362,9 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </table>
       </div>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4">Megelőzési stratégiák</h2>
+      <h2 class="text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4">Megelőzési stratégiák</h2>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Tervezési szintű megelőzés</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Tervezési szintű megelőzés</h3>
 
       <div class="space-y-4 mb-6">
         <div class="border border-gray-200 p-4 rounded-lg">
@@ -413,7 +416,7 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </div>
       </div>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Kivitelezési megelőzés</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Kivitelezési megelőzés</h3>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div class="bg-green-50 p-4 rounded-lg">
@@ -439,9 +442,9 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </div>
       </div>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4">Korai felismerés és monitoring</h2>
+      <h2 class="text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4">Korai felismerés és monitoring</h2>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Vizuális ellenőrzési rendszer</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Vizuális ellenőrzési rendszer</h3>
 
       <div class="bg-yellow-50 p-4 rounded-lg mb-6">
         <h4 class="font-semibold mb-2">👁️ Rendszeres szemrevételezés:</h4>
@@ -453,7 +456,7 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </ul>
       </div>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Műszeres monitoring rendszerek</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Műszeres monitoring rendszerek</h3>
 
       <div class="overflow-x-auto mb-6">
         <table class="w-full border-collapse border border-gray-300">
@@ -494,9 +497,9 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </table>
       </div>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4">Gazdasági szempontok</h2>
+      <h2 class="text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4">Gazdasági szempontok</h2>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Megelőzés vs. javítás költségei</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Megelőzés vs. javítás költségei</h3>
 
       <p>A betonrepedések megelőzésének és javításának költségelemzése 1000 m² beton padló esetén:</p>
 
@@ -533,7 +536,7 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </table>
       </div>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Kockázatértékelési mátrix</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Kockázatértékelési mátrix</h3>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div class="bg-red-50 p-4 rounded-lg">
@@ -542,7 +545,7 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
             <li>• <strong>Agyagos talaj:</strong> Duzzadás, süllyedés</li>
             <li>• <strong>Magas víz/cement arány:</strong> >0.6</li>
             <li>• <strong>Reaktív adalékanyagok:</strong> ASR veszély</li>
-            <li>• <strong>Hiányos utókezelés:</strong> <7 nap</li>
+            <li>• <strong>Hiányos utókezelés:</strong> &lt;7 nap</li>
             <li>• <strong>Szélsőséges klíma:</strong> Gyors hőváltozások</li>
           </ul>
         </div>
@@ -559,9 +562,9 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </div>
       </div>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4">Esetpéldák Budapestről</h2>
+      <h2 class="text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4">Esetpéldák Budapestről</h2>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">Tipikus káresetek elemzése</h3>
+      <h3 class="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">Tipikus káresetek elemzése</h3>
 
       <div class="space-y-6 mb-6">
         <div class="border border-gray-200 p-4 rounded-lg">
@@ -615,7 +618,7 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
         </div>
       </div>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4">Gyakran ismételt kérdések</h2>
+      <h2 class="text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4">Gyakran ismételt kérdések</h2>
 
       <div class="space-y-6 mb-8">
         <div class="bg-gray-50 p-4 rounded-lg">
@@ -636,6 +639,14 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
 
       <div class="bg-yellow-600 text-white p-6 rounded-lg">
         <h3 class="text-xl font-semibold mb-4">Betonrepedés-diagnosztika és megelőzés Budapesten</h3>
+        
+        <p class="mb-4">
+          A szakszerű <a href="/beton-javitas" class="text-blue-600 hover:text-blue-800 underline">betonjavítás</a> és 
+          <a href="/szerkezeti-problemak" class="text-blue-600 hover:text-blue-800 underline">szerkezeti megerősítés</a> 
+          elengedhetetlen a tartós megoldásokhoz. További információért olvassa el 
+          <a href="/rehabilitacio-megerosites" class="text-blue-600 hover:text-blue-800 underline">betonrehabilitációs</a> 
+          útmutatónkat is.
+        </p>
         <p class="mb-4">Szakértői vizsgálatok és megelőzési tervek készítése 20 éves tapasztalattal. Korai felismerés és gazdaságos megoldások!</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
           <div>
@@ -650,4 +661,15 @@ const description = "Teljes útmutató a betonrepedések okaihoz: zsugorodás, h
       </div>
     </article>
   </main>
+  
+  <!-- Related Posts -->
+  <RelatedPosts currentSlug="repedesek-okai" limit={3} />
+  
+  <!-- CTA Section -->
+  <CTA 
+    title="Betonrepedési problémái vannak?"
+    description="Szakértő csapatunk segít a repedések okainak feltárásában és professzionális javításában. Ingyenes helyszíni felmérés Budapesten!"
+    primaryButton="Ingyenes árajánlat"
+    secondaryButton="+36 30 123 4567"
+  />
 </Layout>

@@ -1,6 +1,8 @@
 ---
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
+import EnhancedContent from '../components/EnhancedContent.astro';
 
 const title = "Beton utókezelés fontossága és módjai Budapesten | Szakszerű ápolás 2024";
 const description = "Teljes útmutató a beton utókezeléséhez: kötési folyamat, nedvesen tartás, védelem. A tartósság kulcsa a helyes utókezelés Budapesten.";
@@ -40,7 +42,11 @@ const description = "Teljes útmutató a beton utókezeléséhez: kötési folya
 
       <h2 class="text-2xl font-bold mt-8 mb-4">A beton kötési folyamata</h2>
       
-      <p>A beton utókezelése kritikus fontosságú a hosszú távú szilárdság és tartósság szempontjából. Budapest változékony éghajlati viszonyai között különösen fontos a szakszerű ápolás, amely meghatározza a szerkezet élettartamát.</p>
+      <EnhancedContent 
+        currentSlug="utokezeles-fontossaga" 
+        content="A beton utókezelése kritikus fontosságú a hosszú távú szilárdság és tartósság szempontjából. Budapest változékony éghajlati viszonyai között különösen fontos a szakszerű ápolás, amely meghatározza a szerkezet élettartamát."
+        className=""
+      />
 
       <h3 class="text-xl font-semibold mt-6 mb-3">Hidratációs reakció fázisai</h3>
 
@@ -555,4 +561,5 @@ const description = "Teljes útmutató a beton utókezeléséhez: kötési folya
       </div>
     </article>
   </main>
+  <RelatedPosts currentSlug="utokezeles-fontossaga" />
 </Layout>

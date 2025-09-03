@@ -1,6 +1,8 @@
 ---
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
+import EnhancedContent from '../components/EnhancedContent.astro';
 ---
 
 <Layout title="Betonozás költségoptimalizálás Budapest | Hatékony betonozási megoldások" description="Betonozás költségoptimalizálás Budapesten. Hatékony anyagfelhasználás, munkaidő-csökkentés, technológiai megoldások a betonozási költségek minimalizálására.">
@@ -43,13 +45,17 @@ import Header from '../components/Header.astro';
           <div class="prose prose-lg max-w-none mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-6">Miért fontos a betonozás költségoptimalizálása?</h2>
             
-            <p class="text-gray-700 leading-relaxed mb-6">
-              A betonozási projektekben a költségek jelentős részét az anyagok és a munka teszik ki. Budapest drágább építőanyag-árai és magas munkabérek mellett különösen fontos a hatékony költséggazdálkodás. Megfelelő tervezéssel és technológiai megoldásokkal akár 30-40% költségmegtakarítás is elérhető.
-            </p>
+            <EnhancedContent 
+              currentSlug="koltsegoptimalizalas" 
+              content="A betonozási projektekben a költségek jelentős részét az anyagok és a munka teszik ki. Budapest drágább építőanyag-árai és magas munkabérek mellett különösen fontos a hatékony költséggazdálkodás. Megfelelő tervezéssel és technológiai megoldásokkal akár 30-40% költségmegtakarítás is elérhető."
+              className="text-gray-700 leading-relaxed mb-6"
+            />
 
-            <p class="text-gray-700 leading-relaxed mb-8">
-              Szakértő csapatunk 18 éve foglalkozik költséghatékony betonozási megoldások kidolgozásával. Tapasztalataink alapján a legtöbb projekt esetében jelentős optimalizálási lehetőségek vannak, amelyek nem járnak a minőség romlásával, sőt gyakran javítják is azt.
-            </p>
+            <EnhancedContent 
+              currentSlug="koltsegoptimalizalas" 
+              content="Szakértő csapatunk 18 éve foglalkozik költséghatékony betonozási megoldások kidolgozásával. Tapasztalataink alapján a legtöbb projekt esetében jelentős optimalizálási lehetőségek vannak, amelyek nem járnak a minőség romlásával, sőt gyakran javítják is azt."
+              className="text-gray-700 leading-relaxed mb-8"
+            />
           </div>
 
           <!-- Költségösszetevők elemzése -->
@@ -829,4 +835,5 @@ import Header from '../components/Header.astro';
       </div>
     </section>
   </main>
+  <RelatedPosts currentSlug="koltsegoptimalizalas" />
 </Layout>

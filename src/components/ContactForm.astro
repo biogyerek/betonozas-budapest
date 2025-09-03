@@ -1,0 +1,111 @@
+---
+// ContactForm component
+---
+
+<section class="py-16 bg-gray-50">
+	<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="bg-white rounded-lg shadow-lg p-8">
+			<h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Kérj Árajánlatot</h2>
+			
+			<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				<div>
+					<label for="name" class="block text-sm font-medium text-gray-700 mb-2">
+						Teljes név *
+					</label>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						required
+						class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+						placeholder="Az Ön neve"
+					>
+				</div>
+				
+				<div>
+					<label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+						Email cím *
+					</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						required
+						class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+						placeholder="pelda@email.hu"
+					>
+				</div>
+				
+				<div>
+					<label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+						Telefonszám *
+					</label>
+					<input
+						type="tel"
+						id="phone"
+						name="phone"
+						required
+						class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+						placeholder="+36 20 123 4567"
+					>
+				</div>
+				
+				<div>
+					<label for="service" class="block text-sm font-medium text-gray-700 mb-2">
+						Szolgáltatás
+					</label>
+					<select
+						id="service"
+						name="service"
+						class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+					>
+						<option value="">Válasszon szolgáltatást</option>
+						<option value="alapozes">Alapozás</option>
+						<option value="betonozes">Betonozás</option>
+						<option value="terasz">Terasz betonozás</option>
+						<option value="udvar">Udvar betonozás</option>
+						<option value="vizallo">Vízálló betonozás</option>
+						<option value="egyeb">Egyéb</option>
+					</select>
+				</div>
+				
+				<div class="md:col-span-2">
+					<label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+						Projekt részletei
+					</label>
+					<textarea
+						id="message"
+						name="message"
+						rows="5"
+						class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+						placeholder="Írja le a projekt részleteit, területnagyságot, speciális igényeket..."
+					></textarea>
+				</div>
+				
+				<div class="md:col-span-2">
+					<div class="flex items-start">
+						<input
+							type="checkbox"
+							id="privacy"
+							name="privacy"
+							required
+							class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded mt-1"
+						>
+						<label for="privacy" class="ml-2 block text-sm text-gray-700">
+							Elfogadom az <a href="/adatvedelmi-tajekoztato" class="text-blue-600 hover:underline">adatvédelmi tájékoztatót</a> és hozzájárulok adataim kezeléséhez. *
+						</label>
+					</div>
+				</div>
+				
+				<div class="md:col-span-2">
+					<button
+						type="submit"
+						class="w-full bg-blue-600 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
+					>
+						Árajánlat Küldése
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
